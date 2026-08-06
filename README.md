@@ -41,12 +41,47 @@ This framework governs the **productization** stage — what happens *after* an 
 - **Security-first / defense context.** Products may serve government/defense customers; authorization (ATO/cATO) is a first-class part of the timeline.
 - **Software products.** Written for software (including cloud-delivered); hardware-heavy efforts need adaptation.
 
-## Contributing / iteration conventions
+## Repository tooling (optional)
+
+The `llm-memory/` and `.llm-memory/` directories hold a knowledge-capture tool, **lmc** (LLM Memory Compiler), that records what gets discussed in AI-assisted sessions on this repo and compiles it into searchable articles under `llm-memory/knowledge/`. It is **entirely optional** — you can read, edit, and contribute to every document here without it.
+
+If you do want capture to work on your machine, install `lmc` once:
+
+```bash
+git clone https://github.com/j105rob/llm-memory-compiler
+cd llm-memory-compiler
+uv sync
+./lmc install
+```
+
+That writes a launcher to `~/.local/bin/lmc`; make sure that directory is on your `PATH`. You do **not** need to run `lmc init` — this repo already carries its configuration (`.llm-memory/config.json`) and the Claude Code hooks (`.claude/settings.json`), which invoke `lmc` via `$CLAUDE_PROJECT_DIR` so they work from any clone location.
+
+If `lmc` isn't installed, the session hooks simply fail and are logged — nothing in the repo breaks, and no framework content depends on the tool.
+
+See [`llm-memory/README.md`](./llm-memory/README.md) for usage and [`llm-memory/AGENTS.md`](./llm-memory/AGENTS.md) for the technical reference.
+
+## Contributing
+
+This is a living knowledge base, so contributions are expected to be *arguments and revisions*, not just typo fixes. The conventions below keep an iterative document set legible.
+
+**Document conventions**
 
 - Each document carries a **status line and revision date** (`Draft`, `In review`, or `Adopted`). Treat everything as **Draft for discussion** unless its status says otherwise.
-- Each document ends with an **"Open questions / to resolve"** section — the fastest way to see what's still unsettled.
-- Propose changes via pull request; note decisions in the affected document's changelog stub.
-- Nothing is "Adopted" until the team agrees it is.
+- Each document ends with an **"Open questions / to resolve"** section — the fastest way to see what's still unsettled. If your change settles one, remove it from that list and reflect the decision in the body.
+- Documents are numbered and cross-reference each other by number (`docs/03`). If you move or renumber content, fix the inbound references — including those in `EXECUTIVE-SUMMARY.md` and `templates/`.
+- New terms and acronyms get an entry in [`docs/06-glossary-and-references.md`](./docs/06-glossary-and-references.md); new external claims get a verified source in its reference list.
+
+**How to propose a change**
+
+1. Branch from `main` (`git checkout -b <short-topic-name>`).
+2. Make the change, keeping the document's existing voice and altitude — prose that explains *why*, not bullet fragments.
+3. Bump the document's revision date, and note the change in its **changelog** section at the bottom (add one, following the pattern in [`templates/ipt-charter-template.md`](./templates/ipt-charter-template.md), if the document doesn't have one yet).
+4. Open a pull request describing what changed and, more importantly, *what argument or evidence drove it*.
+5. For anything that changes the model itself — roles, gates, cadence, security posture — say plainly in the PR which **open question** you believe it resolves.
+
+**Status promotion**
+
+Nothing is "Adopted" until the team agrees it is. Moving a document from `Draft` to `In review` to `Adopted` is a deliberate act discussed with the team, not a side effect of merging a PR.
 
 ---
 
