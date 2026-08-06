@@ -1,0 +1,40 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lmc hook --kb-root /Users/rweiss/git/IPT-Framework session-start",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lmc hook --kb-root /Users/rweiss/git/IPT-Framework pre-compact",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lmc hook --kb-root /Users/rweiss/git/IPT-Framework session-end",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

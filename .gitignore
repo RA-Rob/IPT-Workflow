@@ -9,3 +9,10 @@ Thumbs.db
 # Local scratch
 *.tmp
 /tmp/
+# lmc — operational files
+.llm-memory/flush.log
+.llm-memory/compile.log
+.llm-memory/last-flush.json
+.llm-memory/state.json
+.llm-memory/session-flush-*.md
+.llm-memory/cursor-*.md
