@@ -1,4 +1,4 @@
-# IPT Framework
+# IPT Workflow
 
 Red Alpha's standard way of turning a validated idea and its MVP into a shipped, secure, supportable software product — using small, durable, cross-functional **Integrated Product Teams (IPTs)**.
 
@@ -10,7 +10,7 @@ This repository is a **living, iterative knowledge base**, not a finished standa
 
 ## The core idea
 
-The expensive mistake in software is *building the wrong thing well.* So the framework does two things, in order:
+The expensive mistake in software is *building the wrong thing well.* So the workflow does two things, in order:
 
 1. **Reduce uncertainty cheaply, before committing** — frame the outcome and validate the riskiest assumptions on paper or with a throwaway prototype.
 2. **Then let a small, empowered team own delivery end to end** — in fixed-time cycles, with security designed in from day one.
@@ -35,7 +35,7 @@ Both come from studying how the best builders work: Amazon, Google Ventures, IDE
 
 ## Scope and assumptions
 
-This framework governs the **productization** stage — what happens *after* an idea has produced a working MVP and someone decides it's worth turning into a product. Early ideation and MVP-building precede it and have lighter rules. Key assumptions, called out where they matter:
+This workflow governs the **productization** stage — what happens *after* an idea has produced a working MVP and someone decides it's worth turning into a product. Early ideation and MVP-building precede it and have lighter rules. Key assumptions, called out where they matter:
 
 - **Lean teams.** A standard IPT is **4–7 people**; almost everyone wears more than one hat.
 - **Security-first / defense context.** Products may serve government/defense customers; authorization (ATO/cATO) is a first-class part of the timeline.
@@ -56,7 +56,7 @@ uv sync
 
 That writes a launcher to `~/.local/bin/lmc`; make sure that directory is on your `PATH`. You do **not** need to run `lmc init` — this repo already carries its configuration (`.llm-memory/config.json`) and the Claude Code hooks (`.claude/settings.json`), which invoke `lmc` via `$CLAUDE_PROJECT_DIR` so they work from any clone location.
 
-If `lmc` isn't installed, the session hooks simply fail and are logged — nothing in the repo breaks, and no framework content depends on the tool.
+If `lmc` isn't installed, the session hooks simply fail and are logged — nothing in the repo breaks, and no workflow content depends on the tool.
 
 See [`llm-memory/README.md`](./llm-memory/README.md) for usage and [`llm-memory/AGENTS.md`](./llm-memory/AGENTS.md) for the technical reference.
 

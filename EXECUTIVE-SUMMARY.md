@@ -1,10 +1,10 @@
-# The Red Alpha IPT Framework — Executive Summary
+# The Red Alpha IPT Workflow — Executive Summary
 
 *One-page overview for leadership. Full detail in the `docs/` folder. Status: Draft for discussion — August 2026.*
 
 **What this is.** A standard, repeatable way for Red Alpha to turn a validated idea and its MVP into a shipped, secure, supportable software product — using small, durable, cross-functional **Integrated Product Teams (IPTs)**.
 
-**The core belief.** The expensive mistake in software is *building the wrong thing well.* So the framework does two things in order: **(1) reduce uncertainty cheaply before committing, then (2) let a small empowered team own delivery end to end.** Both come from studying how the best builders work — Amazon (write the customer outcome first), Google Ventures (validate in a one-week sprint), IDEO (human-centered discovery), Spotify (autonomy with alignment), and Basecamp (fixed-time cycles built for small teams).
+**The core belief.** The expensive mistake in software is *building the wrong thing well.* So the workflow does two things in order: **(1) reduce uncertainty cheaply before committing, then (2) let a small empowered team own delivery end to end.** Both come from studying how the best builders work — Amazon (write the customer outcome first), Google Ventures (validate in a one-week sprint), IDEO (human-centered discovery), Spotify (autonomy with alignment), and Basecamp (fixed-time cycles built for small teams).
 
 **The team.** A Red Alpha IPT is **4–7 people** who own a product from productization through operation. Because there are more essential functions than people, most members wear more than one hat — but all seven functions always have a named owner: product, engineering leadership, development, **security/authorization**, design, quality, and delivery/DevSecOps. The Product Lead is the single **Decider** who breaks ties so a lean team never stalls. The same team that builds the product runs it.
 
@@ -22,7 +22,7 @@ Gates are short, honest decision points — proceed, re-scope, or stop — that 
 
 **Security is not a phase — it's continuous.** Because our products may serve defense and government customers, security and the path to authorization (NIST RMF, ATO / continuous-ATO, DevSecOps) are designed in from Gate 0 and maintained through operations. The authorization package is assembled *as we build*, not written under deadline before launch — the single biggest lever for hitting launch dates in a government context.
 
-**What we're asking of the team.** Read the full framework, then help us settle a handful of open decisions: cycle length (six weeks vs. shorter), whether security leads are embedded per-team or shared, and which products need formal government authorization versus commercial-grade security.
+**What we're asking of the team.** Read the full workflow, then help us settle a handful of open decisions: cycle length (six weeks vs. shorter), whether security leads are embedded per-team or shared, and which products need formal government authorization versus commercial-grade security.
 
 ---
 
