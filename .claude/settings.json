@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "lmc hook --kb-root /Users/rweiss/git/IPT-Framework session-start",
+            "command": "lmc hook --kb-root \"$CLAUDE_PROJECT_DIR\" session-start",
             "timeout": 15
           }
         ]
@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "lmc hook --kb-root /Users/rweiss/git/IPT-Framework pre-compact",
+            "command": "lmc hook --kb-root \"$CLAUDE_PROJECT_DIR\" pre-compact",
             "timeout": 10
           }
         ]
@@ -30,7 +30,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "lmc hook --kb-root /Users/rweiss/git/IPT-Framework session-end",
+            "command": "lmc hook --kb-root \"$CLAUDE_PROJECT_DIR\" session-end",
             "timeout": 10
           }
         ]
