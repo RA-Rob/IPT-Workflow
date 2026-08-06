@@ -74,4 +74,4 @@ The common denominator — **reduce uncertainty cheaply before committing, then 
 - How often (if ever) do we actually run a full five-day Design Sprint versus a lighter one- or two-day validation?
 - What cycle length fits Red Alpha best — the classic six weeks, or shorter given our size and cadence?
 
-*Sources for this brief are consolidated in `06-glossary-and-references.md`.*
+*Sources for this brief are consolidated in [`06-glossary-and-references.md`](06-glossary-and-references.md).*

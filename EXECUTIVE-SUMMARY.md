@@ -26,4 +26,4 @@ Gates are short, honest decision points — proceed, re-scope, or stop — that 
 
 ---
 
-*Read next: `docs/02-ipt-model-overview.md` (the model), `docs/03-team-structure-and-roles.md` (the team), `docs/04-process-timeline-and-phases.md` (the process). Background research: `docs/01-research-brief-incubator-methodologies.md`.*
+*Read next: [`docs/02-ipt-model-overview.md`](docs/02-ipt-model-overview.md) (the model), [`docs/03-team-structure-and-roles.md`](docs/03-team-structure-and-roles.md) (the team), [`docs/04-process-timeline-and-phases.md`](docs/04-process-timeline-and-phases.md) (the process). Background research: [`docs/01-research-brief-incubator-methodologies.md`](docs/01-research-brief-incubator-methodologies.md).*

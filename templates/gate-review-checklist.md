@@ -1,6 +1,6 @@
 # Gate-Review Checklist
 
-*Companion to `docs/04-process-timeline-and-phases.md`. A gate review is a short, honest decision — not a ceremony. Every gate has three possible outcomes: **Proceed**, **Iterate/Re-scope**, or **Stop**. Copy the relevant section into your product's working notes and check the boxes live in the review.*
+*Companion to [`docs/04-process-timeline-and-phases.md`](../docs/04-process-timeline-and-phases.md). A gate review is a short, honest decision — not a ceremony. Every gate has three possible outcomes: **Proceed**, **Iterate/Re-scope**, or **Stop**. Copy the relevant section into your product's working notes and check the boxes live in the review.*
 
 **How to run one:** 30 minutes, the IPT plus the gate's decision owner(s). Walk the checklist, decide, and record the one-line decision at the bottom of each section. If a box can't be checked, that's the conversation — don't check it to be polite.
 
@@ -13,7 +13,7 @@
 - [ ] The MVP has proven something concrete; we can say what.
 - [ ] Plausible path to **desirable + feasible + viable + securable/authorizable**.
 - [ ] A durable 4–7 person team can be staffed, with every core function owned.
-- [ ] **IPT Charter** drafted (`templates/ipt-charter-template.md`).
+- [ ] **IPT Charter** drafted ([`templates/ipt-charter-template.md`](ipt-charter-template.md)).
 - [ ] Security Lead has given an initial risk read (RMF *Prepare* begun).
 - [ ] Appetite for Discovery agreed.
 

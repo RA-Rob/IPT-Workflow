@@ -1,0 +1,51 @@
+title: IPT Workflow
+tagline: Red Alpha's idea-to-product workflow
+description: >-
+  Red Alpha's standard way of turning a validated idea and its MVP into a
+  shipped, secure, supportable software product — using small, durable,
+  cross-functional Integrated Product Teams.
+
+# Project site served from https://ra-rob.github.io/IPT-Workflow/
+url: https://ra-rob.github.io
+baseurl: /IPT-Workflow
+
+repository: RA-Rob/IPT-Workflow
+
+# These three are enabled by default on GitHub Pages; listed explicitly so the
+# reason we depend on them is visible. Together they let every document in
+# docs/ and templates/ render as a site page with NO front matter added:
+#   optional-front-matter  — treats plain .md files as pages
+#   titles-from-headings   — takes each page's title from its first H1
+#   relative-links         — rewrites ./docs/0X-name.md links to built page URLs
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+
+# The layout prints the page title, so drop the now-duplicate H1 from the body.
+titles_from_headings:
+  strip_title: true
+
+# index.md is the landing page; don't let README.md claim the site root.
+readme_index:
+  enabled: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Repo-front-door and tooling files that should not become site pages.
+exclude:
+  - README.md
+  - llm-memory/
+  - .llm-memory/
+  - .claude/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

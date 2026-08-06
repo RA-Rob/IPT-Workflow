@@ -83,4 +83,4 @@ The model is deliberately simple to hold in your head: a **small durable team** 
 - Should every product get a *durable* IPT, or do some smaller efforts get a time-boxed team that disbands? (Trade-off between focus and headcount.)
 - How many IPTs can Red Alpha realistically staff at once given our size, and what's the rule when demand exceeds that?
 
-*Definitions of terms used here are in `06-glossary-and-references.md`.*
+*Definitions of terms used here are in [`06-glossary-and-references.md`](06-glossary-and-references.md).*

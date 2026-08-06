@@ -129,4 +129,4 @@ That places a first real launch in the **~5–6 month** range for a typical prod
 - How formal should **gate reviews** be — a written decision memo, or a live 30-minute review?
 - Where exactly does the **authorization timeline** (which can be long) sit relative to build — parallel throughout, or a dedicated pre-launch window? (See document 05.)
 
-*Terms and acronyms are defined in `06-glossary-and-references.md`.*
+*Terms and acronyms are defined in [`06-glossary-and-references.md`](06-glossary-and-references.md).*

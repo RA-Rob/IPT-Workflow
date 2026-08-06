@@ -1,0 +1,48 @@
+# Site navigation and reading order.
+#
+# Kept here rather than as front matter inside each document so that the
+# documents themselves stay plain Markdown — readable on GitHub, in an editor,
+# and on this site without carrying site-specific metadata.
+#
+# Order matters: the sidebar and the prev/next links at the foot of each page
+# both come from this list, flattened top to bottom.
+
+sections:
+  - title: Start here
+    items:
+      - title: Overview
+        url: /
+        blurb: What this is and how to read it
+      - title: Executive Summary
+        url: /EXECUTIVE-SUMMARY.html
+        blurb: The one-page version for leadership
+
+  - title: The workflow
+    items:
+      - title: 01 — Research Brief
+        url: /docs/01-research-brief-incubator-methodologies.html
+        blurb: How five of the best product builders work, and what we take from each
+      - title: 02 — The Model
+        url: /docs/02-ipt-model-overview.html
+        blurb: What an IPT is, the guiding principles, and when one stands up
+      - title: 03 — Team & Roles
+        url: /docs/03-team-structure-and-roles.html
+        blurb: The lean 4–7 person team, its seven functions, hats, and RACI
+      - title: 04 — Process & Gates
+        url: /docs/04-process-timeline-and-phases.html
+        blurb: Four phases, four gates, cycle cadence, and a worked timeline
+      - title: 05 — Security & Compliance
+        url: /docs/05-security-and-compliance.html
+        blurb: RMF, ATO/cATO and DevSecOps woven through every phase
+      - title: 06 — Glossary & References
+        url: /docs/06-glossary-and-references.html
+        blurb: Definitions and the verified source list
+
+  - title: Templates
+    items:
+      - title: IPT Charter
+        url: /templates/ipt-charter-template.html
+        blurb: One-page charter to complete at Gate 0
+      - title: Gate-Review Checklist
+        url: /templates/gate-review-checklist.html
+        blurb: Entry/exit criteria and decision owners for Gates 0–3

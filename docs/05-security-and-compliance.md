@@ -83,4 +83,4 @@ These accumulate across the timeline rather than being written at the end:
 - What is our realistic **impact level** default (moderate?) and the corresponding control burden for a lean team?
 - Should the **Security Lead** be embedded per IPT or shared across teams as a security "chapter" at our current size?
 
-*Framework definitions and the source list are in `06-glossary-and-references.md`.*
+*Framework definitions and the source list are in [`06-glossary-and-references.md`](06-glossary-and-references.md).*

@@ -98,4 +98,4 @@ When a product genuinely outgrows seven people, we **split into two IPTs around 
 - What is the minimum viable team we'd ever stand up — is four really the floor, or three for the smallest efforts?
 - How do we handle **on-call / operations** load on a lean team once products are live in production?
 
-*Role definitions and acronyms are in `06-glossary-and-references.md`.*
+*Role definitions and acronyms are in [`06-glossary-and-references.md`](06-glossary-and-references.md).*

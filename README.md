@@ -5,6 +5,8 @@ Red Alpha's standard way of turning a validated idea and its MVP into a shipped,
 This repository is a **living, iterative knowledge base**, not a finished standard. It is meant to be read, argued with, and revised by the Red Alpha team. Once the ideas here stabilize through discussion, we pull them into other forms (decks, checklists, charters) without rewriting the underlying thinking.
 
 > **Start here:** [`EXECUTIVE-SUMMARY.md`](./EXECUTIVE-SUMMARY.md) for the one-page overview, then the `docs/` folder for full detail.
+>
+> **Reading on the web is easier:** every document in this repository is published as a browsable site at **<https://ra-rob.github.io/IPT-Workflow/>** — sidebar navigation, working cross-references, and next/previous links through the reading order.
 
 ---
 
@@ -40,6 +42,27 @@ This workflow governs the **productization** stage — what happens *after* an i
 - **Lean teams.** A standard IPT is **4–7 people**; almost everyone wears more than one hat.
 - **Security-first / defense context.** Products may serve government/defense customers; authorization (ATO/cATO) is a first-class part of the timeline.
 - **Software products.** Written for software (including cloud-delivered); hardware-heavy efforts need adaptation.
+
+## The documentation site
+
+Everything here is published with **GitHub Pages**, built by GitHub's own Jekyll from the `main` branch — there is no build step to run and nothing to install.
+
+| Path | Role |
+|------|------|
+| `index.md` | The landing page |
+| `_layouts/default.html` | The page shell: sidebar, next/previous pager, footer |
+| `_data/nav.yml` | Navigation **and reading order** — the single place both are defined |
+| `assets/css/style.css` | Styling, including light/dark support |
+| `_config.yml` | Site config, plugin declarations, and what to exclude from the site |
+
+The important property: **the documents themselves carry no site metadata.** No front matter, no layout declarations — they stay plain Markdown that reads correctly in an editor, on GitHub, and on the site. Three plugins that GitHub Pages enables by default make that work — `jekyll-optional-front-matter` renders bare `.md` files as pages, `jekyll-titles-from-headings` takes each page's title from its first `#` heading, and `jekyll-relative-links` rewrites relative `.md` cross-references into working site links.
+
+**Adding or renaming a document?** Add it to `_data/nav.yml` — that's what puts it in the sidebar and in the reading order. A document that isn't listed there still gets published, but nothing links to it.
+
+Two consequences worth knowing:
+
+- Cross-references between documents must be written as **relative Markdown links** (`[text](../docs/05-security-and-compliance.md)`), which work both on GitHub and on the site. A bare backticked filename renders as inert text.
+- The site relies on GitHub's built-in Jekyll build. If it is ever switched to a GitHub Actions workflow, those three default plugins must be declared in a `Gemfile` explicitly or every page loses its title and cross-links.
 
 ## Repository tooling (optional)
 

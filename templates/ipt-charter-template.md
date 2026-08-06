@@ -1,6 +1,6 @@
 # IPT Charter — [Product Name]
 
-*Template — fill in the bracketed fields. A charter should fit on one page. Complete it at **Phase 0 / Gate 0** (see `docs/04-process-timeline-and-phases.md`) and revisit it at each gate.*
+*Template — fill in the bracketed fields. A charter should fit on one page. Complete it at **Phase 0 / Gate 0** (see [`docs/04-process-timeline-and-phases.md`](../docs/04-process-timeline-and-phases.md)) and revisit it at each gate.*
 
 | Field | Value |
 |-------|-------|
@@ -29,7 +29,7 @@
 
 ## 4. The team and their hats
 
-*Every one of the seven core functions must have a named owner, even if one person wears two hats. See `docs/03-team-structure-and-roles.md`.*
+*Every one of the seven core functions must have a named owner, even if one person wears two hats. See [`docs/03-team-structure-and-roles.md`](../docs/03-team-structure-and-roles.md).*
 
 | Function | Owner | Second hat? |
 |----------|-------|-------------|
@@ -48,7 +48,7 @@
 - **Decider (breaks ties on *what/why*):** [Product Lead]
 - **Technical tie-breaker (*how*):** [Tech Lead]
 - **Risk-acceptance / authorization authority:** [Authorizing Official]
-- **Gate decisions:** per `docs/04-process-timeline-and-phases.md` (Gate 0 = Sponsor; Gate 1 = Product Lead + sponsor concurrence; Gate 2 = Product Lead + Security Lead + AO; Gate 3 = Product Lead + Sponsor).
+- **Gate decisions:** per [`docs/04-process-timeline-and-phases.md`](../docs/04-process-timeline-and-phases.md) (Gate 0 = Sponsor; Gate 1 = Product Lead + sponsor concurrence; Gate 2 = Product Lead + Security Lead + AO; Gate 3 = Product Lead + Sponsor).
 
 ## 6. Appetite for the next phase
 
@@ -57,7 +57,7 @@
 
 ## 7. Initial risk & security read
 
-[3–5 bullets from the Security Lead: likely impact level, obvious authorization constraints, whether we build on an existing authorized platform, biggest unknowns. See `docs/05-security-and-compliance.md`.]
+[3–5 bullets from the Security Lead: likely impact level, obvious authorization constraints, whether we build on an existing authorized platform, biggest unknowns. See [`docs/05-security-and-compliance.md`](../docs/05-security-and-compliance.md).]
 
 ## 8. What success looks like at first launch
 
