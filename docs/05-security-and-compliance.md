@@ -1,6 +1,6 @@
 # 05 — Security and Compliance, Woven Into the Process
 
-*Status: Draft for discussion — v0.1 — August 2026*
+*Status: Draft for discussion — v0.2 — August 2026*
 
 ## Why this is its own document — but not its own phase
 
@@ -53,14 +53,30 @@ Security work is distributed across the phases and gates from document 04 so tha
 
 | Phase / Gate | RMF & security activity |
 |--------------|-------------------------|
-| **Phase 0 / Gate 0** | Begin RMF **Prepare**; Security Lead gives the initial risk read and flags authorization constraints before we commit. |
-| **Phase 1 / Gate 1** | **Categorize** the system (impact level); draft **Select** (control baseline & boundary); the security & authorization plan is a Gate 1 exit artifact; architecture chosen to be authorizable. |
-| **Phase 2 (Build)** | **Implement** controls alongside features every cycle; DevSecOps pipeline enforces the secure supply chain; SSP and control evidence accumulate; begin **Assess** activities as increments stabilize. |
-| **Gate 2** | **Assess** complete enough and **Authorize** achieved — an ATO granted, or an interim/continuous-authorization path agreed with the AO — as a hard condition of launch. |
-| **Phase 3 (Launch)** | Security monitoring and incident response live from day one of the pilot. |
-| **Phase 4 (Operate)** | **Monitor** continuously; mature toward **cATO** (CONMON + ACD + SSSC); maintain authorization through ongoing evidence rather than re-accreditation. |
+| *Before Gate 0 (the POC)* | Outside this workflow's scope, but one security judgment belongs there and we should insist on it: is a production version of this idea **plausibly authorizable at all**? Shopping something we could never field wastes a customer's time and ours. The POC itself stays a demonstration — Red Alpha-controlled environment, synthetic or sample data, nobody operating it. |
+| **Gate 0 (Commit & charter)** | Begin RMF **Prepare** in earnest, now that a real customer environment is in view: stakeholders, operational environment, risk-management roles, and who the actual **Authorizing Official** will be. |
+| **Phase 1 (Discovery) / Gate 1** | **Categorize** the system (impact level); draft **Select** (control baseline & boundary); the security & authorization plan is a Gate 1 exit artifact; architecture chosen to be authorizable in *this customer's* environment. The **stage** environment is stood up with its access and data rules decided, not improvised. |
+| **Phase 2 (MVP)** | **Implement** controls as tailored capability is built, every short cycle; the pipeline enforces the secure supply chain from the first increment. Stage now holds representative data and is reachable by people outside Red Alpha — see below. Control evidence begins accumulating. |
+| **Gate 2** | No authorization decision here — Gate 2 is the customer's acceptance. But the Security Lead reports honestly on control status and the realistic authorization timeline, because that timeline is part of what the customer is deciding to keep funding. |
+| **Phase 3 (Build)** | **Implement** across both tracks; SSP and control evidence assembled deliberately; begin **Assess** activities as increments stabilize. Core-track work carries its own obligation: controls built into the licensed core benefit every future customer, so build them to be inherited. |
+| **Gate 3** | **Assess** complete enough and **Authorize** achieved — an ATO granted, or an interim/continuous-authorization path agreed with the AO — as a hard condition of launch. |
+| **Phase 4 (Launch)** | Security monitoring and incident response live from day one of the pilot in the customer's real environment. |
+| **Phase 5 (Operate)** | **Monitor** continuously; mature toward **cATO** (CONMON + ACD + SSSC); maintain authorization through ongoing evidence rather than re-accreditation. |
 
 The key scheduling insight: **authorization work runs in parallel with build the whole way**, not as a separate stage bolted on before launch. This is the single biggest lever a lean team has for hitting launch dates in a government context.
+
+## The stage environment is a security concern, not a scratch pad
+
+The mechanism that makes incremental customer delivery real is **stage** — the middle environment in the `dev → stage → prod` path, where each cycle's working capability lands for the customer's own people to exercise (document 04). It deserves explicit treatment here because it is the first place in the lifecycle where **people outside Red Alpha touch a running system**, and it is easy to treat it with dev-environment casualness while it accumulates production-shaped risk.
+
+Four things to settle before the first increment lands there, not after:
+
+- **Whose data is in it.** Representative data is what makes an evaluation meaningful, but "representative" slides toward "real" under pressure. Decide deliberately what class of data stage may hold — synthetic, sanitized, or genuinely operational — because the answer sets its control baseline. If real operational data is ever in stage, stage is inside the authorization boundary and must be treated that way.
+- **Who can reach it, and how.** Named customer evaluators with individual, auditable accounts — not a shared credential passed around a program office. Access is granted for evaluation and revoked when people rotate off.
+- **Where it lives.** Red Alpha-hosted or in the customer's own environment. This is a live open question below, and it changes the authorization boundary materially.
+- **That it is not the pilot.** Stage is for evaluating direction. It carries no authorization to operate and no mission dependency, and both sides should be clear that using it is not using the product for real work. Gate 3 exists precisely because moving to the customer's production environment is a different decision with a different bar.
+
+Handled well, stage is also a security *asset*: it is where controls get exercised by real users against realistic tasks, months before an assessor looks at them.
 
 ## Who owns what
 
@@ -74,13 +90,16 @@ These accumulate across the timeline rather than being written at the end:
 - **Security Assessment Report (SAR)** — the independent assessor's findings.
 - **Plan of Action & Milestones (POA&M)** — known gaps and the plan to close them.
 - **Authorization decision (ATO / interim / cATO evidence)** — the AO's risk acceptance and its basis.
-- **Continuous monitoring evidence** — the live dashboards and automated results that sustain authorization in Phase 4.
+- **Continuous monitoring evidence** — the live dashboards and automated results that sustain authorization in Phase 5.
 
 ## Open questions / to resolve
 
+- **Where does stage live** — Red Alpha-hosted or inside the customer's environment? This is the biggest unsettled security question in the workflow: it determines the authorization boundary, who can see the data in it, and whether standing it up is a two-day job or a two-month one.
+- **What data class is stage allowed to hold** by default, and who decides when a customer asks to put real operational data in it?
 - Which of Red Alpha's products actually target environments requiring a formal **ATO/cATO**, and which are commercial (security-strong but not government-authorized)? The timeline weight differs a lot.
 - Do we build on an existing **authorized platform / software factory**, or stand up our own pipeline? This heavily affects the authorization timeline.
 - What is our realistic **impact level** default (moderate?) and the corresponding control burden for a lean team?
 - Should the **Security Lead** be embedded per IPT or shared across teams as a security "chapter" at our current size?
+- How much of the control baseline can be **inherited from the core product** by each new customer's tailored instance? Getting this right is what makes the second engagement cheaper than the first.
 
 *Framework definitions and the source list are in [`06-glossary-and-references.md`](06-glossary-and-references.md).*

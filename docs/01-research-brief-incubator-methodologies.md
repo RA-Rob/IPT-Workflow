@@ -18,7 +18,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 
 **Why it succeeds.** Writing the press release first forces intellectual honesty. If you cannot describe a compelling customer benefit in plain language before building, you probably do not have one. It kills weak ideas when killing them is nearly free, and it aligns everyone on the *outcome* rather than the feature list. Small, single-owner teams then move fast because they own their decisions.
 
-**Lesson for Red Alpha.** Adopt a lightweight **PR/FAQ-style framing document** as the entry gate to productization. Before an IPT commits to turning an MVP into a product, the team writes a short "launch narrative + hard questions" doc and defends it. This is our cheapest risk-reduction step, and it fits a lean team perfectly.
+**Lesson for Red Alpha.** Adopt a lightweight **PR/FAQ-style framing document** as the entry gate to spending a customer's money. Before the IPT starts building the MVP, the team writes a short "launch narrative + hard questions" doc — from the customer's operators' point of view — and defends it. This is our cheapest risk-reduction step, and it fits a lean team perfectly.
 
 ## 2. Google Ventures — the Design Sprint
 
@@ -26,7 +26,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 
 **Why it succeeds.** It replaces opinion-driven meetings with a validated (or invalidated) hypothesis in one week, at the cost of a prototype rather than a product. The five-user test reliably surfaces the biggest usability problems. The Decider role prevents the endless consensus loops that stall small teams.
 
-**Lesson for Red Alpha.** Keep a **sprint-style validation tool** in the kit for any point where the team faces a high-stakes, uncertain design decision on the way from MVP to product. We don't run a sprint for everything, but when a direction is genuinely unclear, a one-week structured sprint is far cheaper than building the wrong thing. We also adopt the explicit **Decider** concept — a lean team needs someone who can break ties fast.
+**Lesson for Red Alpha.** Keep a **sprint-style validation tool** in the kit for any point where the team faces a high-stakes, uncertain design decision on the way from POC to MVP to product. We don't run a sprint for everything, but when a direction is genuinely unclear, a one-week structured sprint is far cheaper than building the wrong thing. We also adopt the explicit **Decider** concept — a lean team needs someone who can break ties fast.
 
 ## 3. IDEO — human-centered design thinking
 
