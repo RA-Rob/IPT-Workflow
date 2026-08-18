@@ -35,10 +35,11 @@ Two facts about how Red Alpha is funded shape everything downstream of that:
 | [`docs/04-process-timeline-and-phases.md`](./docs/04-process-timeline-and-phases.md) | End-to-end timeline: five phases, five gates, POC → MVP → product, artifacts, worked schedule |
 | [`docs/05-security-and-compliance.md`](./docs/05-security-and-compliance.md) | Security-first / defense context: RMF, ATO/cATO, DevSecOps woven into the process; the `stage` boundary |
 | [`docs/06-glossary-and-references.md`](./docs/06-glossary-and-references.md) | Definitions, a POC-vs-MVP comparison, and the full verified source list |
+| [`docs/07-open-items.md`](./docs/07-open-items.md) | The open-items register: every unsettled question, its owner, who decides, and what "resolved" looks like |
 | [`templates/ipt-charter-template.md`](./templates/ipt-charter-template.md) | Fill-in charter for standing up an IPT at Gate 0 |
 | [`templates/gate-review-checklist.md`](./templates/gate-review-checklist.md) | Entry/exit criteria and decision owners for Gates 0–4, plus the per-cycle customer evaluation |
 
-**Suggested first read:** `docs/02` → `docs/03` → `docs/04` → `docs/05`, with `docs/01` as background and `docs/06` as reference.
+**Suggested first read:** `docs/02` → `docs/03` → `docs/04` → `docs/05`, with `docs/01` as background and `docs/06` as reference. `docs/07` is the register of what is still unsettled — start there if you came to help settle something.
 
 ## Scope and assumptions
 

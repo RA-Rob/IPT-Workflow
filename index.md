@@ -16,7 +16,7 @@ description: >-
   <p>So the workflow does two things, in order: <strong>reduce uncertainty cheaply before committing</strong>, then <strong>let a small empowered team own delivery end to end</strong>.</p>
 </div>
 
-This site is a **living knowledge base, not a finished standard**. It is meant to be read, argued with, and revised by the Red Alpha team. Every document carries a status line, and every document ends with an *Open questions / to resolve* section — the fastest way to see what is still unsettled.
+This site is a **living knowledge base, not a finished standard**. It is meant to be read, argued with, and revised by the Red Alpha team. Every document carries a status line and ends with an *Open questions / to resolve* section. All of those items are consolidated — with an owner, whoever decides, and what "resolved" looks like — in [07 — Open Items]({{ '/docs/07-open-items.html' | relative_url }}), which is where to go if you came to help settle something.
 
 ## The shape of it
 
@@ -87,10 +87,10 @@ This workflow covers **an IPT taking a POC to product**. It starts at Gate 0 —
 The decisions that matter most, and that the team is being asked to settle:
 
 1. **The missing front end** — how does a POC come to exist? Who funds it, who staffs it before any IPT exists, what it must prove, and who shops it. This workflow starts after all of that, which leaves the front of our pipeline undefined.
-2. **Where `stage` lives** — Red Alpha-hosted or in the customer's environment — and **what data class it may hold**. This sets the authorization boundary.
+2. **The `stage` policy and its data class.** Settled: stage runs in Red Alpha's controlled environment (on-prem or cloud), is built to the customer's CONOPS or mirrors our intended production deployment, serves pre-production and pre-sales, and may be replicated only at mainline release parity. Open: **what data class it may hold** by default, and who approves real operational data going into it — that is what sets the authorization boundary.
 3. **Upstreaming and IP** — what do our standard customer terms actually permit when we want to promote customer-funded capability into the licensed core?
 4. **Build-phase cycle length** — the MVP phase is set at 2–3 weeks for customer contact; should Phase 3 return to the classic six?
 5. **Security Lead** — embedded in every IPT, or shared across teams as a chapter?
 6. **Which products need formal ATO/cATO** versus commercial-grade security? The timeline weight differs a lot.
 
-Each document's *Open questions* section carries the rest.
+The rest are in [07 — Open Items]({{ '/docs/07-open-items.html' | relative_url }}) — twenty-four of them, each with an owner field waiting for a name.

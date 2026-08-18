@@ -43,7 +43,7 @@ Owns human-centered discovery and the shape of the user experience: talks to rea
 Owns confidence that the product works and keeps working — test strategy, automation, and the definition of "done." On lean teams this is a hat worn by an engineer and enforced through automation in the pipeline rather than by a separate manual tester; it becomes a dedicated role for larger or higher-assurance products.
 
 ### Delivery / Platform (DevSecOps)
-Owns the CI/CD pipeline, environments, infrastructure-as-code, and the automation that makes shipping safe and repeatable — the "secure software supply chain." On lean teams this is usually the Tech Lead's or an engineer's second hat, tightly paired with the Security Lead. This hat also owns the `dev → stage → prod` promotion path, which makes it responsible for something the whole customer relationship rests on: **stage has to be reliably reachable and reliably current**, because a customer who cannot exercise this cycle's increment cannot approve the direction, and the loop that justifies their funding stalls.
+Owns the CI/CD pipeline, environments, infrastructure-as-code, and the automation that makes shipping safe and repeatable — the "secure software supply chain." On lean teams this is usually the Tech Lead's or an engineer's second hat, tightly paired with the Security Lead. This hat also owns the `dev → stage → prod` promotion path, which makes it responsible for something the whole customer relationship rests on: **stage has to be reliably reachable and reliably current**, because a customer who cannot exercise this cycle's increment cannot approve the direction, and the loop that justifies their funding stalls. "Current" is a specific obligation: stage lives in Red Alpha's controlled environment and may be replicated, and this hat keeps **every instance on the same release as the upstream mainline** (document 05).
 
 ## How functions map to people at each size
 
@@ -100,6 +100,8 @@ A lean IPT depends on a few roles it does **not** contain, and naming them preve
 When a product genuinely outgrows seven people, we **split into two IPTs around bounded missions** rather than growing one team past the point where everyone can hold the whole product in their heads. At that point the **chapter/guild** idea from document 01 activates: a security chapter, an engineering chapter, and shared guilds keep standards and knowledge aligned across teams. The guardrail we take from Spotify's failures: adding structure only works if the culture of trust, ownership, and shared accountability comes with it — otherwise we've just made a bigger, slower team with new titles.
 
 ## Open questions / to resolve
+
+*These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`07-open-items.md`](07-open-items.md), the register the whole team works from.*
 
 - Is the **Product Lead** always the Decider, or should the Decider role rotate/depend on the decision type (e.g., Tech Lead decides technical ties)?
 - Do we want the **Security Lead** to be a full member of every IPT, or a shared specialist across two or three teams at our current size?

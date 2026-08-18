@@ -110,6 +110,8 @@ The model is deliberately simple to hold in your head: a **small durable team** 
 
 ## Open questions / to resolve
 
+*These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`07-open-items.md`](07-open-items.md), the register the whole team works from.*
+
 - **The missing front end:** how does a POC come to exist? Who funds it, who staffs it before an IPT exists, how long it runs, what it must prove to be worth shopping, and who shops it. This model deliberately starts after all of that, which leaves Red Alpha's ideation-to-product concept undocumented — the single largest gap around this knowledge base.
 - Who owns **Gate 0** — the decision to stand up an IPT at all? A product council, a single executive, or the prospective Product Lead making the case to the sponsor?
 - What do our standard customer terms say about **upstreaming** customer-funded capability into the licensed core? The model assumes it is permitted with agreement; the contract has to actually say so.

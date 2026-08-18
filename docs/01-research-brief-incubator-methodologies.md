@@ -70,6 +70,8 @@ The common denominator — **reduce uncertainty cheaply before committing, then 
 
 ## Open questions / to resolve
 
+*These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`07-open-items.md`](07-open-items.md), the register the whole team works from.*
+
 - Do we want a *mandatory* PR/FAQ at the entry gate, or only for larger bets?
 - How often (if ever) do we actually run a full five-day Design Sprint versus a lighter one- or two-day validation?
 - What cycle length fits Red Alpha best — the classic six weeks, or shorter given our size and cadence?

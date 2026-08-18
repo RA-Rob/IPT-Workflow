@@ -40,6 +40,7 @@
 - [ ] Low-fidelity architecture sketch exists and is judged feasible by the Tech Lead.
 - [ ] **Security & authorization plan (draft)** exists; system **categorized** (impact level) and control baseline **selected** in draft.
 - [ ] **`stage` is stood up and the customer can actually reach it** — named accounts, agreed data class, access rules decided rather than improvised.
+- [ ] `stage` sits in **Red Alpha's controlled environment** and matches either the customer's stage **CONOPS** or our intended production deployment; every instance runs the **same release as the upstream mainline**.
 - [ ] First MVP cycle is **shaped** with an agreed **appetite**.
 
 **Decision:** Proceed to MVP / Iterate discovery / Stop — [date] — [owner]

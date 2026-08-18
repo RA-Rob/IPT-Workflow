@@ -69,7 +69,7 @@
 - **Discovery appetite (Phase 1):** [e.g., 3 weeks] — we will spend no more than this framing the outcome, drawing the core/tailoring boundary, and validating the riskiest assumption before Gate 1.
 - **MVP cycle length:** [2–3 weeks] — each cycle ends with working capability promoted to **stage**.
 - **Customer evaluation:** [who, how, how long after each promotion] — the loop that justifies their funding.
-- **Where `stage` lives:** [Red Alpha-hosted / customer environment] and **what data class it may hold:** [synthetic / sanitized / operational]
+- **`stage` environment:** hosted in Red Alpha's controlled environment — [on premises / Red Alpha cloud]. Shaped by [customer-supplied stage CONOPS, dated ___ / Red Alpha's intended production deployment]. Data supplied by [customer / Red Alpha]; **data class:** [synthetic / sanitized / operational]. Instances: [how many, and for whom — funding customer, pre-sales] — all at the same release as the upstream mainline.
 - **Working agreement:** [sync rhythm, where work is tracked, how funding source is tagged on each item]
 
 ## 8. Initial risk & security read

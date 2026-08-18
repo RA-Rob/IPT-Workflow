@@ -22,6 +22,8 @@
 
 **Continuous Authorization to Operate (cATO)** — A modern alternative to a point-in-time ATO: ongoing authorization based on real-time evidence, resting on three pillars — Continuous Monitoring, Active Cyber Defense, and Secure Software Supply Chain.
 
+**CONOPS (Concept of Operations)** — A description of how a system will actually be used: by whom, for what tasks, under what conditions. A funding customer may supply a CONOPS for the **stage** environment, in which case Red Alpha builds stage to it; absent one, stage mirrors what Red Alpha determines the production deployment will be (document 05).
+
 **Continuous Monitoring (CONMON)** — Automated, real-time visibility into the state of security controls; the pillar of cATO that replaces periodic re-assessment with ongoing awareness.
 
 **Cool-down** — From Shape Up: a short period between build cycles used for review, shaping upcoming work, betting, and small fixes.
@@ -72,7 +74,7 @@
 
 **Squad** — From Spotify: a small, cross-functional, autonomous team owning a mission. At 4–7 people a Red Alpha IPT effectively *is* one squad.
 
-**Stage (evaluation environment)** — The middle environment in the `dev → stage → prod` promotion path, and the one the **funding customer** has access to. Each **MVP** cycle ends with working capability promoted to stage, where the customer's own people exercise it against realistic tasks and approve or redirect the next cycle. Stage is what makes "incremental delivery for customer review" a concrete mechanism rather than a good intention. Because a customer touches it, its data handling and access controls are a security concern in their own right (document 05).
+**Stage (evaluation environment)** — The middle environment in the `dev → stage → prod` promotion path, and the one the **funding customer** has access to. Each **MVP** cycle ends with working capability promoted to stage, where the customer's own people exercise it against realistic tasks and approve or redirect the next cycle. Stage is what makes "incremental delivery for customer review" a concrete mechanism rather than a good intention. It is a **pre-production and/or pre-sales** environment: it always runs inside **Red Alpha's controlled environment** (on premises or Red Alpha's cloud, never the customer's enclave), it is shaped by the customer's stage **CONOPS** where they supply one and otherwise mirrors Red Alpha's intended production deployment, its data may be customer-supplied or Red Alpha-provided, and it **may be replicated so long as every instance runs the same release as the upstream mainline**. It carries no authorization to operate and no mission dependency — it is not the pilot. Because people outside Red Alpha touch it, its data handling and access controls are a security concern in their own right (document 05).
 
 **System Security Plan (SSP)** — The document describing how a system implements its selected security controls (RMF step 4).
 

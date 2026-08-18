@@ -37,6 +37,9 @@ sections:
       - title: 06 — Glossary & References
         url: /docs/06-glossary-and-references.html
         blurb: Definitions, POC vs. MVP side by side, and the verified source list
+      - title: 07 — Open Items
+        url: /docs/07-open-items.html
+        blurb: Every unsettled question in one register, with owners and what "resolved" looks like
 
   - title: Templates
     items:
