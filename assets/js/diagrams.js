@@ -105,10 +105,17 @@ async function draw(nodes) {
     /* The gantt's dates are a fictional anchor (see docs/04): every task is
        written as "after <priorTaskId>", so only the diagram's first date is
        real, and axisFormat here shows a week count rather than a calendar
-       date. useMaxWidth is off on purpose — a wide timeline shrunk to fit
-       --measure would make its text illegible, so it keeps its natural size
-       and scrolls inside .diagram's overflow-x, the same as a wide table. */
+       date. Mermaid's gantt renderer fits its own day-to-pixel scale to the
+       CURRENT container width regardless of useMaxWidth — harmless at
+       --measure's 672px, but on a phone-width container it squeezes every
+       bar and label into a couple hundred pixels at the same font-size,
+       producing an unreadable pile-up rather than a scroll. useWidth pins
+       the render to --measure's own pixel width so it fits the reading
+       column exactly on desktop and genuinely overflows into .diagram's
+       overflow-x on anything narrower, instead of shrinking. If --measure
+       ever changes, this constant should move with it. */
     gantt: {
+      useWidth: 672,
       useMaxWidth: false,
       barHeight: 26,
       barGap: 6,

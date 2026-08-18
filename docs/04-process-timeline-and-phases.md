@@ -163,8 +163,8 @@ gantt
     accTitle: A worked, illustrative timeline from Gate 0 to steady-state operation
     accDescr: Week 1 is Gate 0. Discovery runs weeks 2 to 4 into Gate 1. Four MVP cycles run weeks 5 to 16 into Gate 2, funded by the customer alone. Two build cycles with cool-downs run weeks 17 to 32 into Gate 3, funded by both wallets. Launch runs weeks 33 to 35 into Gate 4. Operate and Iterate begins week 36 and continues.
     dateFormat YYYY-MM-DD
-    axisFormat Wk %-W
-    tickInterval 2week
+    axisFormat %-W
+    tickInterval 4week
 
     section Entry
     Gate 0 — commit & charter :milestone, crit, g0, 2024-01-01, 0d
