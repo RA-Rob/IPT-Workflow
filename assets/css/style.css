@@ -356,13 +356,16 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
 
 /* ---------- Diagrams ----------
    A ```mermaid fence is replaced by assets/js/diagrams.js with a figure it can
-   draw into. Diagrams carry more detail than a line of prose, so they run wider
-   than --measure and scroll inside themselves rather than shrinking to nothing
-   on a phone. Until the script runs — or if it never does — the definition
-   stays visible as an ordinary code block. */
+   draw into. .content caps every child at --measure, same as a paragraph — but
+   a diagram carries more detail than prose, so wide ones (a gantt chart, a
+   many-column flowchart) are drawn at their natural size in diagrams.js
+   (useMaxWidth: false) and scroll inside this box rather than shrinking their
+   text to fit, the same treatment already given to a wide table below. Until
+   the script runs — or if it never does — the definition stays visible as an
+   ordinary code block. */
 .diagram {
   margin: 2rem 0 1.5rem;
-  max-width: min(100%, 54rem);
+  max-width: 100%;
   overflow-x: auto;
 }
 .content .diagram pre.mermaid {

@@ -158,20 +158,44 @@ Periodically, the sponsor and team make an explicit **renew, scale, or sunset** 
 
 Week 1 is the week the customer's funding is committed. The POC and the period spent shopping it precede this entirely and run on their own clock, which is why they are not in the count — folding an unschedulable period into a continuous calendar produces plans that are wrong before they start. Treat the numbers as a shape to adapt, not a promise.
 
-| Week(s) | Phase | Focus |
-|---------|-------|-------|
-| 1 | *(entry)* | **Gate 0** — commit and charter the IPT; agree the funding and ownership split |
-| 2–4 | 1. Discovery & Framing | PR/FAQ with the customer, operator discovery, core/tailoring boundary, stage stood up, security plan draft; **Gate 1** |
-| 5–7 | 2. MVP cycle 1 | First tailored capability to stage; customer evaluation |
-| 8–10 | 2. MVP cycle 2 | Respond to evaluation 1; next capability to stage; customer evaluation |
-| 11–13 | 2. MVP cycle 3 | Respond to evaluation 2; next capability to stage; customer evaluation |
-| 14–16 | 2. MVP cycle 4 | Close the gaps the evaluations surfaced; **Gate 2** (customer acceptance) |
-| 17–22 | 3. Build cycle 1 | Core productization + tailoring, in parallel; authorization work in earnest |
-| 23–24 | Cool-down | Ship review; upstream dispositions; shape and **bet** on cycle 2 |
-| 25–30 | 3. Build cycle 2 | Complete first-release scope; assemble the authorization package |
-| 31–32 | Cool-down / pre-launch | Final hardening; **Gate 3** (readiness + authorization) |
-| 33–35 | 4. Launch | Pilot into the customer's environment + hypercare; **Gate 4** |
-| 36+ | 5. Operate & Iterate | Steady-state cadence on both tracks; continuous authorization; renew/scale/sunset reviews |
+```mermaid
+gantt
+    accTitle: A worked, illustrative timeline from Gate 0 to steady-state operation
+    accDescr: Week 1 is Gate 0. Discovery runs weeks 2 to 4 into Gate 1. Four MVP cycles run weeks 5 to 16 into Gate 2, funded by the customer alone. Two build cycles with cool-downs run weeks 17 to 32 into Gate 3, funded by both wallets. Launch runs weeks 33 to 35 into Gate 4. Operate and Iterate begins week 36 and continues.
+    dateFormat YYYY-MM-DD
+    axisFormat Wk %-W
+    tickInterval 2week
+
+    section Entry
+    Gate 0 — commit & charter :milestone, crit, g0, 2024-01-01, 0d
+
+    section Phase 1 — Discovery
+    PR/FAQ, discovery, core/tailoring boundary :p1, after g0, 3w
+    Gate 1 — green-light the MVP :milestone, crit, g1, after p1, 0d
+
+    section Phase 2 — MVP
+    Cycle 1 — first capability to stage   :active, p2a, after g1, 3w
+    Cycle 2 — respond to evaluation 1     :active, p2b, after p2a, 3w
+    Cycle 3 — respond to evaluation 2     :active, p2c, after p2b, 3w
+    Cycle 4 — close the gaps              :active, p2d, after p2c, 3w
+    Gate 2 — customer acceptance :milestone, crit, g2, after p2d, 0d
+
+    section Phase 3 — Build
+    Cycle 1 — core + tailoring, in parallel      :p3a, after g2, 6w
+    Cool-down — ship review, bet cycle 2         :p3b, after p3a, 2w
+    Cycle 2 — complete first-release scope       :p3c, after p3b, 6w
+    Cool-down / pre-launch — final hardening     :p3d, after p3c, 2w
+    Gate 3 — authority & readiness :milestone, crit, g3, after p3d, 0d
+
+    section Phase 4 — Launch
+    Pilot + hypercare :p4, after g3, 3w
+    Gate 4 — sustainment :milestone, crit, g4, after p4, 0d
+
+    section Phase 5 — Operate
+    Steady-state, continuous authorization :p5, after g4, 6w
+```
+
+*Bar color marks whose money pays, matching document 02's encoding: blue for the customer's alone (the MVP phase), gold for both wallets open. Red diamonds mark the five gates — decision points, not funded work. The axis counts weeks from Gate 0 rather than a calendar date, since week 1 is whenever a given engagement's funding actually commits.*
 
 That puts a proven first launch roughly **8 months after the customer commits funding**. The MVP phase alone — about four months — is where the customer sees four or five working increments and has as many chances to redirect us. Scope, not the schedule, is what flexes when reality pushes back.
 

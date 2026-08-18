@@ -47,6 +47,29 @@ function theme() {
     edgeLabelBackground: color('--bg'),
     fontFamily: font(),
     fontSize: '14px',
+
+    /* Gantt (docs/04's worked timeline). Bars carry the same funding-source
+       encoding as the flowchart's classDefs: default/untagged bars are "both
+       wallets" (--ra-series-3, gold); ":active"-tagged bars are the
+       customer-funded MVP phase (--ra-series-2, blue). Milestones — the five
+       gates — use critBkgColor (--ra-series-1, red) so a decision point never
+       reads as funded work. */
+    sectionBkgColor: color('--bg-soft'),
+    sectionBkgColor2: color('--bg'),
+    altSectionBkgColor: color('--bg'),
+    gridColor: color('--rule-soft'),
+    todayLineColor: 'transparent',
+    taskBkgColor: color('--ra-series-3'),
+    taskBorderColor: color('--ra-series-3'),
+    taskTextColor: color('--bg'),
+    taskTextOutsideColor: color('--text'),
+    taskTextLightColor: color('--bg'),
+    activeTaskBkgColor: color('--ra-series-2'),
+    activeTaskBorderColor: color('--ra-series-2'),
+    doneTaskBkgColor: color('--bg-sink'),
+    doneTaskBorderColor: color('--rule'),
+    critBkgColor: color('--ra-series-1'),
+    critBorderColor: color('--ra-series-1'),
   };
 }
 
@@ -79,6 +102,22 @@ async function draw(nodes) {
        the <br/> breaks the diagram author chose. Widen it so the source
        controls the line breaks. */
     flowchart: { htmlLabels: true, useMaxWidth: true, wrappingWidth: 520, padding: 16, nodeSpacing: 30, rankSpacing: 44 },
+    /* The gantt's dates are a fictional anchor (see docs/04): every task is
+       written as "after <priorTaskId>", so only the diagram's first date is
+       real, and axisFormat here shows a week count rather than a calendar
+       date. useMaxWidth is off on purpose — a wide timeline shrunk to fit
+       --measure would make its text illegible, so it keeps its natural size
+       and scrolls inside .diagram's overflow-x, the same as a wide table. */
+    gantt: {
+      useMaxWidth: false,
+      barHeight: 26,
+      barGap: 6,
+      topPadding: 40,
+      rightPadding: 30,
+      fontSize: 13,
+      sectionFontSize: 13,
+      numberSectionStyles: 2,
+    },
   });
   await mermaid.run({ nodes });
 }
