@@ -180,10 +180,24 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
   line-height: 1.35;
 }
 
+/* h4 titles a discrete record, not a minor subhead: the open-items register
+   uses one per item, so it reads at full strength with room above to separate
+   one item from the last. */
 .content h4 {
-  margin: 1.6rem 0 .4rem;
-  font-size: .95rem;
+  margin: 2.1rem 0 .5rem;
+  font-size: 1rem;
   font-weight: 700;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+/* The paragraph directly beneath an item heading is its metadata line
+   (owner, who decides, source, status) — quieter than the prose that
+   follows it, with its bold labels left at full strength. */
+.content h4 + p {
+  margin-bottom: .8rem;
+  font-size: .9rem;
+  line-height: 1.55;
   color: var(--text-soft);
 }
 
