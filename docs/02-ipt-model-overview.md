@@ -85,11 +85,11 @@ flowchart TD
     L["PHASE 4 · LAUNCH — both wallets<br/>Into the customer's real environment; prove it there"]
     O["PHASE 5 · OPERATE AND ITERATE — both wallets<br/>Run, monitor, iterate · continuous authorization<br/>renew, scale, or sunset"]
 
-    POC -. "GATE 0 · Commit and charter, standing up the IPT" .-> D
-    D -- "GATE 1 · Green-light the MVP" --> M
-    M -- "GATE 2 · Customer acceptance — the customer's decision" --> B
-    B -- "GATE 3 · Authority and readiness to launch" --> L
-    L -- "GATE 4 · Sustainment and continuous authorization" --> O
+    POC -. "GATE 0<br/>Commit and charter" .-> D
+    D -- "GATE 1<br/>Green-light the MVP" --> M
+    M -- "GATE 2<br/>Customer acceptance<br/>the customer's decision" --> B
+    B -- "GATE 3<br/>Authority and readiness<br/>to launch" --> L
+    L -- "GATE 4<br/>Sustainment and<br/>continuous authorization" --> O
 
     classDef outside fill:transparent,stroke:#e8594f,stroke-width:1.5px,stroke-dasharray:5 4
     classDef customer fill:transparent,stroke:#3987e5,stroke-width:2px
