@@ -375,6 +375,12 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
   border: 0;
   font-size: .78rem;
   line-height: 1.45;
+  /* A block box with the default width:auto fills .diagram's own box, so a
+     wider SVG child paints outside it without ever registering as overflow
+     on .diagram — nothing to scroll to. Shrink-to-fit its actual content so
+     an oversized diagram genuinely widens this box past its container,
+     which is what .diagram's overflow-x is there to catch. */
+  width: max-content;
 }
 .content .diagram pre.mermaid svg { display: block; height: auto; }
 
