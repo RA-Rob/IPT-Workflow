@@ -1,33 +1,111 @@
 /* IPT Workflow — documentation site styles.
    Built for long-form reading: one measured text column, a persistent
-   document list, and light/dark support driven by the reader's system setting. */
+   document list, and light/dark support driven by the reader's system setting.
+
+   Brand layer: the --ra-* tokens below are taken from the Red Alpha Product
+   Site Design Standard (assets/tokens.css on the product sites) so this
+   knowledge base reads as a Red Alpha property. Color, type, radii and motion
+   are adopted as published. Two deliberate departures, both because this is a
+   documentation site rather than a product page:
+
+     1. The standard is dark-only. This site is read for long stretches and
+        keeps a light default plus a dark mode, so the light plane below is a
+        LOCAL EXTENSION — those values are not in the standard, and should be
+        replaced if it ever publishes its own.
+     2. The reading column stays at --measure (42rem), tied to font size, in
+        place of the standard's fixed --ra-content-narrow. Line length is a
+        legibility constraint here, not a layout one.
+
+   Measured contrast (WCAG):
+     light plane, on --ra-light-page:   ink 17.1 · secondary 7.6 · muted 5.2 · red 5.8
+     dark plane, on --ra-page:          ink 17.0 · secondary 8.5 · muted 4.4 · red 5.6
+
+   Not carried over, for want of anything here that uses them: the diagram
+   series colors, the reveal duration, the largest space steps, and the fixed
+   content widths. Deliberate omissions, not oversights. */
 
 :root {
-  --bg: #ffffff;
-  --bg-soft: #f6f7f8;
-  --bg-sink: #eceef0;
-  --text: #1b1f24;
-  --text-soft: #565f6a;
-  --text-faint: #7b848f;
-  --rule: #dfe3e7;
-  --rule-soft: #eaedf0;
-  --accent: #b3271e;
-  --accent-soft: #f7ecea;
+  /* ---- Red Alpha brand tokens (from the Design Standard, unchanged) ---- */
+
+  /* Surfaces — warm near-black planes */
+  --ra-page: #0d0c0b;
+  --ra-surface-1: #171512;
+  --ra-surface-2: #1e1b18;
+  --ra-surface-3: #262220;
+  --ra-hairline: rgba(242, 239, 233, 0.08);
+  --ra-hairline-strong: rgba(242, 239, 233, 0.16);
+
+  /* Ink — warm neutrals */
+  --ra-ink: #f2efe9;
+  --ra-ink-secondary: #b0aaa0;
+  --ra-ink-muted: #7d776d;
+
+  /* Brand accent */
+  --ra-red: #e8594f;
+  --ra-red-bright: #f0776e;
+  --ra-red-deep: #b23830;
+  --ra-red-wash: rgba(232, 89, 79, 0.12);
+
+  /* Type */
+  --ra-font-sans: "Inter", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  --ra-font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Scale — 4px grid */
+  --ra-space-1: 4px;
+  --ra-space-2: 8px;
+  --ra-space-3: 16px;
+  --ra-space-4: 24px;
+  --ra-space-5: 40px;
+  --ra-space-6: 64px;
+
+  /* Radii */
+  --ra-radius-1: 6px;
+  --ra-radius-2: 10px;
+  --ra-radius-3: 16px;
+
+  /* Motion */
+  --ra-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ra-duration-micro: 180ms;
+
+  /* ---- Light plane — LOCAL EXTENSION, not part of the standard ----
+     Warm neutrals chosen to sit on the same hue family as the dark plane,
+     with the accent dropped to --ra-red-deep so it clears 4.5:1 on paper. */
+  --ra-light-page: #fbfaf8;
+  --ra-light-surface-1: #f4f2ed;
+  --ra-light-surface-2: #eae6de;
+  --ra-light-hairline: #ebe7e0;
+  --ra-light-hairline-strong: #ded8ce;
+  --ra-light-ink: #1a1714;
+  --ra-light-ink-secondary: #56504a;
+  --ra-light-ink-muted: #6f6961;
+  --ra-red-deep-wash: rgba(178, 56, 48, 0.10);
+
+  /* ---- Site roles — what the rules below actually consume ---- */
+  --bg: var(--ra-light-page);
+  --bg-soft: var(--ra-light-surface-1);
+  --bg-sink: var(--ra-light-surface-2);
+  --text: var(--ra-light-ink);
+  --text-soft: var(--ra-light-ink-secondary);
+  --text-faint: var(--ra-light-ink-muted);
+  --rule: var(--ra-light-hairline-strong);
+  --rule-soft: var(--ra-light-hairline);
+  --accent: var(--ra-red-deep);
+  --accent-soft: var(--ra-red-deep-wash);
   --measure: 42rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #14161a;
-    --bg-soft: #1b1e23;
-    --bg-sink: #23272e;
-    --text: #e6e9ed;
-    --text-soft: #a4adb8;
-    --text-faint: #7d8792;
-    --rule: #2c3138;
-    --rule-soft: #23272e;
-    --accent: #ef8b83;
-    --accent-soft: #2a1d1c;
+    --bg: var(--ra-page);
+    --bg-soft: var(--ra-surface-1);
+    --bg-sink: var(--ra-surface-3);
+    --text: var(--ra-ink);
+    --text-soft: var(--ra-ink-secondary);
+    --text-faint: var(--ra-ink-muted);
+    --rule: var(--ra-hairline-strong);
+    --rule-soft: var(--ra-hairline);
+    --accent: var(--ra-red);
+    --accent-soft: var(--ra-red-wash);
   }
 }
 
@@ -39,8 +117,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 400 17px/1.68 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
+  font: 400 17px/1.68 var(--ra-font-sans);
   font-synthesis-weight: none;
   -webkit-font-smoothing: antialiased;
 }
@@ -123,11 +200,13 @@ a:hover { text-decoration-thickness: 2px; }
   display: block;
   padding: .34rem .6rem;
   margin-left: -.6rem;
-  border-radius: 5px;
+  border-radius: var(--ra-radius-1);
   color: var(--text-soft);
   font-size: .89rem;
   line-height: 1.45;
   text-decoration: none;
+  transition: background var(--ra-duration-micro) var(--ra-ease),
+              color var(--ra-duration-micro) var(--ra-ease);
 }
 .nav-list a:hover { background: var(--bg-sink); color: var(--text); }
 .nav-list a.current {
@@ -139,7 +218,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 .sidebar-foot {
   margin: 2rem 0 0;
-  padding-top: 1rem;
+  padding-top: var(--ra-space-3);
   border-top: 1px solid var(--rule);
   font-size: .82rem;
 }
@@ -250,9 +329,9 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
 /* Code — the ASCII lifecycle diagram in doc 02 lives in one of these. */
 .content code {
   padding: .12em .34em;
-  border-radius: 4px;
+  border-radius: var(--ra-radius-1);
   background: var(--bg-sink);
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-family: var(--ra-font-mono);
   font-size: .86em;
 }
 .content pre {
@@ -261,7 +340,7 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
   overflow-x: auto;
   background: var(--bg-soft);
   border: 1px solid var(--rule);
-  border-radius: 7px;
+  border-radius: var(--ra-radius-2);
   line-height: 1.5;
 }
 .content pre code { padding: 0; background: none; font-size: .82rem; }
@@ -296,7 +375,7 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
   background: var(--bg-soft);
   border: 1px solid var(--rule);
   border-left: 3px solid var(--accent);
-  border-radius: 0 7px 7px 0;
+  border-radius: 0 var(--ra-radius-2) var(--ra-radius-2) 0;
 }
 .belief p { margin: 0; }
 .belief p + p { margin-top: .7rem; }
@@ -316,9 +395,11 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
   height: 100%;
   padding: .95rem 1.1rem;
   border: 1px solid var(--rule);
-  border-radius: 8px;
+  border-radius: var(--ra-radius-2);
   background: var(--bg);
   text-decoration: none;
+  transition: border-color var(--ra-duration-micro) var(--ra-ease),
+              background var(--ra-duration-micro) var(--ra-ease);
 }
 .cards a:hover { border-color: var(--accent); background: var(--bg-soft); }
 .cards .card-title {
@@ -340,18 +421,20 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
 .pager {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--ra-space-3);
   max-width: var(--measure);
   margin: 3.5rem 0 0;
-  padding-top: 1.5rem;
+  padding-top: var(--ra-space-4);
   border-top: 1px solid var(--rule);
 }
 .pager-link {
   flex: 0 1 48%;
   padding: .8rem 1rem;
   border: 1px solid var(--rule);
-  border-radius: 8px;
+  border-radius: var(--ra-radius-2);
   text-decoration: none;
+  transition: border-color var(--ra-duration-micro) var(--ra-ease),
+              background var(--ra-duration-micro) var(--ra-ease);
 }
 .pager-link:hover { border-color: var(--accent); background: var(--bg-soft); }
 .pager-link.next { text-align: right; }
@@ -407,6 +490,10 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
   .pager { flex-direction: column; }
   .pager-link { flex: 1 1 auto; }
   .pager-link.next { text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0ms !important; animation-duration: 0ms !important; }
 }
 
 @media print {

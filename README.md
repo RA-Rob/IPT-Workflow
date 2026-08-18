@@ -59,10 +59,12 @@ Everything here is published with **GitHub Pages**, built by GitHub's own Jekyll
 | `index.md` | The landing page |
 | `_layouts/default.html` | The page shell: sidebar, next/previous pager, footer |
 | `_data/nav.yml` | Navigation **and reading order** — the single place both are defined |
-| `assets/css/style.css` | Styling, including light/dark support |
+| `assets/css/style.css` | Styling: the Red Alpha brand tokens, then light/dark support on top of them |
 | `_config.yml` | Site config, plugin declarations, and what to exclude from the site |
 
 The important property: **the documents themselves carry no site metadata.** No front matter, no layout declarations — they stay plain Markdown that reads correctly in an editor, on GitHub, and on the site. Three plugins that GitHub Pages enables by default make that work — `jekyll-optional-front-matter` renders bare `.md` files as pages, `jekyll-titles-from-headings` takes each page's title from its first `#` heading, and `jekyll-relative-links` rewrites relative `.md` cross-references into working site links.
+
+**Where the look comes from.** The stylesheet opens with the `--ra-*` tokens from the **Red Alpha Product Site Design Standard** — the same warm palette, brand red, Inter/JetBrains Mono pairing, radii, and motion the product sites use — and maps them onto the roles the rest of the rules consume. Two documented departures: the standard is dark-only, so the light plane is a local extension to be replaced if the standard ever publishes one; and the reading column stays at `--measure` rather than the standard's fixed content width, because line length here is a legibility constraint. Both are called out in the file header.
 
 **Adding or renaming a document?** Add it to `_data/nav.yml` — that's what puts it in the sidebar and in the reading order. A document that isn't listed there still gets published, but nothing links to it.
 
