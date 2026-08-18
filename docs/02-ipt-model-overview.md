@@ -78,12 +78,12 @@ flowchart TD
     accTitle: The IPT lifecycle, from a shopped POC through five gated phases to sustained operation
     accDescr: A Red Alpha-funded POC sits outside the model. Gate 0 charters the IPT, then five phases follow — Discovery and Framing, MVP, Build, Launch, and Operate and Iterate — each closed by the next numbered gate. Gate 2 is the funding customer's decision.
 
-    POC(["OUTSIDE THIS MODEL · Red Alpha's money<br/>A POC is built and shopped until a customer<br/>commits to fund the next stage"])
-    D["PHASE 1 · DISCOVERY AND FRAMING · both wallets<br/>PR/FAQ with the customer · validate the riskiest assumptions<br/>draw the core/tailoring boundary · stand up stage"]
-    M["PHASE 2 · MVP, the tailoring · the customer's money<br/>Short 2–3 week cycles. Each ends with working capability<br/>in stage; the customer evaluates it and steers the next one."]
-    B["PHASE 3 · BUILD · both wallets, two tracks, one team<br/>core product, Red Alpha-funded + tailoring, customer-funded<br/>upstream decisions move capability into the core"]
-    L["PHASE 4 · LAUNCH · both wallets<br/>Into the customer's real environment; prove it there"]
-    O["PHASE 5 · OPERATE AND ITERATE · both wallets<br/>Run, monitor, iterate · continuous authorization<br/>decide renew / scale / sunset"]
+    POC["OUTSIDE THIS MODEL — Red Alpha's money<br/>A POC is built, then shopped until a customer funds the next stage"]
+    D["PHASE 1 · DISCOVERY AND FRAMING — both wallets<br/>PR/FAQ with the customer · validate the riskiest assumptions<br/>draw the core/tailoring boundary · stand up stage"]
+    M["PHASE 2 · MVP, the tailoring — the customer's money<br/>Short 2–3 week cycles, each ending with working<br/>capability in stage for the customer to evaluate"]
+    B["PHASE 3 · BUILD — both wallets, two tracks, one team<br/>core product (Red Alpha-funded) + tailoring (customer-funded)<br/>upstream decisions move capability into the core"]
+    L["PHASE 4 · LAUNCH — both wallets<br/>Into the customer's real environment; prove it there"]
+    O["PHASE 5 · OPERATE AND ITERATE — both wallets<br/>Run, monitor, iterate · continuous authorization<br/>renew, scale, or sunset"]
 
     POC -. "GATE 0 · Commit and charter, standing up the IPT" .-> D
     D -- "GATE 1 · Green-light the MVP" --> M

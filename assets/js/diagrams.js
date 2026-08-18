@@ -75,7 +75,10 @@ async function draw(nodes) {
     startOnLoad: false,
     theme: 'base',
     themeVariables: theme(),
-    flowchart: { htmlLabels: true, useMaxWidth: true, padding: 14, nodeSpacing: 34, rankSpacing: 46 },
+    /* wrappingWidth defaults to 200px, which re-wraps every label and ignores
+       the <br/> breaks the diagram author chose. Widen it so the source
+       controls the line breaks. */
+    flowchart: { htmlLabels: true, useMaxWidth: true, wrappingWidth: 520, padding: 16, nodeSpacing: 30, rankSpacing: 44 },
   });
   await mermaid.run({ nodes });
 }
