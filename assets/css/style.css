@@ -40,6 +40,15 @@
   --ra-ink-secondary: #b0aaa0;
   --ra-ink-muted: #7d776d;
 
+  /* Diagram series — fixed order, never cycled. Validated by the standard for
+     contrast and color-vision-deficiency separation. The Mermaid classDefs in
+     docs/02 repeat these hex values on purpose: github.com renders the same
+     fence without this stylesheet, so the diagram has to carry its own colors. */
+  --ra-series-1: #e8594f;
+  --ra-series-2: #3987e5;
+  --ra-series-3: #c98500;
+  --ra-series-4: #199e70;
+
   /* Brand accent */
   --ra-red: #e8594f;
   --ra-red-bright: #f0776e;
@@ -344,6 +353,34 @@ main { min-width: 0; padding: 3rem 3rem 4rem; }
   line-height: 1.5;
 }
 .content pre code { padding: 0; background: none; font-size: .82rem; }
+
+/* ---------- Diagrams ----------
+   A ```mermaid fence is replaced by assets/js/diagrams.js with a figure it can
+   draw into. Diagrams carry more detail than a line of prose, so they run wider
+   than --measure and scroll inside themselves rather than shrinking to nothing
+   on a phone. Until the script runs — or if it never does — the definition
+   stays visible as an ordinary code block. */
+.diagram {
+  margin: 2rem 0 1.5rem;
+  max-width: min(100%, 54rem);
+  overflow-x: auto;
+}
+.content .diagram pre.mermaid {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  font-size: .78rem;
+  line-height: 1.45;
+}
+.content .diagram pre.mermaid svg { display: block; height: auto; }
+
+/* The line of prose beneath a diagram reads as its caption. */
+.content .diagram + p > em:only-child,
+.content .diagram + p > em:first-child {
+  color: var(--text-soft);
+  font-size: .88rem;
+}
 
 /* Checklist items in the templates. */
 .content input[type="checkbox"] {

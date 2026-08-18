@@ -130,5 +130,14 @@
   })();
 </script>
 
+{%- comment -%}
+  Diagrams: a ```mermaid fence renders natively on github.com; this draws it on
+  the site, themed from the stylesheet's tokens. Loaded only on pages that
+  actually contain one, so no other page pays for the Mermaid download.
+{%- endcomment -%}
+{%- if content contains 'language-mermaid' %}
+<script type="module" src="{{ '/assets/js/diagrams.js' | relative_url }}"></script>
+{%- endif %}
+
 </body>
 </html>

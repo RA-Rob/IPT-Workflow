@@ -73,36 +73,35 @@ The payoff of that boundary is that from Gate 0 onward there is a customer, a bu
 
 The full lifecycle, gates, and timeline are in document 04. In brief, the arc is:
 
-```
-  (outside this model: a Red Alpha-funded POC is built and shopped
-   until a customer commits to fund the next stage)
-          │
-          │           Gate 0: Commit and charter (stand up the IPT)
-  ┌───────▼───────┐
-  │  DISCOVERY    │   PR/FAQ with the customer; validate riskiest assumptions;
-  │  & FRAMING    │   draw the core/tailoring boundary; stand up `stage`
-  └───────┬───────┘
-          │           Gate 1: Green-light the MVP
-  ┌───────▼───────┐   THE CUSTOMER'S MONEY
-  │   MVP         │   Short cycles (2–3 wks). Each ends with working capability
-  │  (tailoring)  │   in `stage`; the customer evaluates and steers the next one.
-  └───────┬───────┘
-          │           Gate 2: Customer acceptance  ← the customer's decision
-  ┌───────▼───────┐   BOTH — two tracks, one team
-  │   BUILD       │   core product (RA-funded) ║ tailoring (customer-funded)
-  └───────┬───────┘        ↑ upstream decisions move capability left
-          │           Gate 3: Authority/readiness to launch
-  ┌───────▼───────┐
-  │   LAUNCH      │   Into the customer's real environment; prove it there
-  └───────┬───────┘
-          │           Gate 4: Sustainment & continuous authorization
-  ┌───────▼───────┐
-  │  OPERATE &    │   Run, monitor, iterate; continuous ATO;
-  │  ITERATE      │   decide renew / scale / sunset
-  └───────────────┘
+```mermaid
+flowchart TD
+    accTitle: The IPT lifecycle, from a shopped POC through five gated phases to sustained operation
+    accDescr: A Red Alpha-funded POC sits outside the model. Gate 0 charters the IPT, then five phases follow — Discovery and Framing, MVP, Build, Launch, and Operate and Iterate — each closed by the next numbered gate. Gate 2 is the funding customer's decision.
 
-  Gate 0 opens the work; after that, Gate N closes Phase N.
+    POC(["OUTSIDE THIS MODEL · Red Alpha's money<br/>A POC is built and shopped until a customer<br/>commits to fund the next stage"])
+    D["PHASE 1 · DISCOVERY AND FRAMING · both wallets<br/>PR/FAQ with the customer · validate the riskiest assumptions<br/>draw the core/tailoring boundary · stand up stage"]
+    M["PHASE 2 · MVP, the tailoring · the customer's money<br/>Short 2–3 week cycles. Each ends with working capability<br/>in stage; the customer evaluates it and steers the next one."]
+    B["PHASE 3 · BUILD · both wallets, two tracks, one team<br/>core product, Red Alpha-funded + tailoring, customer-funded<br/>upstream decisions move capability into the core"]
+    L["PHASE 4 · LAUNCH · both wallets<br/>Into the customer's real environment; prove it there"]
+    O["PHASE 5 · OPERATE AND ITERATE · both wallets<br/>Run, monitor, iterate · continuous authorization<br/>decide renew / scale / sunset"]
+
+    POC -. "GATE 0 · Commit and charter, standing up the IPT" .-> D
+    D -- "GATE 1 · Green-light the MVP" --> M
+    M -- "GATE 2 · Customer acceptance — the customer's decision" --> B
+    B -- "GATE 3 · Authority and readiness to launch" --> L
+    L -- "GATE 4 · Sustainment and continuous authorization" --> O
+
+    classDef outside fill:transparent,stroke:#e8594f,stroke-width:1.5px,stroke-dasharray:5 4
+    classDef customer fill:transparent,stroke:#3987e5,stroke-width:2px
+    classDef both fill:transparent,stroke:#c98500,stroke-width:2px
+
+    class POC outside
+    class M customer
+    class D,B,L,O both
 ```
+
+*Outline color marks whose money pays: dashed red for Red Alpha's own, outside this model; blue for the customer's alone; gold where both wallets are open. Each phase also names its funding source in text, so the color is a shortcut rather than the only way to read it. **Gate 0 opens the work; after that, Gate N closes Phase N.***
+
 
 ## How the pieces fit
 
