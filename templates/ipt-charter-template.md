@@ -8,7 +8,7 @@
 | **Charter date / version** | [YYYY-MM-DD] / v[0.1] |
 | **Sponsor / Product Champion** | [name, role] |
 | **Funding customer** | [organization; named decision-maker; named evaluation lead] |
-| **Product Lead (Decider)** | [name] |
+| **Product Owner (Decider)** | [name] |
 | **Charter status** | Draft / Approved at Gate 0 |
 
 ---
@@ -45,11 +45,11 @@
 
 | Function | Owner | Second hat? |
 |----------|-------|-------------|
-| Product & customer/mission | [name — Product Lead] | [Design?] |
+| Product & customer/mission | [name — Product Owner] | [Design?] |
 | Engineering lead & architecture | [name — Tech Lead] | [Delivery?] |
 | Software development | [name(s) — Engineer(s)] | [QA?] |
 | Security & authorization (ISSO) | [name — Security Lead] | [DevSecOps?] |
-| Design & UX | [name / shared / Product Lead's hat] | — |
+| Design & UX | [name / shared / Product Owner's hat] | — |
 | Quality & test | [name / engineer's hat] | — |
 | Delivery / platform (DevSecOps) | [name / Tech Lead's hat] | — |
 
@@ -57,19 +57,19 @@
 
 ## 6. Decision rights
 
-- **Decider (breaks ties on *what/why*):** [Product Lead]
+- **Decider (breaks ties on *what/why*):** [Product Owner]
 - **Technical tie-breaker (*how*):** [Tech Lead]
 - **MVP acceptance (Gate 2):** [named customer decision-maker] — *this one is not ours*
 - **Risk-acceptance / authorization authority:** [Authorizing Official]
-- **Gate decisions:** per [`docs/04-process-timeline-and-phases.md`](../docs/04-process-timeline-and-phases.md) — Gate 0 = Sponsor; Gate 1 = Product Lead + sponsor concurrence + customer agreement on tailoring scope; **Gate 2 = the funding customer**; Gate 3 = Product Lead + Security Lead + AO; Gate 4 = Product Lead + Sponsor, customer confirming the operating model.
-- **Mid-cycle customer requests:** routed to the next bet by the Product Lead, never injected into a cycle in flight.
+- **Gate decisions:** per [`docs/04-process-timeline-and-phases.md`](../docs/04-process-timeline-and-phases.md) — Gate 0 = the Product Owner (sponsor then commits the team and funding); Gate 1 = Product Owner + sponsor concurrence + customer agreement on tailoring scope; **Gate 2 = the funding customer**; Gate 3 = Product Owner + Security Lead + AO; Gate 4 = Product Owner + Sponsor, customer confirming the operating model.
+- **Mid-cycle customer requests:** routed to the next bet by the Product Owner, never injected into a cycle in flight.
 
 ## 7. Appetite and cadence for the next phase
 
 - **Discovery appetite (Phase 1):** [e.g., 3 weeks] — we will spend no more than this framing the outcome, drawing the core/tailoring boundary, and validating the riskiest assumption before Gate 1.
 - **MVP cycle length:** [2–3 weeks] — each cycle ends with working capability promoted to **stage**.
 - **Customer evaluation:** [who, how, how long after each promotion] — the loop that justifies their funding.
-- **`stage` environment:** hosted in Red Alpha's controlled environment — [on premises / Red Alpha cloud]. Shaped by [customer-supplied stage CONOPS, dated ___ / Red Alpha's intended production deployment]. Data supplied by [customer / Red Alpha]; **data class:** [synthetic / sanitized / operational]. Instances: [how many, and for whom — funding customer, pre-sales] — all at the same release as the upstream mainline.
+- **`stage` environment:** hosted in Red Alpha's controlled environment — [on premises / Red Alpha cloud]. Shaped by [customer-supplied stage CONOPS, dated ___ / Red Alpha's intended production deployment]. Data supplied by [customer / Red Alpha's synthetic default — synthetic unless a funding customer is engaged and supplies its own]; **data class (may not be left blank):** [synthetic (default) / customer-supplied — describe]. Instances: [how many, and for whom — funding customer, pre-sales] — all at the same release as the upstream mainline.
 - **Working agreement:** [sync rhythm, where work is tracked, how funding source is tagged on each item]
 
 ## 8. Initial risk & security read

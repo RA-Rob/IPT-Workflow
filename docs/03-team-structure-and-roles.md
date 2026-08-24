@@ -22,10 +22,10 @@ Regardless of headcount, every IPT must own all seven of these functions. Nothin
 
 ## The roles
 
-### Product Lead *(also the team's Decider)*
+### Product Owner *(also the team's Decider)*
 Owns the product outcome end to end. Frames the problem and the launch narrative (the PR/FAQ-style entry document), maintains and prioritizes the backlog by value, sets the **appetite** for each piece of work, and is the single person empowered to **break ties** so the team never stalls waiting for consensus. Manages the relationship with the sponsor, the **funding customer** and their mission owners, and the Authorizing Official's expectations. Accountable for *what* and *why*; explicitly not the person deciding *how* the code is written. This is the role that carries Amazon's "single-threaded owner" and Google's "Decider" ideas.
 
-Two responsibilities specific to how Red Alpha is funded sit with this role, and they are not delegable. The Product Lead **runs the customer evaluation loop** — making sure every short cycle in the MVP phase ends with working capability the customer can actually exercise in **stage**, and that what they say comes back as input to the next bet rather than as a mid-cycle interruption. And the Product Lead **owns the integrity of the funding boundary**: every piece of work carries a funding source and a core-or-tailored designation, and every decision to promote customer-funded **tailoring** into the licensed **core product** is recorded in the **upstream log** with its reasoning and any agreement it requires (document 04). Nobody else is positioned to see both sides of that line.
+Two responsibilities specific to how Red Alpha is funded sit with this role, and they are not delegable. The Product Owner **runs the customer evaluation loop** — making sure every short cycle in the MVP phase ends with working capability the customer can actually exercise in **stage**, and that what they say comes back as input to the next bet rather than as a mid-cycle interruption. And the Product Owner **owns the integrity of the funding boundary**: every piece of work carries a funding source and a core-or-tailored designation, and every decision to promote customer-funded **tailoring** into the licensed **core product** is recorded in the **upstream log** with its reasoning and any agreement it requires (document 04). Nobody else is positioned to see both sides of that line.
 
 ### Tech Lead / Lead Engineer
 Owns technical direction: architecture, key trade-offs, technical standards, and the technical feasibility judgment at each gate. Breaks technical ties, keeps the system coherent, and is the senior hands-on builder. Partners with the Security Lead so that security decisions and architecture decisions are made together, not in sequence. Accountable for *how* we build and for technical risk.
@@ -37,7 +37,7 @@ Build, test, and integrate the product. On a lean team, engineers are generalist
 Owns security-by-design and the authorization path. Translates the product into the language of controls and risk, drives the RMF/ATO (and, where applicable, continuous-ATO) activities described in document 05, and keeps the security posture continuously visible rather than checking it at the end. On a lean team this person is also the DevSecOps conscience — making sure the pipeline enforces security automatically. This role is non-negotiable given Red Alpha's defense/government context; it is a hat someone must wear even on a team of four.
 
 ### Designer / UX
-Owns human-centered discovery and the shape of the user experience: talks to real users/operators, synthesizes needs into insight, and turns concepts into testable prototypes. On the smallest teams this is a part-time or shared hat (often carried by the Product Lead or a shared design resource); it becomes a dedicated seat as the team grows, because in most products design quality is a direct driver of adoption.
+Owns human-centered discovery and the shape of the user experience: talks to real users/operators, synthesizes needs into insight, and turns concepts into testable prototypes. On the smallest teams this is a part-time or shared hat (often carried by the Product Owner or a shared design resource); it becomes a dedicated seat as the team grows, because in most products design quality is a direct driver of adoption.
 
 ### Quality / Test
 Owns confidence that the product works and keeps working — test strategy, automation, and the definition of "done." On lean teams this is a hat worn by an engineer and enforced through automation in the pipeline rather than by a separate manual tester; it becomes a dedicated role for larger or higher-assurance products.
@@ -51,11 +51,11 @@ The same seven functions are always covered; they just concentrate or split depe
 
 | Function | 4 people | 5 people | 6 people | 7 people |
 |----------|----------|----------|----------|----------|
-| Product & customer | **Product Lead** (+ Design) | **Product Lead** (+ Design) | **Product Lead** | **Product Lead** |
+| Product & customer | **Product Owner** (+ Design) | **Product Owner** (+ Design) | **Product Owner** | **Product Owner** |
 | Engineering lead & architecture | **Tech Lead** (+ Delivery) | **Tech Lead** (+ Delivery) | **Tech Lead** (+ Delivery) | **Tech Lead** |
 | Software development | **Engineer** (+ QA) | **Engineer A**, **Engineer B** (+ QA) | **Engineer A**, **Engineer B** | **Engineer A**, **Engineer B** |
 | Security & authorization | **Security Lead** (+ DevSecOps) | **Security Lead** (+ DevSecOps) | **Security Lead** (+ DevSecOps) | **Security Lead** |
-| Design & UX | (Product Lead's hat) | (Product Lead's hat) | **Designer** | **Designer** |
+| Design & UX | (Product Owner's hat) | (Product Owner's hat) | **Designer** | **Designer** |
 | Quality & test | (Engineer's hat) | (Engineer's hat) | (shared / automated) | **QA/Delivery Engineer** |
 | Delivery / platform | (Tech Lead's hat) | (Tech Lead's hat) | (Tech Lead's hat) | **QA/Delivery Engineer** |
 
@@ -63,9 +63,9 @@ Read the table as a default, not a rule. The constant is that **all seven functi
 
 ## Responsibilities at a glance (RACI)
 
-**R**esponsible = does the work · **A**ccountable = owns the outcome (one per row) · **C**onsulted · **I**nformed. Roles: PL = Product Lead, TL = Tech Lead, ENG = Engineer(s), SEC = Security Lead, UX = Designer, QA = Quality/Delivery.
+**R**esponsible = does the work · **A**ccountable = owns the outcome (one per row) · **C**onsulted · **I**nformed. Roles: PO = Product Owner, TL = Tech Lead, ENG = Engineer(s), SEC = Security Lead, UX = Designer, QA = Quality/Delivery.
 
-| Key activity | PL | TL | ENG | SEC | UX | QA |
+| Key activity | PO | TL | ENG | SEC | UX | QA |
 |--------------|----|----|-----|-----|----|----|
 | Frame outcome / PR/FAQ (entry doc) | **A/R** | C | I | C | C | I |
 | Prioritize backlog & set appetite | **A/R** | C | I | C | C | I |
@@ -84,14 +84,14 @@ Read the table as a default, not a rule. The constant is that **all seven functi
 
 Where a lean team has merged two roles into one person, that person holds both rows — which is exactly why keeping the team small *and* keeping ownership explicit both matter.
 
-**One row has an exception worth stating.** "Gate-review decision to proceed" shows the Product Lead accountable, and that holds for the gates Red Alpha owns. **Gate 2 is not one of them** — customer acceptance of the MVP is the funding customer's decision, and the Product Lead's accountability there is for making the decision *informed and easy to make*, not for making it. **Gate 3** likewise requires the Security Lead as a joint owner and the Authorizing Official for the authorization itself. See document 04 for the decision owner of each gate.
+**One row has an exception worth stating.** "Gate-review decision to proceed" shows the Product Owner accountable, and that holds for the gates Red Alpha owns. **Gate 2 is not one of them** — customer acceptance of the MVP is the funding customer's decision, and the Product Owner's accountability there is for making the decision *informed and easy to make*, not for making it. **Gate 3** likewise requires the Security Lead as a joint owner and the Authorizing Official for the authorization itself. See document 04 for the decision owner of each gate.
 
 ## Roles that sit around the IPT (not on it)
 
 A lean IPT depends on a few roles it does **not** contain, and naming them prevents confusion about who decides what:
 
-- **Sponsor / Product Champion** — the Red Alpha leader who commits the team and Red Alpha's own **core-product** money, and owns the business case; sets direction at gates but does not run the team day to day. Decision owner at Gate 0.
-- **Funding customer** — the customer who, having seen the POC, pays for the **tailoring** that turns it into an MVP for their mission. Distinct from the sponsor in what they commit: the sponsor commits people and core investment, the customer commits money *and their operators' time* to evaluate each cycle's increment in **stage**. They are the decision owner at **Gate 2** — the acceptance of the MVP is theirs to make, not ours — and they confirm the operating model at Gate 4. Emphatically outside the IPT: they steer direction between cycles, and the Product Lead protects the team from mid-cycle requests by routing them to the next bet.
+- **Sponsor / Product Champion** — the Red Alpha leader who commits the team and Red Alpha's own **core-product** money once the Product Owner decides to charter, and owns the business case; sets direction at gates but does not run the team day to day.
+- **Funding customer** — the customer who, having seen the POC, pays for the **tailoring** that turns it into an MVP for their mission. Distinct from the sponsor in what they commit: the sponsor commits people and core investment, the customer commits money *and their operators' time* to evaluate each cycle's increment in **stage**. They are the decision owner at **Gate 2** — the acceptance of the MVP is theirs to make, not ours — and they confirm the operating model at Gate 4. Emphatically outside the IPT: they steer direction between cycles, and the Product Owner protects the team from mid-cycle requests by routing them to the next bet.
 - **Authorizing Official (AO)** — the government/organizational authority who accepts risk and grants the Authority to Operate. External to the team by definition; the Security Lead manages the relationship. (See document 05.)
 - **Shared specialists / chapters** — as Red Alpha grows more than one IPT, cross-team "chapter"-style groups (e.g., all security leads, all engineers) keep standards consistent without adding permanent headcount to any single team. This is the Spotify lesson we hold in reserve for scaling.
 
@@ -103,7 +103,6 @@ When a product genuinely outgrows seven people, we **split into two IPTs around 
 
 *These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`07-open-items.md`](07-open-items.md), the register the whole team works from.*
 
-- Is the **Product Lead** always the Decider, or should the Decider role rotate/depend on the decision type (e.g., Tech Lead decides technical ties)?
 - Do we want the **Security Lead** to be a full member of every IPT, or a shared specialist across two or three teams at our current size?
 - What is the minimum viable team we'd ever stand up — is four really the floor, or three for the smallest efforts?
 - How do we handle **on-call / operations** load on a lean team once products are live in production?

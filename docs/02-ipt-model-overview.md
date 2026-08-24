@@ -57,7 +57,7 @@ Three consequences follow:
 
 - **The core stays ours.** Customer-funded tailoring does not transfer the core product. The customer receives a licensed, working instance tailored to their mission.
 - **Tailoring is not assumed to be core.** Much of it is specific enough that it never belongs in the licensed product, and that is a normal outcome. Whether any given capability is **upstreamed** into the core is a separate decision, made when the answer is clear and recorded in the **upstream log** with its reasoning.
-- **Both streams run at once.** Red Alpha keeps funding core-product work while the customer funds tailoring — one team, one backlog, two funding sources, every piece of work tagged. Keeping that split honest is an obligation in both directions, and it is the Product Lead's to own (document 04).
+- **Both streams run at once.** Red Alpha keeps funding core-product work while the customer funds tailoring — one team, one backlog, two funding sources, every piece of work tagged. Keeping that split honest is an obligation in both directions, and it is the Product Owner's to own (document 04).
 
 The return on all of this is compounding: each engagement pays for the tailoring while Red Alpha's own investment turns a proven concept into something the *next* customer can license with far less work.
 
@@ -67,7 +67,7 @@ This model covers **an IPT taking a POC to product**. It begins at a specific, r
 
 > **Entry condition:** A **POC** has proven the idea against an identified customer gap, and a **funding customer** has committed to pay for turning it into an **MVP** tailored to their environment and mission — meaning there is a real mission need, a plausible path to being desirable, feasible, viable, *and* securable/authorizable in that environment, and Red Alpha is willing to commit a durable team.
 
-**How a POC comes to exist is out of scope.** The decision to fund one, who staffs it before any IPT exists, how long it runs, what it must prove, and how it gets shopped to prospective customers are all real questions — but they belong to Red Alpha's broader ideation-to-product concept, which we have not written down yet. Keeping them out is a deliberate choice, not an oversight: subjecting speculative, self-funded exploration to charter-and-gate machinery designed for funded delivery would be exactly the wrong trade. It is also the most significant gap around this model, and it is listed in the open questions below.
+**How a POC comes to exist is out of scope.** A POC comes out of Red Alpha's own **ideation process** — separate from this framework, funded internally by Red Alpha, with Red Alpha owning the resulting IP outright. Beyond that starting point, who staffs a POC before any IPT exists, how long it runs, what it must prove, and how it gets shopped to prospective customers are all real questions we have not written down yet. Keeping them out is a deliberate choice, not an oversight: subjecting speculative, self-funded exploration to charter-and-gate machinery designed for funded delivery would be exactly the wrong trade. It is also the most significant gap around this model, and it is listed in the open questions below.
 
 The payoff of that boundary is that from Gate 0 onward there is a customer, a budget, and a durable team — so the model can be specific about all three.
 
@@ -112,7 +112,6 @@ The model is deliberately simple to hold in your head: a **small durable team** 
 *These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`07-open-items.md`](07-open-items.md), the register the whole team works from.*
 
 - **The missing front end:** how does a POC come to exist? Who funds it, who staffs it before an IPT exists, how long it runs, what it must prove to be worth shopping, and who shops it. This model deliberately starts after all of that, which leaves Red Alpha's ideation-to-product concept undocumented — the single largest gap around this knowledge base.
-- Who owns **Gate 0** — the decision to stand up an IPT at all? A product council, a single executive, or the prospective Product Lead making the case to the sponsor?
 - What do our standard customer terms say about **upstreaming** customer-funded capability into the licensed core? The model assumes it is permitted with agreement; the contract has to actually say so.
 - Should every product get a *durable* IPT, or do some smaller efforts get a time-boxed team that disbands? (Trade-off between focus and headcount.)
 - How many IPTs can Red Alpha realistically staff at once given our size, and what's the rule when demand exceeds that? Related: can one IPT carry two funding customers' tailoring?

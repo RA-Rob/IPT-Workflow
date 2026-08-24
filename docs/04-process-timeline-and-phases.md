@@ -52,9 +52,9 @@ What this boundary buys us is focus. From Gate 0 onward there is a customer, a b
 
 Gate 0 is both the entry decision and the week of work that follows it, which is why it is a gate rather than a phase: standing up the team *is* the act of committing, and separating the two invented ceremony without adding a decision.
 
-**The decision.** *Decision owner: Sponsor, with the prospective Product Lead making the case.* Commit a durable IPT only if the customer's funding is genuinely committed, a 4–7 person team can be staffed with every core function owned, and the core/tailoring and licensing arrangement is understood by both sides. Otherwise: keep shopping the POC, or stop. This is a real decision, not a formality — it commits scarce Red Alpha people for the life of a product.
+**The decision.** *Decision owner: the Product Owner.* Commit a durable IPT only if the customer's funding is genuinely committed, a 4–7 person team can be staffed with every core function owned, and the core/tailoring and licensing arrangement is understood by both sides. Otherwise: keep shopping the POC, or stop. This is a real decision, not a formality — it commits scarce Red Alpha people for the life of a product.
 
-**The chartering work it authorizes (~1 week).** The Product Lead brings together the funded scope, what the POC proved, and the customer's stated mission need. The sponsor names the team and their hats (document 03). The Security Lead turns the POC-era security read into an initial view of the authorization path, now that a real environment and a real customer are in view. Red Alpha and the customer write down what the customer's money buys and what Red Alpha continues to fund itself.
+**The chartering work it authorizes (~1 week).** The Product Owner brings together the funded scope, what the POC proved, and the customer's stated mission need, and decides to take the product from POC to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money and names the team's hats (document 03). The Security Lead turns the POC-era security read into an initial view of the authorization path, now that a real environment and a real customer are in view. Red Alpha and the customer write down what the customer's money buys and what Red Alpha continues to fund itself.
 
 **Artifacts produced.**
 - **IPT Charter** — one page: mission, named members and their hats, the sponsor, the funding customer, decision rights, and the appetite for Discovery.
@@ -68,7 +68,7 @@ Gate 0 is both the entry decision and the week of work that follows it, which is
 **Purpose.** Before spending the customer's money on build cycles, get the outcome clear and knock down the riskiest assumptions while doing so is still cheap. This is where the Amazon, Google, and IDEO lessons do their work — and now they do it *with the customer in the room*, which makes them considerably more useful than they were in the abstract.
 
 **Key steps.**
-1. **Write the launch narrative (PR/FAQ).** The Product Lead drafts a short mock press release describing the tailored product from the customer's operators' point of view, plus an FAQ answering the hard questions — mission fit, feasibility, cost, legal, and *how it will be secured and authorized in the customer's environment*. Iterate with the customer until the outcome is clear and compelling, or the idea is honestly reworked on paper.
+1. **Write the launch narrative (PR/FAQ).** The Product Owner drafts a short mock press release describing the tailored product from the customer's operators' point of view, plus an FAQ answering the hard questions — mission fit, feasibility, cost, legal, and *how it will be secured and authorized in the customer's environment*. Iterate with the customer until the outcome is clear and compelling, or the idea is honestly reworked on paper.
 2. **Talk to the customer's real operators.** Not just the people who signed. The Designer (or whoever wears that hat) runs direct discovery with the people who would actually use this, and synthesizes findings into a small set of insights. Apply the desirable / feasible / viable filter explicitly.
 3. **Draw the core/tailoring boundary.** Explicitly: which capabilities belong to the Red Alpha **core product** and which are **tailoring** for this customer. This is the decision that keeps the funding split honest for the rest of the engagement, and it is far easier to draw now than to argue about in month four. It will move as we learn — but it should always be written down.
 4. **Validate the riskiest assumption.** For the one or two decisions that would most damage the product if wrong, run a lightweight, time-boxed **validation sprint** (a compressed Design Sprint) — map, sketch, decide, prototype a facade, and test with about five of the customer's users. Spend a prototype, not a cycle, to learn.
@@ -76,7 +76,7 @@ Gate 0 is both the entry decision and the week of work that follows it, which is
 
 **Artifacts produced.** PR/FAQ; discovery insights from the customer's operators; the written **core/tailoring boundary**; validation-sprint results; a lightweight architecture sketch; a **security & authorization plan (draft)**; a working **stage** environment with customer access; a shaped first MVP cycle with an explicit appetite.
 
-**Gate 1 — Green-light the MVP.** *Decision owner: Product Lead (the Decider), with sponsor concurrence and the customer's agreement on the tailoring scope.* Proceed only if the outcome is clear, the riskiest assumptions survived validation, the approach is feasible and securable in the customer's environment, the core/tailoring boundary is written down, stage is reachable by the customer, and the first cycle is shaped with an agreed appetite. Otherwise: iterate discovery, re-scope, or stop.
+**Gate 1 — Green-light the MVP.** *Decision owner: Product Owner (the Decider), with sponsor concurrence and the customer's agreement on the tailoring scope.* Proceed only if the outcome is clear, the riskiest assumptions survived validation, the approach is feasible and securable in the customer's environment, the core/tailoring boundary is written down, stage is reachable by the customer, and the first cycle is shaped with an agreed appetite. Otherwise: iterate discovery, re-scope, or stop.
 
 ---
 
@@ -95,7 +95,7 @@ Gate 0 is both the entry decision and the week of work that follows it, which is
 
 **Security woven in (every cycle).** Controls are implemented as capability is built, not deferred. The pipeline enforces automated security checks, and the Security Lead keeps a live view of control status feeding toward authorization. Note that stage now holds representative or customer-supplied data and is reachable by people outside Red Alpha — it is part of the security picture, not a scratch environment. It also stays at mainline release parity, so what the customer exercises is the same release everyone else is on (document 05).
 
-**Tailoring and the upstream log.** Most of what gets built here is customer-funded tailoring. As each capability lands, the Product Lead records a disposition in the **upstream log** — *core*, *customer-only*, or *deferred* — with the reasoning. There is no fixed cadence for this; entries are made when the answer is clear. What matters is that the question is never left implicit, because it determines who owns and funds a capability from then on.
+**Tailoring and the upstream log.** Most of what gets built here is customer-funded tailoring. As each capability lands, the Product Owner records a disposition in the **upstream log** — *core*, *customer-only*, or *deferred* — with the reasoning. There is no fixed cadence for this; entries are made when the answer is clear. What matters is that the question is never left implicit, because it determines who owns and funds a capability from then on.
 
 **Artifacts produced (accumulating across cycles).** A working, tailored increment in stage each cycle; a record of each customer evaluation and the decisions it drove; the **upstream log**; an evolving architecture record; automated tests and a green pipeline; security control evidence building toward authorization; cycle summaries and updated hill charts.
 
@@ -118,7 +118,7 @@ Gate 0 is both the entry decision and the week of work that follows it, which is
 
 One team carries both, one backlog holds both, and **every bet is tagged with its funding source and its core-or-tailored designation**. The betting table at each cool-down allocates across both tracks deliberately rather than letting whichever is louder win.
 
-**The funding boundary is a real obligation, not bookkeeping.** Customer money must not quietly fund core-product work that Red Alpha will license to others; Red Alpha must not bill the customer for work that is really core investment; and customer-funded capability must not be absorbed into the core without the disposition being recorded and any required agreement in place. The Product Lead owns the integrity of that split. It is the kind of thing that is easy while everyone remembers who asked for what, and impossible to reconstruct a year later — which is what the **upstream log** is for.
+**The funding boundary is a real obligation, not bookkeeping.** Customer money must not quietly fund core-product work that Red Alpha will license to others; Red Alpha must not bill the customer for work that is really core investment; and customer-funded capability must not be absorbed into the core without the disposition being recorded and any required agreement in place. The Product Owner owns the integrity of that split. It is the kind of thing that is easy while everyone remembers who asked for what, and impossible to reconstruct a year later — which is what the **upstream log** is for.
 
 **The cadence.** Cycles here can run longer than the MVP phase's — the customer's need for frequent evaluation is partly satisfied and protected focus is worth more — followed by a short **cool-down** (~1–2 weeks) that serves as the **betting table**: review what shipped, shape upcoming work across both tracks, disposition anything ready for an upstream decision, and consciously bet on the next cycle. Customer-facing increments keep flowing to stage, just not necessarily every two weeks.
 
@@ -126,7 +126,7 @@ One team carries both, one backlog holds both, and **every bet is tagged with it
 
 **Artifacts produced (accumulating).** Working increments on both tracks; a licensable core-product baseline with its documentation; the customer's tailored instance; the **System Security Plan** and control evidence building toward an ATO; a current **upstream log**; release notes; cycle summaries.
 
-**Gate 3 — Authority & readiness to launch.** *Decision owner: Product Lead + Security Lead jointly, with the sponsor, the funding customer, and (for authorization) the Authorizing Official.* Proceed to launch only when the product does what the PR/FAQ promised for its first release, quality bars are met, operations and monitoring are ready, the customer is ready to receive it in their real environment, and **authorization to operate is granted (or an interim / continuous-authorization path is in place)**. Otherwise: run another cycle, cut scope, or hold for authorization.
+**Gate 3 — Authority & readiness to launch.** *Decision owner: Product Owner + Security Lead jointly, with the sponsor, the funding customer, and (for authorization) the Authorizing Official.* Proceed to launch only when the product does what the PR/FAQ promised for its first release, quality bars are met, operations and monitoring are ready, the customer is ready to receive it in their real environment, and **authorization to operate is granted (or an interim / continuous-authorization path is in place)**. Otherwise: run another cycle, cut scope, or hold for authorization.
 
 ---
 
@@ -138,7 +138,7 @@ One team carries both, one backlog holds both, and **every bet is tagged with it
 
 **Artifacts produced.** Production deployment and runbook; monitoring and alerting dashboards; incident-response plan; launch retrospective; first real-usage findings feeding the backlog.
 
-**Gate 4 — Sustainment.** *Decision owner: Product Lead + Sponsor, with the customer confirming the operating model.* Confirm the product is stable in production, is being monitored (including its security posture), and has a sustainable operating model that both sides have agreed to. Move it into steady-state operation, or address what is blocking that.
+**Gate 4 — Sustainment.** *Decision owner: Product Owner + Sponsor, with the customer confirming the operating model.* Confirm the product is stable in production, is being monitored (including its security posture), and has a sustainable operating model that both sides have agreed to. Move it into steady-state operation, or address what is blocking that.
 
 ---
 

@@ -11,7 +11,7 @@
 ---
 
 ## Gate 0 — Commit and charter (stand up the IPT)
-*Decision owner: **Sponsor**, with the prospective Product Lead making the case.*
+*Decision owner: **the Product Owner** — who decides to take the product from POC to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money.*
 
 *This is the entry gate. It assumes a POC already exists and has been shopped — how that happened is outside this workflow (see [`docs/04`](../docs/04-process-timeline-and-phases.md)). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
 
@@ -30,7 +30,7 @@
 ---
 
 ## Gate 1 — Green-light the MVP (ends Phase 1 — Discovery & Framing)
-*Decision owner: **Product Lead** (Decider), with sponsor concurrence and the customer's agreement on tailoring scope.*
+*Decision owner: **Product Owner** (Decider), with sponsor concurrence and the customer's agreement on tailoring scope.*
 
 - [ ] **PR/FAQ** written from the customer's operators' point of view; the outcome is clear and compelling (or the idea was honestly reworked).
 - [ ] The customer's **real operators** were talked to — not only the people who signed. Insights captured.
@@ -48,7 +48,7 @@
 ---
 
 ## End-of-cycle customer evaluation *(every MVP cycle — not a gate)*
-*Run by the **Product Lead**. Lightweight, repeated 3–5 times during Phase 2 (MVP). This is the loop the customer is funding.*
+*Run by the **Product Owner**. Lightweight, repeated 3–5 times during Phase 2 (MVP). This is the loop the customer is funding.*
 
 - [ ] Working capability was **promoted to stage** this cycle — not a slide, not a mockup.
 - [ ] The customer's own people exercised it against realistic tasks.
@@ -79,7 +79,7 @@
 ---
 
 ## Gate 3 — Authority & readiness to launch (ends Phase 3 — Build)
-*Decision owner: **Product Lead + Security Lead** jointly, with Sponsor, the funding customer, and the Authorizing Official.*
+*Decision owner: **Product Owner + Security Lead** jointly, with Sponsor, the funding customer, and the Authorizing Official.*
 
 - [ ] The product does what the PR/FAQ promised for its **first release**.
 - [ ] Quality bars met: tests green, pipeline green, no known launch-blocking defects.
@@ -96,7 +96,7 @@
 ---
 
 ## Gate 4 — Sustainment (ends Phase 4 — Launch)
-*Decision owner: **Product Lead + Sponsor**, with the customer confirming the operating model.*
+*Decision owner: **Product Owner + Sponsor**, with the customer confirming the operating model.*
 
 - [ ] Product is stable in the customer's production environment through the hypercare window.
 - [ ] Security posture is being **continuously monitored**; incident response is live.

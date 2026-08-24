@@ -14,7 +14,7 @@ It is deliberately a *working* document. Items get claimed, argued, and closed. 
 
 **Status values.** **Open** (nobody is working it) · **In work** (owned, being worked) · **Decided** (answer written into the owning document; see *Recently decided* at the bottom).
 
-**Priority.** Three items block more than the rest, and they are the three the [Executive Summary](../EXECUTIVE-SUMMARY.md) puts in front of leadership: **OI-01** (the missing front end), **OI-07** (upstreaming rights), and **OI-08** (the `stage` data class). Everything else can be worked in any order, and several are a half-hour conversation away from closed.
+**Priority.** Two items block more than the rest, and they are the two the [Executive Summary](../EXECUTIVE-SUMMARY.md) still puts in front of leadership: **OI-01** (the missing front end) and **OI-07** (upstreaming rights). A third priority item, **OI-08** (the `stage` data class), closed 2026-08-24 — see *Recently decided* below. Everything else can be worked in any order, and several are a half-hour conversation away from closed.
 
 ---
 
@@ -22,43 +22,25 @@ It is deliberately a *working* document. Items get claimed, argued, and closed. 
 
 #### OI-01 — How does a POC come to exist?
 
-**Owner:** *unassigned* · **Decides:** Sponsor / executive leadership · **Source:** [02](02-ipt-model-overview.md), [03](03-team-structure-and-roles.md), [04](04-process-timeline-and-phases.md) · **Status:** Open
+**Owner:** Rob Weiss · **Decides:** Sponsor / executive leadership · **Source:** [02](02-ipt-model-overview.md), [03](03-team-structure-and-roles.md), [04](04-process-timeline-and-phases.md) · **Status:** In work
 
 The largest gap around this knowledge base. Who decides to fund a POC, who staffs it before any IPT exists, how long it runs, what it must prove to be worth shopping, and who does the shopping. This workflow deliberately starts *after* all of that, at the moment a customer commits money — which leaves the front of our pipeline undefined even though the back end is specific.
 
+**Settled so far (2026-08-24):** a POC comes out of Red Alpha's own **ideation process**, separate from this framework; Red Alpha funds it internally and owns the resulting IP outright. *Now documented in:* [02](02-ipt-model-overview.md), [06 — glossary](06-glossary-and-references.md). Still open: who staffs it before any IPT exists, how long it runs, what it must prove to be worth shopping, and who does the shopping.
+
 **Resolved looks like:** a separate ideation-to-product document covering the pre-Gate-0 world, with this workflow's Gate 0 as its hand-off point. Not an addition to document 04 — the funding model and the risk profile are different enough that putting speculative exploration under charter-and-gate machinery would be the wrong trade.
 
-#### OI-02 — Does a POC being shopped run in a `stage` instance, or its own demo environment?
-
-**Owner:** *unassigned* · **Decides:** Security Lead with Delivery/Platform · **Source:** [05](05-security-and-compliance.md) · **Status:** Open
-
-`stage` now explicitly serves pre-sales as well as pre-production, which makes it the obvious home for a POC demonstration. But the release-parity rule presumes a product with a mainline, and a pre-Gate-0 POC may not have one. Either POCs get their own demo environment, or the parity rule needs an explicit carve-out for pre-Gate-0 instances.
-
-**Resolved looks like:** a sentence in document 05's `stage` policy saying which, and the charter template reflecting it. Best settled alongside OI-01.
+*OI-02 (does a POC being shopped run in a `stage` instance, or its own demo environment) closed 2026-08-24 — see Recently decided below.*
 
 ---
 
 ## B. Decision rights and ceremony
 
-#### OI-03 — Who owns Gate 0?
-
-**Owner:** *unassigned* · **Decides:** Executive leadership · **Source:** [02](02-ipt-model-overview.md) · **Status:** Open
-
-The decision to stand up an IPT at all. A product council, a single executive, or the prospective Product Lead making the case to the sponsor? Gate 0 commits people for the life of a product, so whoever owns it is committing the company's scarcest resource.
-
-**Resolved looks like:** a named decision owner in document 04's Gate 0 section and in the gate-review checklist.
-
-#### OI-04 — Is the Product Lead always the Decider?
-
-**Owner:** *unassigned* · **Decides:** Sponsor with Product Leads · **Source:** [03](03-team-structure-and-roles.md) · **Status:** Open
-
-Or should the Decider role depend on the decision type — the Tech Lead breaking technical ties, the Security Lead breaking authorization ties? The single-Decider rule exists so a lean team never stalls in consensus; the question is whether one person is the right Decider for every kind of tie.
-
-**Resolved looks like:** document 03's Product Lead section either affirming the single Decider or naming the exceptions explicitly. Vagueness here is worse than either answer.
+*OI-03 (who owns Gate 0) and OI-04 (is the Product Owner always the Decider) closed 2026-08-24 — see Recently decided below.*
 
 #### OI-05 — Does the customer have a formal voice at gates beyond Gate 2?
 
-**Owner:** *unassigned* · **Decides:** Product Lead with sponsor · **Source:** [04](04-process-timeline-and-phases.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Product Owner with sponsor · **Source:** [04](04-process-timeline-and-phases.md) · **Status:** Open
 
 The funding customer owns Gate 2 and confirms the operating model at Gate 4. Should they have a formal voice at Gate 1 (green-lighting the MVP) and Gate 3 (readiness to launch), or is concurrence enough? A customer surprised at Gate 3 is a customer who was not really in the loop.
 
@@ -66,7 +48,7 @@ The funding customer owns Gate 2 and confirms the operating model at Gate 4. Sho
 
 #### OI-06 — How formal should a gate review be?
 
-**Owner:** *unassigned* · **Decides:** Product Lead · **Source:** [04](04-process-timeline-and-phases.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Product Owner · **Source:** [04](04-process-timeline-and-phases.md) · **Status:** Open
 
 A written decision memo, or a live 30-minute review with the checklist? The customer-facing gates may warrant more formality than the internal ones. The failure mode in both directions is real: ceremony a 4–7 person team resents, or decisions nobody can reconstruct six months later.
 
@@ -88,15 +70,7 @@ The whole two-wallet model rests on this. We assume that customer-funded **tailo
 
 ## D. The `stage` environment
 
-Where `stage` lives is **settled** — see *Recently decided* below, and the policy in [05](05-security-and-compliance.md). What remains:
-
-#### OI-08 — What data class may `stage` hold by default?
-
-**Owner:** *unassigned* · **Decides:** Security Lead with sponsor · **Source:** [04](04-process-timeline-and-phases.md), [05](05-security-and-compliance.md) · **Status:** Open
-
-Synthetic, sanitized, or genuinely operational? The customer may supply the evaluation data, but customer-supplied is not the same as permissible: the moment real operational data lands in `stage`, `stage` is inside the authorization boundary and carries a production-shaped control baseline. So the default matters, and so does the exception path — **who approves operational data going in, and against what handling agreement.** This is the item that sets the control baseline for every engagement.
-
-**Resolved looks like:** a stated default in document 05, a named approver for the exception, and a charter field that cannot be left blank.
+Where `stage` lives is **settled**, and so is its default data class — see *Recently decided* below, and the policy in [05](05-security-and-compliance.md). What remains:
 
 #### OI-09 — How many replicated `stage` instances can we actually keep at mainline parity?
 
@@ -116,7 +90,7 @@ An IPT that has no funding customer for that instance yet, or the business-devel
 
 #### OI-11 — What must a customer-supplied stage CONOPS contain?
 
-**Owner:** *unassigned* · **Decides:** Product Lead with Tech Lead · **Source:** [05](05-security-and-compliance.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Product Owner with Tech Lead · **Source:** [05](05-security-and-compliance.md) · **Status:** Open
 
 A customer-supplied CONOPS governs the shape of `stage` where one exists. For that to save time rather than cost it, we need to know what a usable CONOPS has to tell us — users and roles, tasks, data, integration points, access mechanics — or we will end up running a second round of discovery to fill in the gaps.
 
@@ -172,9 +146,9 @@ At our current size, one security specialist across two or three teams may be th
 
 #### OI-17 — Can one IPT carry a second funding customer's tailoring?
 
-**Owner:** *unassigned* · **Decides:** Sponsor with Product Lead · **Source:** [02](02-ipt-model-overview.md), [03](03-team-structure-and-roles.md), [04](04-process-timeline-and-phases.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Sponsor with Product Owner · **Source:** [02](02-ipt-model-overview.md), [03](03-team-structure-and-roles.md), [04](04-process-timeline-and-phases.md) · **Status:** Open
 
-The practical limit on how fast the licensing model can grow. Two customers on one team means two evaluation loops, two sets of tailoring priorities, and a Product Lead protecting focus in two directions at once.
+The practical limit on how fast the licensing model can grow. Two customers on one team means two evaluation loops, two sets of tailoring priorities, and a Product Owner protecting focus in two directions at once.
 
 **Resolved looks like:** a stated rule in document 03 with the conditions under which it is allowed.
 
@@ -196,7 +170,7 @@ Or do some smaller efforts get a time-boxed team that disbands at launch? The du
 
 #### OI-20 — What is the minimum viable team?
 
-**Owner:** *unassigned* · **Decides:** Sponsor with Product Lead · **Source:** [03](03-team-structure-and-roles.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Sponsor with Product Owner · **Source:** [03](03-team-structure-and-roles.md) · **Status:** Open
 
 Is four really the floor, or three for the smallest efforts? Below some size the seven functions stop being coverable by hats and start being uncovered.
 
@@ -216,7 +190,7 @@ Phase 5 says the team that built it runs it. On a lean team, sustained on-call c
 
 #### OI-22 — What is the build-phase cycle length?
 
-**Owner:** *unassigned* · **Decides:** Product Lead with Tech Lead · **Source:** [01](01-research-brief-incubator-methodologies.md), [04](04-process-timeline-and-phases.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Product Owner with Tech Lead · **Source:** [01](01-research-brief-incubator-methodologies.md), [04](04-process-timeline-and-phases.md) · **Status:** Open
 
 The MVP phase is fixed at 2–3 weeks because frequent customer contact is the point. Phase 3 does not have that constraint — should it return to Shape Up's six weeks for protected focus, or hold at three or four?
 
@@ -224,7 +198,7 @@ The MVP phase is fixed at 2–3 weeks because frequent customer contact is the p
 
 #### OI-23 — Is a PR/FAQ mandatory at the entry gate?
 
-**Owner:** *unassigned* · **Decides:** Product Lead · **Source:** [01](01-research-brief-incubator-methodologies.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Product Owner · **Source:** [01](01-research-brief-incubator-methodologies.md) · **Status:** Open
 
 For every engagement, or only for larger bets? The PR/FAQ is cheap relative to building the wrong thing, but it is not free, and Discovery has an appetite.
 
@@ -232,7 +206,7 @@ For every engagement, or only for larger bets? The PR/FAQ is cheap relative to b
 
 #### OI-24 — When do we run a full validation sprint?
 
-**Owner:** *unassigned* · **Decides:** Product Lead · **Source:** [01](01-research-brief-incubator-methodologies.md), [04](04-process-timeline-and-phases.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Product Owner · **Source:** [01](01-research-brief-incubator-methodologies.md), [04](04-process-timeline-and-phases.md) · **Status:** Open
 
 Always in Discovery, or only when a decision is genuinely high-risk? And when we do run one, is it Google Ventures' five days or a lighter one-to-two-day version? Two questions with one answer, since the trigger and the format are chosen together.
 
@@ -244,11 +218,29 @@ Always in Discovery, or only when a decision is genuinely high-risk? And when we
 
 Items are kept here briefly after they close, so the team can see what changed without diffing the documents.
 
+**Who owns Gate 0, and whether the Decider role ever moves** — decided **2026-08-24** (closes OI-03 and OI-04).
+
+Every product has one **Product Owner** role (the renamed **Product Lead**). The Product Owner decides to take a product from POC to MVP by chartering the IPT — that is Gate 0, and it is theirs alone; once made, the sponsor commits the team and Red Alpha's own core-product money. The Product Owner is **always** the Decider — no exception by decision type (technical ties still go to the Tech Lead as the technical tie-breaker, but the single Decider for what/why is the Product Owner without exception).
+
+*Now documented in:* [02](02-ipt-model-overview.md) · [03 — the role, renamed from Product Lead](03-team-structure-and-roles.md) · [04 — Gate 0](04-process-timeline-and-phases.md) · [06 — glossary](06-glossary-and-references.md) · [the charter template](../templates/ipt-charter-template.md) · [the gate-review checklist](../templates/gate-review-checklist.md).
+
+**Where a POC being shopped runs, and what a "demo environment" is** — decided **2026-08-24** (closes OI-02).
+
+A POC being shopped runs in a **`stage` instance** — there is no separate POC demo environment. Because a pre-Gate-0 POC has no product mainline yet, the release-parity rule has nothing to hold it to; parity begins to apply once a real mainline exists. Separately, a **demo environment** — a distinct thing from `stage` — is stood up after a product's first launch, owned by business development and running the current production release, so business development can pitch the shipped product to whichever customer comes next.
+
+*Now documented in:* [05 — the `stage` policy](05-security-and-compliance.md). Not yet specified: the demo environment's ownership mechanics, data policy, and refresh cadence — worth a short register item of its own if the team wants those tracked.
+
+**The default `stage` data class** — decided **2026-08-24** (closes OI-08).
+
+`stage` defaults to **synthetic data**. Where an active funding customer is engaged and supplies its own data for evaluation, that governs instead; where there is no funding customer yet — during a pre-Gate-0 POC, or for as long as a product is still being shopped for one — `stage` runs on synthetic data with no exception possible, since there is no one yet to grant one. If genuinely operational data does land in `stage`, `stage` moves inside the authorization boundary from that moment on, and the Security Lead confirms the resulting control baseline and agrees the handling regime in writing before the data arrives.
+
+*Now documented in:* [05 — the `stage` policy](05-security-and-compliance.md) · [the charter template](../templates/ipt-charter-template.md).
+
 **Where `stage` lives, and what it looks like** — decided **2026-08-18**.
 
 `stage` always runs inside Red Alpha's controlled environment: on premises or in Red Alpha's cloud, never the customer's enclave. It is built to a customer-supplied stage **CONOPS** where one exists, and otherwise mirrors what Red Alpha determines the production deployment will be. Its data may be customer-supplied or Red Alpha-provided. It is a **pre-production and/or pre-sales** environment, it **may be replicated**, and every instance **runs the same release as the upstream mainline**. It is not the pilot and carries no authorization to operate.
 
-*Now documented in:* [05 — the `stage` policy](05-security-and-compliance.md) · [the charter template](../templates/ipt-charter-template.md) · [the gate-review checklist](../templates/gate-review-checklist.md). Residual questions from this decision are OI-02, OI-08, OI-09, OI-10, and OI-11 above.
+*Now documented in:* [05 — the `stage` policy](05-security-and-compliance.md) · [the charter template](../templates/ipt-charter-template.md) · [the gate-review checklist](../templates/gate-review-checklist.md). Residual questions from this decision are OI-09, OI-10, and OI-11 above (OI-02 and OI-08 closed 2026-08-24, above).
 
 ---
 

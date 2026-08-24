@@ -59,7 +59,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 | Source | Core idea we adopt | Where it shows up in our model |
 |--------|--------------------|-------------------------------|
 | Amazon | Write the customer outcome first (PR/FAQ); small end-to-end teams | Entry gate; IPT ownership model (doc 02, 04) |
-| Google | Time-boxed sprint to validate risky decisions cheaply; a Decider | Discovery/validation tool; Product Lead as Decider (doc 03, 04) |
+| Google | Time-boxed sprint to validate risky decisions cheaply; a Decider | Discovery/validation tool; Product Owner as Decider (doc 03, 04) |
 | IDEO | Human-centered discovery; desirable/feasible/viable filter | Discovery phase and gate criteria (doc 04) |
 | Spotify | Autonomy + alignment; culture over org chart; chapters for scaling | IPT autonomy; scaling plan (doc 02, 03) |
 | Basecamp | Appetite (fixed time / variable scope); betting; circuit breaker | Cycle-based delivery and cadence (doc 04) |

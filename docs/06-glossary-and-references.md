@@ -32,7 +32,7 @@
 
 **Cycle** — A fixed-time block of protected build work in which scope flexes and time does not. Shape Up's default is six weeks; during the **MVP** phase Red Alpha runs short cycles (2–3 weeks) so the **funding customer** gets working capability to evaluate often.
 
-**Decider** — From the Design Sprint: the single person empowered to make binding decisions so a team doesn't stall in consensus. At Red Alpha this is typically the Product Lead.
+**Decider** — From the Design Sprint: the single person empowered to make binding decisions so a team doesn't stall in consensus. At Red Alpha this is typically the Product Owner.
 
 **Design Sprint** — Google Ventures' five-day, time-boxed process (map, sketch, decide, prototype, test) to validate a risky product idea cheaply with real users before building.
 
@@ -42,7 +42,7 @@
 
 **Funding customer** — The customer who, having seen a **POC**, funds the work to turn it into an **MVP** for their own environment and mission. Distinct from the Red Alpha **sponsor**: the sponsor commits Red Alpha's people and core-product money, the funding customer commits money for **tailoring** and, crucially, commits their operators' time to evaluate each increment. Sits outside the IPT but is the decision owner at **Gate 2**.
 
-**Gate** — In the Red Alpha model, a short, explicit decision point where the accountable parties decide to continue, adjust, or stop. Gate 0 opens the work by chartering the IPT; after that, Gate N closes Phase N. Most gates are decided inside Red Alpha by the sponsor and Product Lead; **Gate 2** belongs to the **funding customer**, and **Gate 3** requires the **Authorizing Official**.
+**Gate** — In the Red Alpha model, a short, explicit decision point where the accountable parties decide to continue, adjust, or stop. Gate 0 opens the work by chartering the IPT; after that, Gate N closes Phase N. Most gates are decided inside Red Alpha by the **Product Owner** (Gate 0 is the Product Owner's alone; the sponsor commits the team and funding once it's made); **Gate 2** belongs to the **funding customer**, and **Gate 3** requires the **Authorizing Official** as well.
 
 **Hill chart** — From Shape Up: a way to show each piece of work's true status by placing it on a hill — uphill = "still figuring it out," downhill = "just execution."
 
@@ -58,7 +58,7 @@
 
 **Plan of Action & Milestones (POA&M)** — The documented list of known security gaps and the plan/timeline to close them.
 
-**POC (Proof of Concept)** — A build Red Alpha funds **itself**, against a customer need or capability gap it has identified, to prove the idea is real: that the approach works technically and that it addresses something someone actually cares about. Its audience is first Red Alpha's own leadership and then prospective customers — a POC exists to be **shopped**, and its success condition is a customer interested enough to fund the next stage. It is deliberately narrow and time-boxed, runs in an environment Red Alpha controls, holds no real customer data, and carries no authorization. It is a demonstration, not something anyone operates. How a POC gets funded, staffed, and built sits **outside** the IPT workflow — that workflow starts once a customer commits money (document 04). See **POC vs. MVP** below.
+**POC (Proof of Concept)** — A build Red Alpha funds **itself**, against a customer need or capability gap it has identified, to prove the idea is real: that the approach works technically and that it addresses something someone actually cares about. Its audience is first Red Alpha's own leadership and then prospective customers — a POC exists to be **shopped**, and its success condition is a customer interested enough to fund the next stage. It is deliberately narrow and time-boxed, runs in a **stage** instance Red Alpha controls, holds no real customer data, and carries no authorization. It is a demonstration, not something anyone operates. A POC comes out of Red Alpha's internally funded **ideation process** — separate from this IPT workflow — and Red Alpha owns the resulting IP outright. How that process staffs and runs a POC still sits **outside** the IPT workflow — that workflow starts once a customer commits money (document 04). See **POC vs. MVP** below.
 
 **PR/FAQ** — Amazon's "Working Backwards" artifact: a mock press release describing the finished product from the customer's view, plus an FAQ answering the hard questions — written *before* building.
 
@@ -70,7 +70,7 @@
 
 **Shape Up** — Basecamp's product-development method built around shaping, betting, and fixed-time cycles; notable for scaling *down* cleanly to small teams.
 
-**Single-threaded owner** — Amazon's idea of one leader whose sole focus is one initiative — the ownership model behind our durable Product Lead.
+**Single-threaded owner** — Amazon's idea of one leader whose sole focus is one initiative — the ownership model behind our durable Product Owner.
 
 **Squad** — From Spotify: a small, cross-functional, autonomous team owning a mission. At 4–7 people a Red Alpha IPT effectively *is* one squad.
 
@@ -82,7 +82,7 @@
 
 **Two-pizza team** — Amazon's heuristic for keeping teams small enough to be fed by two pizzas — small, autonomous, end-to-end owners.
 
-**Upstream (and the upstream log)** — To *upstream* is to promote a capability built as customer-funded **tailoring** into the Red Alpha-owned **core product**, where Red Alpha thereafter owns, funds, and licenses it. Much tailoring is never upstreamed, and that is a normal outcome, not a failure. Because each decision changes who pays for a capability going forward and can carry licensing and IP implications, the Product Lead maintains an **upstream log**: a standing record giving every customer-funded capability a disposition — *core*, *customer-only*, or *deferred* — with the reasoning and any agreement the change requires. It has no fixed cadence; entries are made when the answer is clear.
+**Upstream (and the upstream log)** — To *upstream* is to promote a capability built as customer-funded **tailoring** into the Red Alpha-owned **core product**, where Red Alpha thereafter owns, funds, and licenses it. Much tailoring is never upstreamed, and that is a normal outcome, not a failure. Because each decision changes who pays for a capability going forward and can carry licensing and IP implications, the Product Owner maintains an **upstream log**: a standing record giving every customer-funded capability a disposition — *core*, *customer-only*, or *deferred* — with the reasoning and any agreement the change requires. It has no fixed cadence; entries are made when the answer is clear.
 
 ---
 
@@ -97,7 +97,7 @@ These two terms get used interchangeably in casual conversation, and the confusi
 | **Audience** | Red Alpha leadership, then prospective customers | One named customer's operators and mission owners |
 | **Customer's role** | Subject of the pitch — an observer | Active participant: exercises each increment and approves or redirects |
 | **Built on** | Whatever proves the idea fastest | The Red Alpha-owned **core product**, plus customer-specific **tailoring** |
-| **Where it runs** | A demo environment Red Alpha controls | **Stage** — an evaluation environment the customer can actually use |
+| **Where it runs** | A **stage** instance (no separate POC demo environment; release parity doesn't yet apply — there's no mainline to be at parity with) | **Stage** — an evaluation environment the customer can actually use |
 | **Rhythm** | One time-boxed push | Short cycles (2–3 weeks), each ending in a customer evaluation |
 | **Data** | Synthetic or sample; no real customer data | Representative data, with real controls around it |
 | **Security posture** | No authorization; not operated | Authorization path actively built; controls implemented every cycle |
