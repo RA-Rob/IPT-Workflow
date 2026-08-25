@@ -8,6 +8,8 @@ Before proposing a Red Alpha way of building products, we looked at how the most
 
 A recurring theme across all five is worth stating up front: **the successful methods spend real effort reducing uncertainty *before* committing to full build**, and they organize small, empowered, cross-functional teams to do it. That combination — cheap validation first, autonomous delivery second — is the throughline we adopt.
 
+A sixth entry follows the five, but it answers a different question. The five above are about getting from an idea to a first product; the sixth — the **Forward Deployed Engineer** practice now common across AI labs and their enterprise customers — is about what happens once that product is live in a customer's hands, which is precisely the ground Red Alpha's **Phase 5 (Operate & Iterate)** covers. It gets the same treatment — method, why it works, the lesson we take — because it belongs next to the other borrowed practices, not off on its own.
+
 ---
 
 ## 1. Amazon — "Working Backwards" and two-pizza teams
@@ -52,6 +54,14 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 
 **Lesson for Red Alpha.** This is our closest structural model. We adopt **appetite-driven, fixed-time / variable-scope work**, a **betting-style prioritization** step so the IPT consciously chooses what to build each cycle, and the **circuit-breaker discipline** to protect a 4–7 person team from open-ended commitments. We keep the "which hat am I wearing" clarity as a cultural norm.
 
+## 6. OpenAI / Anthropic / Palantir — the Forward Deployed Engineer
+
+**The method.** As AI labs sell a *general-purpose* capability into specific enterprises, they have converged on a role — the **Forward Deployed Engineer (FDE)** — whose job is to make that capability actually work inside one company's messy, specific reality. The work has three parts, and almost nobody starts equally strong in all three. First, **find the leverage point**: sit with the people who do the work, pull a real sample of recent cases, and identify the single intervention that removes the most delay or risk for the least authority handed to the model — not the biggest or most impressive build, the highest-leverage one. Second, **build and evaluate**: write the software, but just as importantly construct the test cases (evals) that tell the model what "right" looks like, and design the system to see only the data it needs. Third, **own deployment**: stay past launch, watch how real people actually use it, measure whether the impact is what was promised, and keep iterating — the job is not done at "it shipped." The title varies by company (forward deployed engineer, applied AI engineer, solutions engineer, technical deployment lead), but the constant is staying with the problem end-to-end rather than handing off after configuration.
+
+**Why it succeeds.** A general AI capability and a specific business process do not meet on their own — someone has to translate a vague executive ask ("speed up claims processing") into a small, safe, measurably valuable build, because handing that translation entirely to the model or entirely to the customer produces either a dangerous amount of autonomy or a vague goal nobody can build against. And because AI software can now make decisions and take actions rather than just move data around, small misunderstandings travel a lot farther than in ordinary enterprise software — which raises the cost of *not* having someone who owns the whole arc from leverage point to production outcome.
+
+**Lesson for Red Alpha.** We already have the durable, embedded team this practice assumes — that is the point of an IPT. What we add explicitly is the *posture* the team takes once a product is live: in **Phase 5 (Operate & Iterate)**, the IPT works forward-deployed with the customer's own operators — finding the next high-leverage, low-risk automation point, building and evaluating against real cases, and owning the result through actual use. See document 03's role description and document 04's Phase 5.
+
 ---
 
 ## Synthesis: what Red Alpha takes from each
@@ -63,6 +73,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 | IDEO | Human-centered discovery; desirable/feasible/viable filter | Discovery phase and gate criteria (doc 04) |
 | Spotify | Autonomy + alignment; culture over org chart; chapters for scaling | IPT autonomy; scaling plan (doc 02, 03) |
 | Basecamp | Appetite (fixed time / variable scope); betting; circuit breaker | Cycle-based delivery and cadence (doc 04) |
+| OpenAI / Anthropic / Palantir | Stay embedded with the customer to find the highest-leverage, safest point to apply the capability; build and evaluate against real cases; own the outcome through production use | The IPT's forward-deployed posture in Phase 5 (doc 03, 04) |
 
 The common denominator — **reduce uncertainty cheaply before committing, then let a small empowered team own delivery end to end** — is the foundation of the Red Alpha IPT model described in document 02.
 
@@ -75,5 +86,6 @@ The common denominator — **reduce uncertainty cheaply before committing, then 
 - Do we want a *mandatory* PR/FAQ at the entry gate, or only for larger bets?
 - How often (if ever) do we actually run a full five-day Design Sprint versus a lighter one- or two-day validation?
 - What cycle length fits Red Alpha best — the classic six weeks, or shorter given our size and cadence?
+- Does Phase 5's forward-deployed work need a named embedded role, or is it the existing Product Owner / engineering hats simply working in that mode?
 
 *Sources for this brief are consolidated in [`06-glossary-and-references.md`](06-glossary-and-references.md).*

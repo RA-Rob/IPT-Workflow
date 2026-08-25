@@ -40,6 +40,8 @@
 
 **DevSecOps** — Folding security into the automated build/test/ship pipeline so security is enforced on every change rather than checked at the end; the mechanism behind the Secure Software Supply Chain.
 
+**Forward Deployed Engineer (FDE)** — A practice, common across AI labs (OpenAI, Anthropic) and pioneered by Palantir, of staying embedded with a customer's own operators to find the highest-leverage, lowest-risk point to apply a capability, build and evaluate it against real cases, and own the result through actual production use. At Red Alpha this is not a new function on the roster but the **posture** the durable IPT adopts in **Phase 5 — Operate & Iterate** (document 01 §6, document 03, document 04).
+
 **Funding customer** — The customer who, having seen a **POC**, funds the work to turn it into an **MVP** for their own environment and mission. Distinct from the Red Alpha **sponsor**: the sponsor commits Red Alpha's people and core-product money, the funding customer commits money for **tailoring** and, crucially, commits their operators' time to evaluate each increment. Sits outside the IPT but is the decision owner at **Gate 2**.
 
 **Gate** — In the Red Alpha model, a short, explicit decision point where the accountable parties decide to continue, adjust, or stop. Gate 0 opens the work by chartering the IPT; after that, Gate N closes Phase N. Most gates are decided inside Red Alpha by the **Product Owner** (Gate 0 is the Product Owner's alone; the sponsor commits the team and funding once it's made); **Gate 2** belongs to the **funding customer**, and **Gate 3** requires the **Authorizing Official** as well.
@@ -137,6 +139,9 @@ The through-line: a POC is Red Alpha spending its own money to earn the right to
 - Shape Up: Stop Running in Circles and Ship Work that Matters — Basecamp: https://basecamp.com/shapeup
 - Adjust to Your Size (scaling down for small teams) — Shape Up: https://basecamp.com/shapeup/4.1-appendix-02
 - The Betting Table — Shape Up: https://basecamp.com/shapeup/2.2-chapter-08
+
+**Forward Deployed Engineers**
+- "OpenAI Pays $280,000 For This Job. You Don't Have To Be An Engineer." — Nate B Jones, *AI News & Strategy Daily* (YouTube): https://youtu.be/0bLI31EFDDs
 
 **Security & compliance (RMF, ATO, cATO, DevSecOps)**
 - NIST RMF Explained: 7-Step Risk Management Framework — Deepwatch: https://www.deepwatch.com/glossary/nist-rmf/

@@ -99,10 +99,23 @@ A lean IPT depends on a few roles it does **not** contain, and naming them preve
 
 When a product genuinely outgrows seven people, we **split into two IPTs around bounded missions** rather than growing one team past the point where everyone can hold the whole product in their heads. At that point the **chapter/guild** idea from document 01 activates: a security chapter, an engineering chapter, and shared guilds keep standards and knowledge aligned across teams. The guardrail we take from Spotify's failures: adding structure only works if the culture of trust, ownership, and shared accountability comes with it — otherwise we've just made a bigger, slower team with new titles.
 
+## Phase 5 — the IPT works forward-deployed
+
+Once a product is live, the same durable team keeps going, but the *how* changes. Running Phase 5 well means practicing what much of the industry now calls **Forward Deployed Engineering**: staying embedded with the customer's own operators, finding the next point where a small, safe build removes the most friction from a real workflow, and owning the result through actual production use rather than stopping at "it shipped." (See document 01 §6 for where this comes from, and document 04's Phase 5 for how it fits the cadence.)
+
+This is not an eighth function added to the table above — it is the **Product Owner** and **engineering** hats working in that mode, drawing on **Quality/Test**'s eval discipline and **Delivery/Platform**'s deployment ownership, which the team already carries. Concretely:
+
+- **Find leverage before building.** The team observes real workflows with the customer's operators, not just their requests, and picks the intervention that unblocks the most work downstream for the least authority handed to the system — the same judgment that already shapes what earns a bet each cycle.
+- **Build against real cases.** A handful of the customer's own recent, real instances become the test set before anything goes live — an extension of the Quality/Test function's existing discipline, not a separate practice.
+- **Own it through first use.** Deployment ownership does not end at launch. The team watches real usage, measures the time or risk actually saved, and keeps iterating — the same "the team that builds it runs it" principle this document already holds (see *Roles that sit around the IPT*, and OI-21 on how the resulting on-call load is carried).
+
+Domain knowledge compounds here: whoever already knows the customer's mission will find the real leverage point faster than someone learning it from the outside, which is worth weighing when deciding who on the team spends the most embedded time with the customer's operators during Phase 5.
+
 ## Open questions / to resolve
 
 *These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`07-open-items.md`](07-open-items.md), the register the whole team works from.*
 
+- Does Phase 5's forward-deployed work call for one person to spend most of their time embedded with the customer, or does it rotate across the team alongside core-track work?
 - Do we want the **Security Lead** to be a full member of every IPT, or a shared specialist across two or three teams at our current size?
 - What is the minimum viable team we'd ever stand up — is four really the floor, or three for the smallest efforts?
 - How do we handle **on-call / operations** load on a lean team once products are live in production?

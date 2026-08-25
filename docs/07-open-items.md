@@ -184,6 +184,14 @@ Phase 5 says the team that built it runs it. On a lean team, sustained on-call c
 
 **Resolved looks like:** an operations model in document 03: rotation, expectations, and how Phase 5 capacity is reserved rather than assumed.
 
+#### OI-25 — Does Phase 5's forward-deployed work need a named embedded role?
+
+**Owner:** *unassigned* · **Decides:** Sponsor with Product Owner · **Source:** [01](01-research-brief-incubator-methodologies.md), [03](03-team-structure-and-roles.md), [04](04-process-timeline-and-phases.md) · **Status:** Open
+
+Document 03 now describes **Forward Deployed Engineering** as a posture the whole IPT adopts in Phase 5 — embedding with the customer's operators, finding leverage points, building and owning against real cases — rather than a new seat on the roster. Whether that holds as engagements scale is untested: does it stay a mode the Product Owner and engineers step into, or does sustained embedding need one person spending most of their time with the customer, competing with core-track and on-call capacity (see OI-21)?
+
+**Resolved looks like:** a stated staffing model in document 03 — mode vs. dedicated seat — with the conditions under which a dedicated seat is warranted.
+
 ---
 
 ## G. Cadence and method
