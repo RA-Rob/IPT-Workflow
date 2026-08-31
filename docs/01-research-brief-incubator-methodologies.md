@@ -79,6 +79,42 @@ The common denominator — **reduce uncertainty cheaply before committing, then 
 
 ---
 
+## Difficulty comparison: our model vs. the five sources
+
+*This section answers a question raised at the tech council presentation of this research: did building our own process make this harder, easier, or about the same as any of the five methodologies we studied? A single "harder/easier" verdict hides more than it reveals, so the scoring below breaks difficulty into the dimensions that actually drive process weight. Treat the numbers as a discussion aid, not a precision instrument — the point is to make *where* the extra weight comes from legible, not to produce a defensible index.*
+
+### The dimensions
+
+Each source (and our model) is scored **1–5** on six dimensions, where **1 = lightest / least overhead** and **5 = heaviest / most rigorous**:
+
+1. **Validation speed** — how fast the method gets to a go/no-go on the idea itself, before real build spend.
+2. **Process ceremony** — meetings, artifacts, and named roles required to run the method day to day.
+3. **Org overhead** — structure required beyond the immediate small team (cross-team roles, external decision owners).
+4. **Security & authorization coverage** — how much of the method addresses secure-by-design and formal authorization (RMF/ATO).
+5. **Funding & economics coverage** — how much of the method addresses who pays for what and who owns the resulting IP.
+6. **Lifecycle coverage** — how much of idea → build → ship → operate the method actually spans.
+
+The last three dimensions are *coverage*, not ceremony — a high score there means the method solves more of the problem, not that it's needlessly heavy.
+
+### The scores
+
+| Source | Validation speed | Process ceremony | Org overhead | Security coverage | Funding coverage | Lifecycle coverage | Total |
+|---|---|---|---|---|---|---|---|
+| Amazon — Working Backwards | 2 | 2 | 2 | 1 | 1 | 2 | 10 |
+| Google Ventures — Design Sprint | 1 | 2 | 1 | 1 | 1 | 1 | 7 |
+| IDEO — Design thinking | 3 | 3 | 2 | 1 | 1 | 2 | 12 |
+| Spotify — Squad model | 1 | 2 | 4 | 1 | 1 | 2 | 11 |
+| Basecamp — Shape Up | 2 | 2 | 1 | 1 | 1 | 3 | 10 |
+| **Red Alpha IPT Workflow** | 3 | 4 | 3 | **5** | **5** | **5** | **25** |
+
+### What the scores actually say
+
+None of the five sources is a peer of our model — each solves one piece of the idea-to-product problem (validation speed, discovery rigor, team autonomy, delivery cadence), not the whole thing. So on the narrow slice each one owns, several are *lighter* than us on purpose: Google's Design Sprint is the fastest way to validate a single decision (a five-day box, nothing more); Basecamp's Shape Up carries the least organizational overhead and is explicitly built to shrink further for teams of two or three; Amazon's entry gate is a single iterated document. Spotify scores highest org overhead among the five (tribes, chapters, guilds), but that's still lighter than our model once security and funding are counted.
+
+Our model's total is highest, and almost all of that gap sits in the three coverage dimensions — security, funding, and lifecycle — where every one of the five sources scores a 1. That's not an oversight on their part; none of them had to solve for a customer-funded, secure, licensable product in a defense/government context. We built a hybrid specifically because no single source covers that ground: we borrowed Amazon's cheap validation gate, Google's sprint-as-a-tool, IDEO's discovery lens, Spotify's autonomy-with-alignment culture, and Basecamp's fixed-time/variable-scope cadence, then added the two things none of them carry — continuous RMF/authorization and a two-wallet POC/MVP funding model — because a lean team without those would either get audited out of a government contract or accidentally give away the product it's supposed to license. The extra process weight is the cost of also being funded, secure, and licensable at the same time; it is not weight added for its own sake.
+
+---
+
 ## Open questions / to resolve
 
 *These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`07-open-items.md`](07-open-items.md), the register the whole team works from.*
