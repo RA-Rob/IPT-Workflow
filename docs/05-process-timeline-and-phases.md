@@ -18,18 +18,20 @@ A note on time: the durations below are **defaults for a typical lean product**,
 
 ---
 
-## Where this workflow starts (and what sits outside it)
+## Where this process actually begins
 
-This document covers **an IPT taking a POC to product**. It begins at the moment a customer commits money, and everything before that is treated as input rather than process.
+The process does not begin at Gate 0 — **it begins with ideation.** A Red Alpha team already embedded and delivering on an existing customer's mission builds a solution to that customer's real problem; when what they built turns out to generalize beyond that one engagement, Red Alpha self-funds a POC around it and shops it to a new customer. That origin story — the actual seed of every product this workflow ever takes on — is documented in [`01-ideation-and-poc-origin.md`](01-ideation-and-poc-origin.md). It is real process, not input sitting outside the workflow.
+
+**What this document covers is the second half: the charter-and-gate machinery, from Gate 0 through Phase 5.** That machinery starts once a customer commits money, because it is built for funded delivery — a durable team, a budget, and gates with real stakes. Running ideation and POC construction through that same machinery would be the wrong trade: subjecting speculative, self-funded exploration to charter-and-gate ceremony built for a paying customer's money would slow down exactly the work that most needs to stay cheap and fast. So ideation and the POC stay outside *this document's gates* — not outside the process itself.
 
 What we assume already exists when Gate 0 convenes:
 
-- **A POC** — something Red Alpha funded and built itself, which demonstrably works and addresses a customer need or capability gap specific enough that it could have been wrong. It is a demonstration, not a product: Red Alpha-controlled environment, synthetic or sample data, nobody operating it.
-- **A funding customer** — a customer who has seen the POC and will pay to have it turned into an MVP for their environment and their mission.
+- **A POC** — something Red Alpha funded and built itself, seeded by field-sourced insight from an existing customer engagement (document 01), which demonstrably works and addresses a customer need or capability gap specific enough that it could have been wrong. It is a demonstration, not a product: Red Alpha-controlled environment, synthetic or sample data, nobody operating it.
+- **A funding customer** — a *different* customer, who has seen the POC and will pay to have it turned into an MVP for their environment and their mission.
 
-**Building the POC is deliberately out of scope here — where its idea comes from is not.** [`01-ideation-and-poc-origin.md`](01-ideation-and-poc-origin.md) documents that origin: a POC starts as field-sourced insight from a Red Alpha team already embedded in an existing customer's mission, generalized into a self-funded build once Red Alpha decides it reaches beyond that one engagement. What stays out of *this* document is the operational side of running that POC — the decision to fund one, who staffs it, how long it runs, what it must prove, and how it gets shopped. Bolting that onto this workflow would mean subjecting speculative, self-funded exploration to charter-and-gate machinery built for funded delivery, which is exactly the wrong trade. See the open questions for what's still unsettled there.
+Document 01 covers where the idea comes from and the generalization decision that turns it into a POC. What it does not yet settle — who staffs the POC build, how long it runs, what it must prove, and who shops it — is tracked in the open questions below and in OI-01.
 
-What this boundary buys us is focus. From Gate 0 onward there is a customer, a budget, and a durable team — and the process can be specific about all three.
+What Gate 0 buys us from here is focus. From Gate 0 onward there is a customer, a budget, and a durable team — and this document can be specific about all three.
 
 > **Entry condition:** A POC has proven the idea against an identified customer gap, and a funding customer has **committed** (not merely indicated interest) to pay for turning it into an MVP tailored to their environment and mission.
 
@@ -39,7 +41,8 @@ What this boundary buys us is focus. From Gate 0 onward there is a customer, a b
 
 | Phase | Purpose | Funded by | Typical duration | Ends at |
 |-------|---------|-----------|------------------|---------|
-| *(entry)* | A POC exists; a customer commits funding; charter the IPT | — | ~1 week to charter | **Gate 0 — Commit and charter** |
+| **0. Ideation & POC** *(document 01)* | Field-sourced insight from an embedded IPT's mission work generalizes beyond that customer; Red Alpha self-funds a POC and shops it | RA (self-funded) | Not yet standardized (OI-01) | A new customer commits funding → **Gate 0** |
+| *(entry)* | A customer has committed funding; charter the IPT | — | ~1 week to charter | **Gate 0 — Commit and charter** |
 | **1. Discovery & Framing** | Frame the outcome with the customer; draw the core/tailoring boundary | Customer + RA | 2–3 weeks | **Gate 1 — Green-light the MVP** |
 | **2. MVP** | Tailor the core to the customer's mission, in short reviewable cycles | Customer | 3–5 cycles (~2–4 months) | **Gate 2 — Customer acceptance** |
 | **3. Build** | Two tracks, one team: productize the core, continue tailoring | RA + Customer | 2–4 cycles (~3–6 months) | **Gate 3 — Authority & readiness to launch** |

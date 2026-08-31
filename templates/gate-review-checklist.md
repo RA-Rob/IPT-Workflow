@@ -13,7 +13,7 @@
 ## Gate 0 — Commit and charter (stand up the IPT)
 *Decision owner: **the Product Owner** — who decides to take the product from POC to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money.*
 
-*This is the entry gate. It assumes a POC already exists and has been shopped — how that happened is outside this workflow (see [`docs/05`](../docs/05-process-timeline-and-phases.md)). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
+*This is the entry gate. It assumes a POC already exists and has been shopped — where that POC's idea came from is documented in [`docs/01`](../docs/01-ideation-and-poc-origin.md); this checklist picks up at the funded-delivery machinery described in [`docs/05`](../docs/05-process-timeline-and-phases.md). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
 
 - [ ] A funding customer's money is **committed**, not merely expected or verbally encouraged.
 - [ ] There is a real, stated mission need from that customer (not a solution looking for a problem).

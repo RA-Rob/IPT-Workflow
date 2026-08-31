@@ -61,13 +61,15 @@ Three consequences follow:
 
 The return on all of this is compounding: each engagement pays for the tailoring while Red Alpha's own investment turns a proven concept into something the *next* customer can license with far less work.
 
-## When an IPT stands up (and what sits outside this model)
+## Where the model begins — ideation, then Gate 0
 
-This model covers **an IPT taking a POC to product**. It begins at a specific, reviewable moment — when a customer commits money:
+The model does not begin at Gate 0 — **it begins with ideation.** A Red Alpha team already embedded and delivering on an existing customer's mission builds a solution to that customer's real problem; when what they built generalizes beyond that one engagement, Red Alpha self-funds a POC around it and shops it to a new customer, owning the resulting IP outright. That origin is documented in [`01-ideation-and-poc-origin.md`](01-ideation-and-poc-origin.md) — it is a real, if informal, stage of this model, not input sitting outside it.
+
+What *is* kept outside this model's gates is the POC's construction — the charter-and-gate machinery below starts once a customer commits money:
 
 > **Entry condition:** A **POC** has proven the idea against an identified customer gap, and a **funding customer** has committed to pay for turning it into an **MVP** tailored to their environment and mission — meaning there is a real mission need, a plausible path to being desirable, feasible, viable, *and* securable/authorizable in that environment, and Red Alpha is willing to commit a durable team.
 
-**How a POC comes to exist is documented separately, and deliberately kept out of this model's gates.** A POC comes out of Red Alpha's own **ideation process** — funded internally by Red Alpha, with Red Alpha owning the resulting IP outright — described in [`01-ideation-and-poc-origin.md`](01-ideation-and-poc-origin.md): it originates from a Red Alpha team already embedded in an existing customer's mission, when what they build there turns out to generalize beyond that one engagement. Keeping the POC's construction out of *this* model is still a deliberate choice, not an oversight: subjecting speculative, self-funded exploration to charter-and-gate machinery designed for funded delivery would be exactly the wrong trade. What remains genuinely open — who staffs that POC build, how long it runs, what it must prove, and who shops it — is listed in the open questions below.
+Keeping the POC's construction out of the *gated* part of the model is a deliberate choice, not an oversight: subjecting speculative, self-funded exploration to charter-and-gate machinery designed for funded delivery would be exactly the wrong trade — it would slow down the cheap, fast exploration that ideation depends on. What remains genuinely open — who staffs that POC build, how long it runs, what it must prove, and who shops it — is listed in the open questions below.
 
 The payoff of that boundary is that from Gate 0 onward there is a customer, a budget, and a durable team — so the model can be specific about all three.
 

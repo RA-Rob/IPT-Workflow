@@ -75,7 +75,7 @@ The reasoning behind each is in [02 — Research Brief]({{ '/docs/02-research-br
 
 ## Scope and assumptions
 
-This workflow covers **an IPT taking a POC to product**. It starts at Gate 0 — the moment a customer commits funding — and runs through sustained operation. Everything before that is treated as input: a Red Alpha-funded POC exists and has been shopped. **Where that idea comes from is documented in [01 — Ideation & Origin]({{ '/docs/01-ideation-and-poc-origin.html' | relative_url }})**: it starts in the field, with a team already embedded on an existing customer's mission, when what they build there turns out to generalize beyond that one customer.
+This workflow doesn't start at Gate 0 — **it starts with ideation.** A team already embedded on an existing customer's mission builds something that turns out to generalize beyond that one customer, and Red Alpha self-funds a POC around it and shops it. That origin is real process, documented in [01 — Ideation & Origin]({{ '/docs/01-ideation-and-poc-origin.html' | relative_url }}), not input sitting outside the workflow. What *is* gated separately, starting at Gate 0, is everything from a funding customer's commitment through sustained operation — covered by the rest of these documents.
 
 - **Lean teams.** A standard IPT is **4–7 people**; almost everyone wears more than one hat.
 - **Two funding streams.** Red Alpha funds the licensed **core product**; the customer funds **tailoring** for their environment. Upstreaming tailoring into the core is a separate, recorded decision.
