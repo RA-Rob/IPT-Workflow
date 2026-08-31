@@ -1,4 +1,4 @@
-# 06 — Glossary and References
+# 07 — Glossary and References
 
 *Status: Draft for discussion — v0.2 — August 2026*
 
@@ -22,7 +22,7 @@
 
 **Continuous Authorization to Operate (cATO)** — A modern alternative to a point-in-time ATO: ongoing authorization based on real-time evidence, resting on three pillars — Continuous Monitoring, Active Cyber Defense, and Secure Software Supply Chain.
 
-**CONOPS (Concept of Operations)** — A description of how a system will actually be used: by whom, for what tasks, under what conditions. A funding customer may supply a CONOPS for the **stage** environment, in which case Red Alpha builds stage to it; absent one, stage mirrors what Red Alpha determines the production deployment will be (document 05).
+**CONOPS (Concept of Operations)** — A description of how a system will actually be used: by whom, for what tasks, under what conditions. A funding customer may supply a CONOPS for the **stage** environment, in which case Red Alpha builds stage to it; absent one, stage mirrors what Red Alpha determines the production deployment will be (document 06).
 
 **Continuous Monitoring (CONMON)** — Automated, real-time visibility into the state of security controls; the pillar of cATO that replaces periodic re-assessment with ongoing awareness.
 
@@ -40,13 +40,15 @@
 
 **DevSecOps** — Folding security into the automated build/test/ship pipeline so security is enforced on every change rather than checked at the end; the mechanism behind the Secure Software Supply Chain.
 
-**Forward Deployed Engineer (FDE)** — A practice, common across AI labs (OpenAI, Anthropic) and pioneered by Palantir, of staying embedded with a customer's own operators to find the highest-leverage, lowest-risk point to apply a capability, build and evaluate it against real cases, and own the result through actual production use. At Red Alpha this is not a new function on the roster but the **posture** the durable IPT adopts in **Phase 5 — Operate & Iterate** (document 01 §6, document 03, document 04).
+**Forward Deployed Engineer (FDE)** — A practice, common across AI labs (OpenAI, Anthropic) and pioneered by Palantir, of staying embedded with a customer's own operators to find the highest-leverage, lowest-risk point to apply a capability, build and evaluate it against real cases, and own the result through actual production use. At Red Alpha this is not a new function on the roster but the **posture** the durable IPT adopts in **Phase 5 — Operate & Iterate** (document 02 §6, document 04, document 05).
 
 **Funding customer** — The customer who, having seen a **POC**, funds the work to turn it into an **MVP** for their own environment and mission. Distinct from the Red Alpha **sponsor**: the sponsor commits Red Alpha's people and core-product money, the funding customer commits money for **tailoring** and, crucially, commits their operators' time to evaluate each increment. Sits outside the IPT but is the decision owner at **Gate 2**.
 
 **Gate** — In the Red Alpha model, a short, explicit decision point where the accountable parties decide to continue, adjust, or stop. Gate 0 opens the work by chartering the IPT; after that, Gate N closes Phase N. Most gates are decided inside Red Alpha by the **Product Owner** (Gate 0 is the Product Owner's alone; the sponsor commits the team and funding once it's made); **Gate 2** belongs to the **funding customer**, and **Gate 3** requires the **Authorizing Official** as well.
 
 **Hill chart** — From Shape Up: a way to show each piece of work's true status by placing it on a hill — uphill = "still figuring it out," downhill = "just execution."
+
+**Ideation process** — Red Alpha's internally funded, pre-Gate-0 route to a **POC**: a Red Alpha team already embedded and delivering on an existing customer's mission builds something that turns out to generalize beyond that one engagement, and Red Alpha self-funds a POC around the generalized capability to shop to a different customer. See document 01.
 
 **Impact level** — Low / moderate / high categorization of a system's security sensitivity, which determines the applicable control baseline.
 
@@ -60,7 +62,7 @@
 
 **Plan of Action & Milestones (POA&M)** — The documented list of known security gaps and the plan/timeline to close them.
 
-**POC (Proof of Concept)** — A build Red Alpha funds **itself**, against a customer need or capability gap it has identified, to prove the idea is real: that the approach works technically and that it addresses something someone actually cares about. Its audience is first Red Alpha's own leadership and then prospective customers — a POC exists to be **shopped**, and its success condition is a customer interested enough to fund the next stage. It is deliberately narrow and time-boxed, runs in a **stage** instance Red Alpha controls, holds no real customer data, and carries no authorization. It is a demonstration, not something anyone operates. A POC comes out of Red Alpha's internally funded **ideation process** — separate from this IPT workflow — and Red Alpha owns the resulting IP outright. How that process staffs and runs a POC still sits **outside** the IPT workflow — that workflow starts once a customer commits money (document 04). See **POC vs. MVP** below.
+**POC (Proof of Concept)** — A build Red Alpha funds **itself**, against a customer need or capability gap it has identified, to prove the idea is real: that the approach works technically and that it addresses something someone actually cares about. Its audience is first Red Alpha's own leadership and then prospective customers — a POC exists to be **shopped**, and its success condition is a customer interested enough to fund the next stage. It is deliberately narrow and time-boxed, runs in a **stage** instance Red Alpha controls, holds no real customer data, and carries no authorization. It is a demonstration, not something anyone operates. A POC comes out of Red Alpha's internally funded **ideation process** — separate from this IPT workflow, with Red Alpha owning the resulting IP outright — which starts in the field, from a team already embedded on an existing customer's mission, when what they build there generalizes beyond that one engagement (document 01). How that process staffs and runs a POC still sits **outside** the IPT workflow — that workflow starts once a customer commits money (document 05). See **POC vs. MVP** below.
 
 **PR/FAQ** — Amazon's "Working Backwards" artifact: a mock press release describing the finished product from the customer's view, plus an FAQ answering the hard questions — written *before* building.
 
@@ -76,7 +78,7 @@
 
 **Squad** — From Spotify: a small, cross-functional, autonomous team owning a mission. At 4–7 people a Red Alpha IPT effectively *is* one squad.
 
-**Stage (evaluation environment)** — The middle environment in the `dev → stage → prod` promotion path, and the one the **funding customer** has access to. Each **MVP** cycle ends with working capability promoted to stage, where the customer's own people exercise it against realistic tasks and approve or redirect the next cycle. Stage is what makes "incremental delivery for customer review" a concrete mechanism rather than a good intention. It is a **pre-production and/or pre-sales** environment: it always runs inside **Red Alpha's controlled environment** (on premises or Red Alpha's cloud, never the customer's enclave), it is shaped by the customer's stage **CONOPS** where they supply one and otherwise mirrors Red Alpha's intended production deployment, its data may be customer-supplied or Red Alpha-provided, and it **may be replicated so long as every instance runs the same release as the upstream mainline**. It carries no authorization to operate and no mission dependency — it is not the pilot. Because people outside Red Alpha touch it, its data handling and access controls are a security concern in their own right (document 05).
+**Stage (evaluation environment)** — The middle environment in the `dev → stage → prod` promotion path, and the one the **funding customer** has access to. Each **MVP** cycle ends with working capability promoted to stage, where the customer's own people exercise it against realistic tasks and approve or redirect the next cycle. Stage is what makes "incremental delivery for customer review" a concrete mechanism rather than a good intention. It is a **pre-production and/or pre-sales** environment: it always runs inside **Red Alpha's controlled environment** (on premises or Red Alpha's cloud, never the customer's enclave), it is shaped by the customer's stage **CONOPS** where they supply one and otherwise mirrors Red Alpha's intended production deployment, its data may be customer-supplied or Red Alpha-provided, and it **may be replicated so long as every instance runs the same release as the upstream mainline**. It carries no authorization to operate and no mission dependency — it is not the pilot. Because people outside Red Alpha touch it, its data handling and access controls are a security concern in their own right (document 06).
 
 **System Security Plan (SSP)** — The document describing how a system implements its selected security controls (RMF step 4).
 
@@ -107,7 +109,7 @@ These two terms get used interchangeably in casual conversation, and the confusi
 | **Fate of the code** | Informs the core product; rarely shipped as-is | Core parts hardened into the licensed product; tailoring dispositioned in the **upstream log** |
 | **Ends at** | A customer who will fund the next stage — or a shelf | **Gate 2** — the customer accepts it and funds continued work |
 
-The through-line: a POC is Red Alpha spending its own money to earn the right to a conversation. An MVP is a customer spending theirs to find out whether the answer fits their mission — which is why it is delivered in short, reviewable increments rather than as a single reveal. Full phase-by-phase detail is in [`04-process-timeline-and-phases.md`](04-process-timeline-and-phases.md).
+The through-line: a POC is Red Alpha spending its own money to earn the right to a conversation. An MVP is a customer spending theirs to find out whether the answer fits their mission — which is why it is delivered in short, reviewable increments rather than as a single reveal. Full phase-by-phase detail is in [`05-process-timeline-and-phases.md`](05-process-timeline-and-phases.md).
 
 ---
 

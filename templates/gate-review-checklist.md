@@ -1,6 +1,6 @@
 # Gate-Review Checklist
 
-*Companion to [`docs/04-process-timeline-and-phases.md`](../docs/04-process-timeline-and-phases.md). A gate review is a short, honest decision — not a ceremony. Every gate has three possible outcomes: **Proceed**, **Iterate/Re-scope**, or **Stop**. Copy the relevant section into your product's working notes and check the boxes live in the review.*
+*Companion to [`docs/05-process-timeline-and-phases.md`](../docs/05-process-timeline-and-phases.md). A gate review is a short, honest decision — not a ceremony. Every gate has three possible outcomes: **Proceed**, **Iterate/Re-scope**, or **Stop**. Copy the relevant section into your product's working notes and check the boxes live in the review.*
 
 **How to run one:** 30 minutes, the IPT plus the gate's decision owner(s). Walk the checklist, decide, and record the one-line decision at the bottom of each section. If a box can't be checked, that's the conversation — don't check it to be polite.
 
@@ -13,7 +13,7 @@
 ## Gate 0 — Commit and charter (stand up the IPT)
 *Decision owner: **the Product Owner** — who decides to take the product from POC to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money.*
 
-*This is the entry gate. It assumes a POC already exists and has been shopped — how that happened is outside this workflow (see [`docs/04`](../docs/04-process-timeline-and-phases.md)). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
+*This is the entry gate. It assumes a POC already exists and has been shopped — how that happened is outside this workflow (see [`docs/05`](../docs/05-process-timeline-and-phases.md)). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
 
 - [ ] A funding customer's money is **committed**, not merely expected or verbally encouraged.
 - [ ] There is a real, stated mission need from that customer (not a solution looking for a problem).

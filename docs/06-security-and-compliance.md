@@ -1,4 +1,4 @@
-# 05 — Security and Compliance, Woven Into the Process
+# 06 — Security and Compliance, Woven Into the Process
 
 *Status: Draft for discussion — v0.2 — August 2026*
 
@@ -6,7 +6,7 @@
 
 Because Red Alpha's products may serve defense and government customers, they must be **secure by design and authorizable to operate**. The single most common way software programs fail in this context is by treating security and authorization as a gate they sprint toward at the very end — discovering, weeks before launch, that the architecture can't be authorized or that a control was never designed in. Our model refuses that pattern. Security is a **continuous property of how the IPT works**, present from Gate 0 through operations, not a phase at the end.
 
-This document explains the security and compliance landscape in plain terms and maps it onto the phases and gates from document 04. It is written to be read by the whole team, not only the Security Lead — because on a lean team, security is everyone's job even though one person owns it.
+This document explains the security and compliance landscape in plain terms and maps it onto the phases and gates from document 05. It is written to be read by the whole team, not only the Security Lead — because on a lean team, security is everyone's job even though one person owns it.
 
 > **Important caveat for reviewers.** The specific frameworks below (NIST RMF, ATO/cATO, DoD DevSecOps) are the general, publicly documented U.S. government approaches. The *exact* controls, authorization boundary, and authority that apply to any given Red Alpha product depend on that product's customer, data, and environment. Treat this as the shared mental model; the Security Lead tailors the specifics per product with the actual Authorizing Official.
 
@@ -41,15 +41,15 @@ A traditional ATO is a **point-in-time** decision, often valid for around three 
 - **Active Cyber Defense (ACD)** — real-time threat detection and response, integration with security services, and regular testing; proactive defense, not just reactive incident handling.
 - **Secure Software Supply Chain (SSSC)** — security built into the entire development lifecycle via DevSecOps: approved reference designs, infrastructure-as-code, and automated security checkpoints in the pipeline.
 
-For the team, the payoff is direct: cATO lets us **ship updates and patches frequently without waiting on a full re-authorization each time**, shrinking vulnerability windows while *keeping* authorization — exactly the cadence our cycle-based build process (document 04) is designed to produce.
+For the team, the payoff is direct: cATO lets us **ship updates and patches frequently without waiting on a full re-authorization each time**, shrinking vulnerability windows while *keeping* authorization — exactly the cadence our cycle-based build process (document 05) is designed to produce.
 
 ## DevSecOps: how security becomes automatic
 
-The mechanism that makes "secure by design" and cATO real is **DevSecOps** — folding security into the same automated pipeline that builds, tests, and ships the software (the "software factory" pattern). Instead of a human checking security at the end, the **pipeline enforces it on every change**: dependency and vulnerability scanning, policy-as-code checks, hardened build environments, signed artifacts, and infrastructure defined as code so environments are consistent and reviewable. This is why the Delivery/Platform and Security functions in document 03 are tightly paired — the pipeline *is* the security control.
+The mechanism that makes "secure by design" and cATO real is **DevSecOps** — folding security into the same automated pipeline that builds, tests, and ships the software (the "software factory" pattern). Instead of a human checking security at the end, the **pipeline enforces it on every change**: dependency and vulnerability scanning, policy-as-code checks, hardened build environments, signed artifacts, and infrastructure defined as code so environments are consistent and reviewable. This is why the Delivery/Platform and Security functions in document 04 are tightly paired — the pipeline *is* the security control.
 
 ## Mapping security to the IPT timeline
 
-Security work is distributed across the phases and gates from document 04 so that nothing is left to the end:
+Security work is distributed across the phases and gates from document 05 so that nothing is left to the end:
 
 | Phase / Gate | RMF & security activity |
 |--------------|-------------------------|
@@ -67,7 +67,7 @@ The key scheduling insight: **authorization work runs in parallel with build the
 
 ## The stage environment is a security concern, not a scratch pad
 
-The mechanism that makes incremental customer delivery real is **stage** — the middle environment in the `dev → stage → prod` path, where each cycle's working capability lands for the customer's own people to exercise (document 04). It deserves explicit treatment here because it is the first place in the lifecycle where **people outside Red Alpha touch a running system**, and it is easy to treat it with dev-environment casualness while it accumulates production-shaped risk.
+The mechanism that makes incremental customer delivery real is **stage** — the middle environment in the `dev → stage → prod` path, where each cycle's working capability lands for the customer's own people to exercise (document 05). It deserves explicit treatment here because it is the first place in the lifecycle where **people outside Red Alpha touch a running system**, and it is easy to treat it with dev-environment casualness while it accumulates production-shaped risk.
 
 The rules below are settled policy, not options to be re-litigated per engagement; what each engagement decides is recorded in its charter.
 
@@ -107,7 +107,7 @@ These accumulate across the timeline rather than being written at the end:
 
 ## Open questions / to resolve
 
-*These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`07-open-items.md`](07-open-items.md), the register the whole team works from.*
+*These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`08-open-items.md`](08-open-items.md), the register the whole team works from.*
 
 - **How many replicated stage instances can a lean team actually keep at mainline release parity**, given that parity is a hard rule rather than an aspiration? This is a real constraint on how many pre-sales demonstrations we can carry at once.
 - **Who owns a pre-sales stage instance** — an IPT that has no funding customer for it yet, or the business-development side — and how long does such an instance live before it is torn down?
@@ -118,4 +118,4 @@ These accumulate across the timeline rather than being written at the end:
 - Should the **Security Lead** be embedded per IPT or shared across teams as a security "chapter" at our current size?
 - How much of the control baseline can be **inherited from the core product** by each new customer's tailored instance? Getting this right is what makes the second engagement cheaper than the first.
 
-*Framework definitions and the source list are in [`06-glossary-and-references.md`](06-glossary-and-references.md).*
+*Framework definitions and the source list are in [`07-glossary-and-references.md`](07-glossary-and-references.md).*

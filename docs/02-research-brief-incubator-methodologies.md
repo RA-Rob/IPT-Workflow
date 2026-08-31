@@ -1,4 +1,4 @@
-# 01 — Research Brief: How the Best Product Builders Turn Ideas Into Products
+# 02 — Research Brief: How the Best Product Builders Turn Ideas Into Products
 
 *Status: Draft for discussion — v0.1 — August 2026*
 
@@ -60,7 +60,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 
 **Why it succeeds.** A general AI capability and a specific business process do not meet on their own — someone has to translate a vague executive ask ("speed up claims processing") into a small, safe, measurably valuable build, because handing that translation entirely to the model or entirely to the customer produces either a dangerous amount of autonomy or a vague goal nobody can build against. And because AI software can now make decisions and take actions rather than just move data around, small misunderstandings travel a lot farther than in ordinary enterprise software — which raises the cost of *not* having someone who owns the whole arc from leverage point to production outcome.
 
-**Lesson for Red Alpha.** We already have the durable, embedded team this practice assumes — that is the point of an IPT. What we add explicitly is the *posture* the team takes once a product is live: in **Phase 5 (Operate & Iterate)**, the IPT works forward-deployed with the customer's own operators — finding the next high-leverage, low-risk automation point, building and evaluating against real cases, and owning the result through actual use. See document 03's role description and document 04's Phase 5.
+**Lesson for Red Alpha.** We already have the durable, embedded team this practice assumes — that is the point of an IPT. What we add explicitly is the *posture* the team takes once a product is live: in **Phase 5 (Operate & Iterate)**, the IPT works forward-deployed with the customer's own operators — finding the next high-leverage, low-risk automation point, building and evaluating against real cases, and owning the result through actual use. See document 04's role description and document 05's Phase 5 — and document 01 for how this same forward-deployed work is also where the next product's idea comes from.
 
 ---
 
@@ -68,14 +68,14 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 
 | Source | Core idea we adopt | Where it shows up in our model |
 |--------|--------------------|-------------------------------|
-| Amazon | Write the customer outcome first (PR/FAQ); small end-to-end teams | Entry gate; IPT ownership model (doc 02, 04) |
-| Google | Time-boxed sprint to validate risky decisions cheaply; a Decider | Discovery/validation tool; Product Owner as Decider (doc 03, 04) |
-| IDEO | Human-centered discovery; desirable/feasible/viable filter | Discovery phase and gate criteria (doc 04) |
-| Spotify | Autonomy + alignment; culture over org chart; chapters for scaling | IPT autonomy; scaling plan (doc 02, 03) |
-| Basecamp | Appetite (fixed time / variable scope); betting; circuit breaker | Cycle-based delivery and cadence (doc 04) |
-| OpenAI / Anthropic / Palantir | Stay embedded with the customer to find the highest-leverage, safest point to apply the capability; build and evaluate against real cases; own the outcome through production use | The IPT's forward-deployed posture in Phase 5 (doc 03, 04) |
+| Amazon | Write the customer outcome first (PR/FAQ); small end-to-end teams | Entry gate; IPT ownership model (doc 03, 05) |
+| Google | Time-boxed sprint to validate risky decisions cheaply; a Decider | Discovery/validation tool; Product Owner as Decider (doc 04, 05) |
+| IDEO | Human-centered discovery; desirable/feasible/viable filter | Discovery phase and gate criteria (doc 05) |
+| Spotify | Autonomy + alignment; culture over org chart; chapters for scaling | IPT autonomy; scaling plan (doc 03, 04) |
+| Basecamp | Appetite (fixed time / variable scope); betting; circuit breaker | Cycle-based delivery and cadence (doc 05) |
+| OpenAI / Anthropic / Palantir | Stay embedded with the customer to find the highest-leverage, safest point to apply the capability; build and evaluate against real cases; own the outcome through production use | The IPT's forward-deployed posture in Phase 5, and the source of the next product's idea (doc 01, 04, 05) |
 
-The common denominator — **reduce uncertainty cheaply before committing, then let a small empowered team own delivery end to end** — is the foundation of the Red Alpha IPT model described in document 02.
+The common denominator — **reduce uncertainty cheaply before committing, then let a small empowered team own delivery end to end** — is the foundation of the Red Alpha IPT model described in document 03.
 
 ---
 
@@ -117,11 +117,11 @@ Our model's total is highest, and almost all of that gap sits in the three cover
 
 ## Open questions / to resolve
 
-*These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`07-open-items.md`](07-open-items.md), the register the whole team works from.*
+*These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`08-open-items.md`](08-open-items.md), the register the whole team works from.*
 
 - Do we want a *mandatory* PR/FAQ at the entry gate, or only for larger bets?
 - How often (if ever) do we actually run a full five-day Design Sprint versus a lighter one- or two-day validation?
 - What cycle length fits Red Alpha best — the classic six weeks, or shorter given our size and cadence?
 - Does Phase 5's forward-deployed work need a named embedded role, or is it the existing Product Owner / engineering hats simply working in that mode?
 
-*Sources for this brief are consolidated in [`06-glossary-and-references.md`](06-glossary-and-references.md).*
+*Sources for this brief are consolidated in [`07-glossary-and-references.md`](07-glossary-and-references.md).*

@@ -19,26 +19,29 @@ sections:
 
   - title: The workflow
     items:
-      - title: 01 — Research Brief
-        url: /docs/01-research-brief-incubator-methodologies.html
+      - title: 01 — Ideation & Origin
+        url: /docs/01-ideation-and-poc-origin.html
+        blurb: Where the idea comes from, before there's even a POC
+      - title: 02 — Research Brief
+        url: /docs/02-research-brief-incubator-methodologies.html
         blurb: How five of the best product builders work, and what we take from each
-      - title: 02 — The Model
-        url: /docs/02-ipt-model-overview.html
+      - title: 03 — The Model
+        url: /docs/03-ipt-model-overview.html
         blurb: What an IPT is, the guiding principles, and when one stands up
-      - title: 03 — Team & Roles
-        url: /docs/03-team-structure-and-roles.html
+      - title: 04 — Team & Roles
+        url: /docs/04-team-structure-and-roles.html
         blurb: The lean 4–7 person team, its seven functions, hats, and RACI
-      - title: 04 — Process & Gates
-        url: /docs/04-process-timeline-and-phases.html
+      - title: 05 — Process & Gates
+        url: /docs/05-process-timeline-and-phases.html
         blurb: POC to MVP to product — five phases, five gates, and a worked timeline
-      - title: 05 — Security & Compliance
-        url: /docs/05-security-and-compliance.html
+      - title: 06 — Security & Compliance
+        url: /docs/06-security-and-compliance.html
         blurb: RMF, ATO/cATO and DevSecOps woven through every phase
-      - title: 06 — Glossary & References
-        url: /docs/06-glossary-and-references.html
+      - title: 07 — Glossary & References
+        url: /docs/07-glossary-and-references.html
         blurb: Definitions, POC vs. MVP side by side, and the verified source list
-      - title: 07 — Open Items
-        url: /docs/07-open-items.html
+      - title: 08 — Open Items
+        url: /docs/08-open-items.html
         blurb: Every unsettled question in one register, with owners and what "resolved" looks like
 
   - title: Templates

@@ -17,7 +17,7 @@ The expensive mistake in software is *building the wrong thing well.* So the wor
 1. **Reduce uncertainty cheaply, before committing** — frame the outcome and validate the riskiest assumptions on paper or with a throwaway prototype.
 2. **Then let a small, empowered team own delivery end to end** — in fixed-time cycles, with security designed in from day one.
 
-Both come from studying how the best builders work: Amazon, Google Ventures, IDEO, Spotify, and Basecamp (see [`docs/01`](./docs/01-research-brief-incubator-methodologies.md)).
+Both come from studying how the best builders work: Amazon, Google Ventures, IDEO, Spotify, and Basecamp (see [`docs/02`](./docs/02-research-brief-incubator-methodologies.md)).
 
 Two facts about how Red Alpha is funded shape everything downstream of that:
 
@@ -29,21 +29,22 @@ Two facts about how Red Alpha is funded shape everything downstream of that:
 | Path | What it covers |
 |------|----------------|
 | [`EXECUTIVE-SUMMARY.md`](./EXECUTIVE-SUMMARY.md) | One-page overview for leadership |
-| [`docs/01-research-brief-incubator-methodologies.md`](./docs/01-research-brief-incubator-methodologies.md) | Baseline research: five top product/idea companies and why they succeed |
-| [`docs/02-ipt-model-overview.md`](./docs/02-ipt-model-overview.md) | The Red Alpha idea-to-product model: philosophy, principles, when an IPT stands up |
-| [`docs/03-team-structure-and-roles.md`](./docs/03-team-structure-and-roles.md) | The lean 4–7 person IPT: roles, multi-hat assignments, responsibilities (RACI) |
-| [`docs/04-process-timeline-and-phases.md`](./docs/04-process-timeline-and-phases.md) | End-to-end timeline: five phases, five gates, POC → MVP → product, artifacts, worked schedule |
-| [`docs/05-security-and-compliance.md`](./docs/05-security-and-compliance.md) | Security-first / defense context: RMF, ATO/cATO, DevSecOps woven into the process; the `stage` boundary |
-| [`docs/06-glossary-and-references.md`](./docs/06-glossary-and-references.md) | Definitions, a POC-vs-MVP comparison, and the full verified source list |
-| [`docs/07-open-items.md`](./docs/07-open-items.md) | The open-items register: every unsettled question, its owner, who decides, and what "resolved" looks like |
+| [`docs/01-ideation-and-poc-origin.md`](./docs/01-ideation-and-poc-origin.md) | The entry point: where an idea (and the POC built from it) comes from, before Gate 0 |
+| [`docs/02-research-brief-incubator-methodologies.md`](./docs/02-research-brief-incubator-methodologies.md) | Baseline research: five top product/idea companies and why they succeed |
+| [`docs/03-ipt-model-overview.md`](./docs/03-ipt-model-overview.md) | The Red Alpha idea-to-product model: philosophy, principles, when an IPT stands up |
+| [`docs/04-team-structure-and-roles.md`](./docs/04-team-structure-and-roles.md) | The lean 4–7 person IPT: roles, multi-hat assignments, responsibilities (RACI) |
+| [`docs/05-process-timeline-and-phases.md`](./docs/05-process-timeline-and-phases.md) | End-to-end timeline: five phases, five gates, POC → MVP → product, artifacts, worked schedule |
+| [`docs/06-security-and-compliance.md`](./docs/06-security-and-compliance.md) | Security-first / defense context: RMF, ATO/cATO, DevSecOps woven into the process; the `stage` boundary |
+| [`docs/07-glossary-and-references.md`](./docs/07-glossary-and-references.md) | Definitions, a POC-vs-MVP comparison, and the full verified source list |
+| [`docs/08-open-items.md`](./docs/08-open-items.md) | The open-items register: every unsettled question, its owner, who decides, and what "resolved" looks like |
 | [`templates/ipt-charter-template.md`](./templates/ipt-charter-template.md) | Fill-in charter for standing up an IPT at Gate 0 |
 | [`templates/gate-review-checklist.md`](./templates/gate-review-checklist.md) | Entry/exit criteria and decision owners for Gates 0–4, plus the per-cycle customer evaluation |
 
-**Suggested first read:** `docs/02` → `docs/03` → `docs/04` → `docs/05`, with `docs/01` as background and `docs/06` as reference. `docs/07` is the register of what is still unsettled — start there if you came to help settle something.
+**Suggested first read:** `docs/01` → `docs/03` → `docs/04` → `docs/05` → `docs/06`, with `docs/02` as background and `docs/07` as reference. `docs/08` is the register of what is still unsettled — start there if you came to help settle something.
 
 ## Scope and assumptions
 
-This workflow covers **an IPT taking a POC to product**. It starts at **Gate 0 — the moment a customer commits funding** — and runs through sustained operation. Everything before that is treated as input: a Red Alpha-funded POC exists and has been shopped. **How a POC comes to exist is deliberately out of scope** — who funds it, who staffs it before any IPT exists, what it must prove, and how it gets shopped belong to a broader ideation-to-product concept we have not written down yet. That gap is the most significant piece of unwritten work around this repository. Key assumptions, called out where they matter:
+This workflow covers **an IPT taking a POC to product**. It starts at **Gate 0 — the moment a customer commits funding** — and runs through sustained operation. Everything before that is treated as input: a Red Alpha-funded POC exists and has been shopped. **Where that POC's idea comes from is now documented in [`docs/01-ideation-and-poc-origin.md`](./docs/01-ideation-and-poc-origin.md):** it originates in the field, from a development team already embedded and working a mission for an existing customer, when the solution they build for that customer turns out to generalize into something Red Alpha can build a POC around and shop to someone else. What's still open is operational, not conceptual — who staffs that POC build, how long it runs, what it must prove, and who shops it — tracked as OI-01 in [`docs/08-open-items.md`](./docs/08-open-items.md). Key assumptions, called out where they matter:
 
 - **Lean teams.** A standard IPT is **4–7 people**; almost everyone wears more than one hat.
 - **Two funding streams, one team.** Red Alpha funds the licensed **core product**; the customer funds **tailoring** for their environment. Every piece of work carries a funding source, and every upstream promotion is recorded.
@@ -70,7 +71,7 @@ The important property: **the documents themselves carry no site metadata.** No 
 
 Two consequences worth knowing:
 
-- Cross-references between documents must be written as **relative Markdown links** (`[text](../docs/05-security-and-compliance.md)`), which work both on GitHub and on the site. A bare backticked filename renders as inert text.
+- Cross-references between documents must be written as **relative Markdown links** (`[text](../docs/06-security-and-compliance.md)`), which work both on GitHub and on the site. A bare backticked filename renders as inert text.
 - The site relies on GitHub's built-in Jekyll build. If it is ever switched to a GitHub Actions workflow, those three default plugins must be declared in a `Gemfile` explicitly or every page loses its title and cross-links.
 
 ## Repository tooling (optional)
@@ -100,8 +101,8 @@ This is a living knowledge base, so contributions are expected to be *arguments 
 
 - Each document carries a **status line and revision date** (`Draft`, `In review`, or `Adopted`). Treat everything as **Draft for discussion** unless its status says otherwise.
 - Each document ends with an **"Open questions / to resolve"** section — the fastest way to see what's still unsettled. If your change settles one, remove it from that list and reflect the decision in the body.
-- Documents are numbered and cross-reference each other by number (`docs/03`). If you move or renumber content, fix the inbound references — including those in `EXECUTIVE-SUMMARY.md` and `templates/`.
-- New terms and acronyms get an entry in [`docs/06-glossary-and-references.md`](./docs/06-glossary-and-references.md); new external claims get a verified source in its reference list.
+- Documents are numbered and cross-reference each other by number (`docs/04`). If you move or renumber content, fix the inbound references — including those in `EXECUTIVE-SUMMARY.md` and `templates/`.
+- New terms and acronyms get an entry in [`docs/07-glossary-and-references.md`](./docs/07-glossary-and-references.md); new external claims get a verified source in its reference list.
 
 **How to propose a change**
 

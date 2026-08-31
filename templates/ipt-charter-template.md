@@ -1,6 +1,6 @@
 # IPT Charter — [Product Name]
 
-*Template — fill in the bracketed fields. A charter should fit on one page. Complete it at **Gate 0 (Commit and charter)** — once a funding customer has committed (see [`docs/04-process-timeline-and-phases.md`](../docs/04-process-timeline-and-phases.md)) — and revisit it at each gate.*
+*Template — fill in the bracketed fields. A charter should fit on one page. Complete it at **Gate 0 (Commit and charter)** — once a funding customer has committed (see [`docs/05-process-timeline-and-phases.md`](../docs/05-process-timeline-and-phases.md)) — and revisit it at each gate.*
 
 | Field | Value |
 |-------|-------|
@@ -23,7 +23,7 @@
 
 ## 3. What the customer's money buys — and what stays ours
 
-*The split that keeps the rest of the engagement honest. Revisit it at every gate; it will move as we learn, but it should always be written down. See [`docs/04-process-timeline-and-phases.md`](../docs/04-process-timeline-and-phases.md).*
+*The split that keeps the rest of the engagement honest. Revisit it at every gate; it will move as we learn, but it should always be written down. See [`docs/05-process-timeline-and-phases.md`](../docs/05-process-timeline-and-phases.md).*
 
 - **Core product (Red Alpha-funded, Red Alpha-owned, licensed to the customer):** [first read on what belongs here]
 - **Tailoring (customer-funded, specific to this environment/mission):** [first read on what belongs here]
@@ -41,7 +41,7 @@
 
 ## 5. The team and their hats
 
-*Every one of the seven core functions must have a named owner, even if one person wears two hats. See [`docs/03-team-structure-and-roles.md`](../docs/03-team-structure-and-roles.md).*
+*Every one of the seven core functions must have a named owner, even if one person wears two hats. See [`docs/04-team-structure-and-roles.md`](../docs/04-team-structure-and-roles.md).*
 
 | Function | Owner | Second hat? |
 |----------|-------|-------------|
@@ -61,7 +61,7 @@
 - **Technical tie-breaker (*how*):** [Tech Lead]
 - **MVP acceptance (Gate 2):** [named customer decision-maker] — *this one is not ours*
 - **Risk-acceptance / authorization authority:** [Authorizing Official]
-- **Gate decisions:** per [`docs/04-process-timeline-and-phases.md`](../docs/04-process-timeline-and-phases.md) — Gate 0 = the Product Owner (sponsor then commits the team and funding); Gate 1 = Product Owner + sponsor concurrence + customer agreement on tailoring scope; **Gate 2 = the funding customer**; Gate 3 = Product Owner + Security Lead + AO; Gate 4 = Product Owner + Sponsor, customer confirming the operating model.
+- **Gate decisions:** per [`docs/05-process-timeline-and-phases.md`](../docs/05-process-timeline-and-phases.md) — Gate 0 = the Product Owner (sponsor then commits the team and funding); Gate 1 = Product Owner + sponsor concurrence + customer agreement on tailoring scope; **Gate 2 = the funding customer**; Gate 3 = Product Owner + Security Lead + AO; Gate 4 = Product Owner + Sponsor, customer confirming the operating model.
 - **Mid-cycle customer requests:** routed to the next bet by the Product Owner, never injected into a cycle in flight.
 
 ## 7. Appetite and cadence for the next phase
@@ -74,7 +74,7 @@
 
 ## 8. Initial risk & security read
 
-[3–5 bullets from the Security Lead: likely impact level, obvious authorization constraints in the customer's environment, whether we build on an existing authorized platform, the stage environment's boundary, biggest unknowns. See [`docs/05-security-and-compliance.md`](../docs/05-security-and-compliance.md).]
+[3–5 bullets from the Security Lead: likely impact level, obvious authorization constraints in the customer's environment, whether we build on an existing authorized platform, the stage environment's boundary, biggest unknowns. See [`docs/06-security-and-compliance.md`](../docs/06-security-and-compliance.md).]
 
 ## 9. What success looks like
 
