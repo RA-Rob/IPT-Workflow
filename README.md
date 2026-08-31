@@ -1,6 +1,6 @@
 # IPT Workflow
 
-Red Alpha's standard way of turning a self-funded **proof of concept** into a shipped, secure, licensable software product — by way of a customer-funded **MVP** tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional **Integrated Product Teams (IPTs)**.
+Red Alpha's standard way of turning a self-funded **proof of concept** into a shipped, secure, licensable software product — by way of a customer-funded **MVP** tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional **Integrated Project Teams (IPTs)**.
 
 This repository is a **living, iterative knowledge base**, not a finished standard. It is meant to be read, argued with, and revised by the Red Alpha team. Once the ideas here stabilize through discussion, we pull them into other forms (decks, checklists, charters) without rewriting the underlying thinking.
 

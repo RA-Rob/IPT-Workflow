@@ -4,7 +4,7 @@
 
 ## Bottom line up front
 
-**A small, durable Integrated Product Team takes a proven POC to a shipped product in about eight months from the day a customer commits funding — and the customer approves the direction every two to three weeks along the way, not once at the end.**
+**A small, durable Integrated Project Team takes a proven POC to a shipped product in about eight months from the day a customer commits funding — and the customer approves the direction every two to three weeks along the way, not once at the end.**
 
 - **Two stages, two wallets.** Red Alpha funds a **POC** to prove an idea against a real capability gap, then shops it. A **funding customer** then pays for the **tailoring** that makes it work in *their* environment for *their* mission. POC earns interest; MVP earns commitment. They are not the same thing and conflating them is how programs get into trouble.
 - **We keep the asset.** The **core product stays Red Alpha's and is licensed** to the customer. Customer money buys the "does it work for me?" fringe development, not the product. Promoting any of that tailoring into the core is a separate decision, recorded with its reasoning — which protects the customer from funding our roadmap and us from giving away the core by accident.
@@ -18,7 +18,7 @@
 
 ---
 
-**What this is.** A standard, repeatable way for Red Alpha to turn a proven proof of concept into a shipped, secure, supportable software product we own and license — by way of a customer-funded MVP tailored to that customer's mission, delivered in short reviewable increments. The vehicle is a small, durable, cross-functional **Integrated Product Team (IPT)**.
+**What this is.** A standard, repeatable way for Red Alpha to turn a proven proof of concept into a shipped, secure, supportable software product we own and license — by way of a customer-funded MVP tailored to that customer's mission, delivered in short reviewable increments. The vehicle is a small, durable, cross-functional **Integrated Project Team (IPT)**.
 
 **Where this workflow starts and stops.** It covers **an IPT taking a POC to product**: it begins the moment a customer commits funding and runs through sustained operation. How a POC comes to exist — who funds it, who staffs it before any IPT exists, what it must prove, who shops it — is deliberately **out of scope**, because subjecting speculative self-funded exploration to charter-and-gate machinery built for funded delivery would be the wrong trade. It is also the largest gap in our documented pipeline, and closing it is the first ask below.
 

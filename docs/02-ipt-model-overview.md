@@ -4,11 +4,11 @@
 
 ## What this document is
 
-This is the heart of the knowledge base: Red Alpha's **standard model for turning a proven concept into a real, supportable, licensable software product** — by way of a customer-funded MVP tailored to that customer's mission. It defines what we mean by an Integrated Product Team, the principles that govern how one operates, when one stands up, and how the whole thing fits together. Documents 03, 04, and 05 then detail the team, the timeline, and the security dimension respectively.
+This is the heart of the knowledge base: Red Alpha's **standard model for turning a proven concept into a real, supportable, licensable software product** — by way of a customer-funded MVP tailored to that customer's mission. It defines what we mean by an Integrated Project Team, the principles that govern how one operates, when one stands up, and how the whole thing fits together. Documents 03, 04, and 05 then detail the team, the timeline, and the security dimension respectively.
 
-## What an Integrated Product Team is, in our terms
+## What an Integrated Project Team is, in our terms
 
-The phrase "Integrated Product Team" comes from disciplined acquisition practice, where an IPT is a **multi-disciplinary team whose members come from every function needed to make a decision and own an outcome**, working together rather than passing work over walls between departments. The recognized best practices for IPTs are directly relevant to us: keep the team **small**, make **roles and responsibilities explicit** up front, set **clear goals**, and lead through **shared accountability and consensus** rather than command.
+The IPT concept comes from disciplined acquisition practice, most often under the name **Integrated Product Team** — a **multi-disciplinary team whose members come from every function needed to make a decision and own an outcome**, working together rather than passing work over walls between departments. Red Alpha calls its version an **Integrated Project Team**; the underlying concept and its recognized best practices are the same, and they're directly relevant to us: keep the team **small**, make **roles and responsibilities explicit** up front, set **clear goals**, and lead through **shared accountability and consensus** rather than command.
 
 For Red Alpha, we adopt that spirit and make it concrete:
 

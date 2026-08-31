@@ -50,7 +50,7 @@
 
 **Impact level** — Low / moderate / high categorization of a system's security sensitivity, which determines the applicable control baseline.
 
-**Integrated Product Team (IPT)** — A small, cross-functional, durable team that owns a product end to end, containing (in people or hats) every function needed to design, build, secure, ship, and support it. Best practices: keep it small, make roles explicit, set clear goals, lead through shared accountability.
+**Integrated Project Team (IPT)** — A small, cross-functional, durable team that owns a product end to end, containing (in people or hats) every function needed to design, build, secure, ship, and support it. Best practices: keep it small, make roles explicit, set clear goals, lead through shared accountability. The concept comes from disciplined acquisition practice, where it's most often called an **Integrated Product Team** — same idea, different name.
 
 **ISSO (Information System Security Officer)** — The role, embedded in the IPT, that owns security-by-design and the authorization path day to day. Red Alpha's "Security Lead."
 
@@ -113,7 +113,7 @@ The through-line: a POC is Red Alpha spending its own money to earn the right to
 
 ## References (verified, August 2026)
 
-**Integrated Product Teams**
+**Integrated Product Teams** (the acquisition-practice term our **Integrated Project Team** concept draws on)
 - Integrated Product Team (IPT) — AcqNotes: https://acqnotes.com/acqnote/careerfields/integrated-product-teams
 - Integrated product team — Wikipedia: https://en.wikipedia.org/wiki/Integrated_product_team
 - Setting up and managing integrated product teams — PMI: https://www.pmi.org/learning/library/setting-up-managing-integrated-product-teams-8903

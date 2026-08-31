@@ -3,12 +3,12 @@ title: Overview
 description: >-
   Red Alpha's standard way of turning a self-funded proof of concept into a
   shipped, secure, licensable software product, by way of a customer-funded MVP
-  delivered in short reviewable increments by a small Integrated Product Team.
+  delivered in short reviewable increments by a small Integrated Project Team.
 ---
 
 <div class="hero">
   <h1>The Red&nbsp;Alpha IPT Workflow</h1>
-  <p class="lede">A standard, repeatable way to turn a self-funded <strong>proof of concept</strong> into a shipped, secure, licensable software product — by way of a customer-funded <strong>MVP</strong> tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional <strong>Integrated Product Teams</strong>.</p>
+  <p class="lede">A standard, repeatable way to turn a self-funded <strong>proof of concept</strong> into a shipped, secure, licensable software product — by way of a customer-funded <strong>MVP</strong> tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional <strong>Integrated Project Teams</strong>.</p>
 </div>
 
 <div class="belief">
