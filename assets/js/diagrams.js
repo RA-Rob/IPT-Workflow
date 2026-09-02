@@ -46,7 +46,7 @@ function theme() {
     nodeTextColor: color('--text'),
     edgeLabelBackground: color('--bg'),
     fontFamily: font(),
-    fontSize: '14px',
+    fontSize: '11px',
 
     /* Gantt (docs/04's worked timeline). Bars carry the same funding-source
        encoding as the flowchart's classDefs: default/untagged bars are "both
@@ -105,7 +105,7 @@ async function draw(nodes) {
        a wide flowchart (many columns, or an LR layout like doc 01's loop)
        should draw at its natural size and scroll inside .diagram's
        overflow-x, not shrink its text to fit --measure. */
-    flowchart: { htmlLabels: true, useMaxWidth: false, wrappingWidth: 520, padding: 16, nodeSpacing: 30, rankSpacing: 44 },
+    flowchart: { htmlLabels: true, useMaxWidth: false, wrappingWidth: 320, padding: 8, nodeSpacing: 16, rankSpacing: 24 },
     /* The gantt's dates are a fictional anchor (see docs/04): every task is
        written as "after <priorTaskId>", so only the diagram's first date is
        real, and axisFormat here shows a week count rather than a calendar
