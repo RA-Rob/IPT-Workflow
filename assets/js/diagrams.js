@@ -100,8 +100,12 @@ async function draw(nodes) {
     themeVariables: theme(),
     /* wrappingWidth defaults to 200px, which re-wraps every label and ignores
        the <br/> breaks the diagram author chose. Widen it so the source
-       controls the line breaks. */
-    flowchart: { htmlLabels: true, useMaxWidth: true, wrappingWidth: 520, padding: 16, nodeSpacing: 30, rankSpacing: 44 },
+       controls the line breaks. useMaxWidth: false matches the gantt's
+       treatment below and the .diagram CSS's actual intent (see its comment):
+       a wide flowchart (many columns, or an LR layout like doc 01's loop)
+       should draw at its natural size and scroll inside .diagram's
+       overflow-x, not shrink its text to fit --measure. */
+    flowchart: { htmlLabels: true, useMaxWidth: false, wrappingWidth: 520, padding: 16, nodeSpacing: 30, rankSpacing: 44 },
     /* The gantt's dates are a fictional anchor (see docs/04): every task is
        written as "after <priorTaskId>", so only the diagram's first date is
        real, and axisFormat here shows a week count rather than a calendar
