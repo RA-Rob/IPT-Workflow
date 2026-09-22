@@ -86,7 +86,7 @@ This workflow doesn't start at Gate 0 — **it starts with IP we already have.**
 
 - **Contract-derived IP is the norm.** Most of what we shop was built and paid for on an earlier engagement. A self-funded POC is the fallback, not the model.
 - **Nothing moves uncleared.** RA Legal's written determination is a precondition to shopping, and Gate 0 re-checks that its scope still fits.
-- **Lean teams.** A standard IPT is **4–7 people**; almost everyone wears more than one hat.
+- **Lean teams, sized by constraint rather than by a number.** An IPT is the smallest team that covers all seven functions **and** keeps the Product Owner separate from the engineers; almost everyone wears more than one hat. Agentic AI development has lowered the headcount a product needs below the 4–7 previously assumed — the new floor is still open.
 - **Two funding streams.** Red Alpha funds the licensed **core product**; the customer funds **tailoring** for their environment. Upstreaming tailoring into the core is a separate, recorded decision — and where it carries ownership weight, a Legal one.
 - **Security-first / defense context.** Products may serve government or defense customers, so authorization (ATO/cATO) is a first-class part of the timeline.
 - **Software products.** Written for software, including cloud-delivered; hardware-heavy efforts need adaptation.

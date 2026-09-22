@@ -44,7 +44,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 
 **Why it succeeds (and where it breaks).** At its best, the model gives teams genuine ownership and speed while still keeping technical standards and direction coherent. The widely reported failure mode is instructive: companies that *rename* teams to "squads" without the underlying culture of trust and autonomy get nothing — "lipstick on a pig." Structure alone does not create agility; behavior does.
 
-**Lesson for Red Alpha.** At 4–7 people we *are* a single squad, so the direct lesson is smaller: give the IPT real **autonomy over how it works**, hold it accountable for a **mission and outcomes** rather than activity, and — importantly for when we grow — plan now for the **chapter/guild idea** so that as we spin up a second and third IPT, shared engineering and security standards don't fragment. Adopt the *culture* (trust, ownership), not just the org chart.
+**Lesson for Red Alpha.** At our size we *are* a single squad, so the direct lesson is smaller: give the IPT real **autonomy over how it works**, hold it accountable for a **mission and outcomes** rather than activity, and — importantly for when we grow — plan now for the **chapter/guild idea** so that as we spin up a second and third IPT, shared engineering and security standards don't fragment. Adopt the *culture* (trust, ownership), not just the org chart.
 
 ## 5. Basecamp — Shape Up (built for small teams)
 
@@ -52,7 +52,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 
 **Why it succeeds.** Fixed time / variable scope (the appetite) prevents the runaway projects that kill small teams. The circuit breaker stops sunk-cost death marches. Shaping at the right altitude gives builders room to solve problems without being either under- or over-specified. And unlike most frameworks, it was designed by a small company for small teams, so it doesn't collapse when you strip out the ceremonies.
 
-**Lesson for Red Alpha.** This is our closest structural model. We adopt **appetite-driven, fixed-time / variable-scope work**, a **betting-style prioritization** step so the IPT consciously chooses what to build each cycle, and the **circuit-breaker discipline** to protect a 4–7 person team from open-ended commitments. We keep the "which hat am I wearing" clarity as a cultural norm.
+**Lesson for Red Alpha.** This is our closest structural model. We adopt **appetite-driven, fixed-time / variable-scope work**, a **betting-style prioritization** step so the IPT consciously chooses what to build each cycle, and the **circuit-breaker discipline** to protect a lean team from open-ended commitments. We keep the "which hat am I wearing" clarity as a cultural norm.
 
 ## 6. OpenAI / Anthropic / Palantir — the Forward Deployed Engineer
 

@@ -34,7 +34,7 @@ Four facts about how Red Alpha gets its products shape everything downstream of 
 | [`docs/01-ip-origin-and-clearance.md`](./docs/01-ip-origin-and-clearance.md) | The entry point: where the IP comes from, and the rights RA Legal must confirm before we shop it |
 | [`docs/02-research-brief-incubator-methodologies.md`](./docs/02-research-brief-incubator-methodologies.md) | Baseline research: five top product/idea companies and why they succeed |
 | [`docs/03-ipt-model-overview.md`](./docs/03-ipt-model-overview.md) | The Red Alpha idea-to-product model: philosophy, principles, when an IPT stands up |
-| [`docs/04-team-structure-and-roles.md`](./docs/04-team-structure-and-roles.md) | The lean 4–7 person IPT: roles, multi-hat assignments, responsibilities (RACI) |
+| [`docs/04-team-structure-and-roles.md`](./docs/04-team-structure-and-roles.md) | The lean IPT: how it is sized, the separation of decision rights, roles, multi-hat assignments, responsibilities (RACI) |
 | [`docs/05-process-timeline-and-phases.md`](./docs/05-process-timeline-and-phases.md) | End-to-end timeline: five phases, five gates, IP → MVP → product, artifacts, worked schedule |
 | [`docs/06-security-and-compliance.md`](./docs/06-security-and-compliance.md) | Security-first / defense context: RMF, ATO/cATO, DevSecOps woven into the process; the `stage` boundary |
 | [`docs/07-glossary-and-references.md`](./docs/07-glossary-and-references.md) | Definitions, a shoppable-asset-vs-MVP comparison, and the full verified source list |
@@ -52,7 +52,7 @@ What's still open about the front end is now mostly **legal, not operational**: 
 
 - **Contract-derived IP is the norm.** Most of what Red Alpha shops was built and paid for on an earlier engagement; a self-funded POC is the fallback.
 - **Nothing moves uncleared.** An RA Legal determination is a precondition to shopping, and Gate 0 re-checks that its scope still covers the engagement.
-- **Lean teams.** A standard IPT is **4–7 people**; almost everyone wears more than one hat.
+- **Lean teams, sized by constraint rather than by a number.** An IPT is the smallest team that covers all seven functions **and** keeps the Product Owner separate from the engineers; almost everyone wears more than one hat. Agentic AI development has lowered the headcount a product needs below the 4–7 previously assumed — the new floor is OI-20, still open.
 - **Two funding streams, one team.** Red Alpha funds the licensed **core product**; the customer funds **tailoring** for their environment. Every piece of work carries a funding source, and every upstream promotion is recorded.
 - **Security-first / defense context.** Products may serve government/defense customers; authorization (ATO/cATO) is a first-class part of the timeline.
 - **Software products.** Written for software (including cloud-delivered); hardware-heavy efforts need adaptation.

@@ -21,7 +21,7 @@
 - [ ] A funding customer's money is **committed**, not merely expected or verbally encouraged.
 - [ ] There is a real, stated mission need from that customer (not a solution looking for a problem).
 - [ ] Plausible path to **desirable + feasible + viable + securable/authorizable** *in that customer's environment*.
-- [ ] A durable 4–7 person team can be staffed, with every core function owned.
+- [ ] A durable team can be staffed with every core function owned, and the **Product Owner is not one of the engineers** — the separation holds at whatever size this team is (`docs/04`).
 - [ ] The **funding and ownership split** is understood by both sides: the core product is Red Alpha's and licensed; the customer's money funds tailoring; upstreaming is decided case by case and recorded.
 - [ ] The customer has committed **their operators' time**, not only money — the evaluation loop doesn't work without it.
 - [ ] **IPT Charter** drafted ([`templates/ipt-charter-template.md`](ipt-charter-template.md)).

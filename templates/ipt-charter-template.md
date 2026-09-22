@@ -71,7 +71,7 @@
 | Quality & test | [name / engineer's hat] | — |
 | Delivery / platform (DevSecOps) | [name / Tech Lead's hat] | — |
 
-**Team size:** [4–7]. **Roles sitting around the team:** Sponsor [name]; Funding customer [org / decision-maker]; Authorizing Official [name/TBD]; RA Legal [name — the determination in §2a is theirs, not the team's].
+**Team size:** [n] — *justify it: which of the seven functions each person carries, and what a team this size is relying on agentic AI to absorb.* **Separation check:** the Product Owner named above is not one of the engineers named above — [confirmed]. **Roles sitting around the team:** Sponsor [name]; Funding customer [org / decision-maker]; Authorizing Official [name/TBD]; RA Legal [name — the determination in §2a is theirs, not the team's].
 
 ## 6. Decision rights
 
@@ -109,7 +109,7 @@
 - [ ] Real mission need confirmed
 - [ ] Plausible path to desirable + feasible + viable + securable in their environment
 - [ ] Core/tailoring and licensing split understood by both sides
-- [ ] Durable 4–7 person team staffable with every core function owned
+- [ ] Durable team staffable with every core function owned, and the **Product Owner separate from the engineers**
 - **Decision:** Proceed to Discovery / Iterate / Stop — [decision], [date], [decider]
 
 ### Changelog

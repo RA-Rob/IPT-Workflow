@@ -1,12 +1,28 @@
 # 04 — Team Structure, Roles, and Responsibilities
 
-*Status: Draft for discussion — v0.3 — September 2026*
+*Status: Draft for discussion — v0.4 — September 2026*
 
-## The lean IPT, sized for Red Alpha
+## How an IPT is sized
 
-A Red Alpha IPT is **4–7 people**. At this size the guiding truth is simple: **there are more essential functions than there are people, so most people wear more than one hat.** The job of this document is to name every function the team must cover, assign those functions to roles, and be explicit about which hats each person wears at each team size — so that "who owns this?" always has an answer, even on a four-person team.
+An IPT is **the smallest team that covers all seven functions and preserves the separation of decision rights.** Those are two different constraints, they bind in different ways, and conflating them is how team-sizing arguments go wrong.
 
-We treat **functions** (the work that must happen) separately from **people** (who does it). A team of four still covers all the core functions; it just concentrates them onto fewer individuals. As the team grows toward seven, functions split apart into dedicated roles.
+**The first constraint is capacity, and it has moved.** The working default used to be 4–7 people, on the reasoning that below four there were more essential functions than there were hands to cover them. Red Alpha's heavy use of **agentic AI software development** changes that arithmetic: a given headcount now delivers considerably more built software than it did, so the number of people required to carry a product is genuinely lower than it was. The floor is below four. **Exactly where it sits is not settled** — it is the live question in OI-20 — so this document deliberately does not assert a range. Size the team to the work, and justify the number in the charter rather than reading it off a table.
+
+**The second constraint is accountability, and it has not moved at all.** No amount of AI capacity changes who is allowed to decide what. The separation described in the next section holds at every size, and it is what actually sets the floor: a team stops being viable not when it runs out of hands but when it runs out of people to keep the decision rights apart.
+
+We treat **functions** (the work that must happen) separately from **people** (who does it) throughout. A smaller team still covers all seven functions; it concentrates them onto fewer individuals. As the team grows, functions split apart into dedicated roles.
+
+## The separation that sets the floor
+
+**The person who owns the product must not be the person who builds it.** This is the one structural rule that no team size, tooling improvement, or scheduling pressure relaxes.
+
+Concretely: the **Product Owner** gathers the requirements **directly from the customer**, decides what is worth building and why, and judges whether what came back meets the mission need. The **Tech Lead and engineers** decide how it gets built and build it. Those are different people, always — not different hats on one person.
+
+**Why this is a rule and not a preference.** When the same person defines a requirement and implements it, nothing independent stands between the mission need and what was convenient to build. Requirements quietly reshape themselves toward the implementation during development, and nobody is positioned to notice, because the only person who could raise the objection is the person who made the trade. The customer discovers it at an evaluation, or later. The failure is not dishonesty; it is the ordinary drift that happens when there is no second pair of eyes with standing to say "that is not what they asked for."
+
+**Agentic AI makes this more important, not less.** When building was the expensive part, the binding constraint on a product was whether we *could* build it. That is much less true now — which moves the binding constraint to whether we are building **the right thing**, judged against a mission need somebody actually gathered. That judgment is exactly the Product Owner's job, and it is the one part of the work that does not get cheaper when the code gets cheaper. A smaller team therefore leans *harder* on this separation, because there is less else standing between a requirement and a release.
+
+**Requirements do not move.** The Product Owner owns the customer requirements relationship personally. It does not transfer to a delivery or project-management function, and it does not get delegated to whoever happens to be talking to the customer that week. There is no project-manager seat on an IPT; if one exists elsewhere at Red Alpha, gathering requirements is still not theirs. This is what keeps the line between **the owner of the product** and **the developers of the product** legible to everyone, the customer included.
 
 ## The core functions every IPT must cover
 
@@ -23,7 +39,7 @@ Regardless of headcount, every IPT must own all seven of these functions. Nothin
 ## The roles
 
 ### Product Owner *(also the team's Decider)*
-Owns the product outcome end to end. Frames the problem and the launch narrative (the PR/FAQ-style entry document), maintains and prioritizes the backlog by value, sets the **appetite** for each piece of work, and is the single person empowered to **break ties** so the team never stalls waiting for consensus. Manages the relationship with the sponsor, the **funding customer** and their mission owners, and the Authorizing Official's expectations. Accountable for *what* and *why*; explicitly not the person deciding *how* the code is written. This is the role that carries Amazon's "single-threaded owner" and Google's "Decider" ideas.
+Owns the product outcome end to end. **Gathers the requirements directly from the customer** — this is the role's defining responsibility and it does not transfer to anyone else, on any team size. Frames the problem and the launch narrative (the PR/FAQ-style entry document), maintains and prioritizes the backlog by value, sets the **appetite** for each piece of work, and is the single person empowered to **break ties** so the team never stalls waiting for consensus. Manages the relationship with the sponsor, the **funding customer** and their mission owners, and the Authorizing Official's expectations. Accountable for *what* and *why*; explicitly not the person deciding *how* the code is written — **and explicitly not a person who writes it.** That second exclusion is the separation described above, and it is the one constraint that holds at every team size. This is the role that carries Amazon's "single-threaded owner" and Google's "Decider" ideas.
 
 Two responsibilities specific to how Red Alpha is funded sit with this role, and they are not delegable. The Product Owner **runs the customer evaluation loop** — making sure every short cycle in the MVP phase ends with working capability the customer can actually exercise in **stage**, and that what they say comes back as input to the next bet rather than as a mid-cycle interruption. And the Product Owner **owns the integrity of the funding boundary**: every piece of work carries a funding source and a core-or-tailored designation, and every decision to promote customer-funded **tailoring** into the licensed **core product** is recorded in the **upstream log** with its reasoning and any agreement it requires (document 05). Nobody else is positioned to see both sides of that line.
 
@@ -47,21 +63,25 @@ Owns confidence that the product works and keeps working — test strategy, auto
 ### Delivery / Platform (DevSecOps)
 Owns the CI/CD pipeline, environments, infrastructure-as-code, and the automation that makes shipping safe and repeatable — the "secure software supply chain." On lean teams this is usually the Tech Lead's or an engineer's second hat, tightly paired with the Security Lead. This hat also owns the `dev → stage → prod` promotion path, which makes it responsible for something the whole customer relationship rests on: **stage has to be reliably reachable and reliably current**, because a customer who cannot exercise this cycle's increment cannot approve the direction, and the loop that justifies their funding stalls. "Current" is a specific obligation: stage lives in Red Alpha's controlled environment and may be replicated, and this hat keeps **every instance on the same release as the upstream mainline** (document 06).
 
-## How functions map to people at each size
+## How functions concentrate as the team gets smaller
 
-The same seven functions are always covered; they just concentrate or split depending on headcount. A workable default mapping:
+The same seven functions are always covered. What changes with headcount is how many hats each person wears — and which hats are *allowed* to share a head. That second column is the one that matters, because it is the separation rule expressed as a staffing constraint:
 
-| Function | 4 people | 5 people | 6 people | 7 people |
-|----------|----------|----------|----------|----------|
-| Product & customer | **Product Owner** (+ Design) | **Product Owner** (+ Design) | **Product Owner** | **Product Owner** |
-| Engineering lead & architecture | **Tech Lead** (+ Delivery) | **Tech Lead** (+ Delivery) | **Tech Lead** (+ Delivery) | **Tech Lead** |
-| Software development | **Engineer** (+ QA) | **Engineer A**, **Engineer B** (+ QA) | **Engineer A**, **Engineer B** | **Engineer A**, **Engineer B** |
-| Security & authorization | **Security Lead** (+ DevSecOps) | **Security Lead** (+ DevSecOps) | **Security Lead** (+ DevSecOps) | **Security Lead** |
-| Design & UX | (Product Owner's hat) | (Product Owner's hat) | **Designer** | **Designer** |
-| Quality & test | (Engineer's hat) | (Engineer's hat) | (shared / automated) | **QA/Delivery Engineer** |
-| Delivery / platform | (Tech Lead's hat) | (Tech Lead's hat) | (Tech Lead's hat) | **QA/Delivery Engineer** |
+| Function | Whose it is by default | May it double onto the **Product Owner**? |
+|----------|------------------------|-------------------------------------------|
+| Product & customer/mission | **Product Owner** | — (this is the role) |
+| Engineering lead & architecture | **Tech Lead** | **No.** This is the line. |
+| Software development | **Engineer(s)** | **No.** This is the line. |
+| Security & authorization | **Security Lead** | **No** — see the note below |
+| Design & UX | **Designer**, or the Product Owner's hat | **Yes** — closest to the product-definition work |
+| Quality & test | An engineer's hat, enforced by automation | **No** — it judges the build, so it sits with the build |
+| Delivery / platform (DevSecOps) | Tech Lead's or an engineer's hat | **No** — it ships the build |
 
-Read the table as a default, not a rule. The constant is that **all seven functions have a named owner**; the variable is how many hats each person wears. The recommended growth order as you add the 5th, 6th, and 7th person is: **second engineer → dedicated designer → dedicated quality/delivery engineer**, because that sequence relieves the most overloaded hats first (build capacity, then adoption-driving design, then release safety).
+**Read the "no" column as the real sizing rule.** Everything an engineer does can concentrate onto fewer engineers, and agentic AI is what makes that practical further down than it used to be. What cannot concentrate is the product side onto the build side. The Product Owner may pick up **Design** — defining what the experience should be is the same kind of work as defining what the product should do — and that is the only one of the six that may travel in that direction.
+
+**On the Security Lead.** Keeping this separate from the Product Owner is not the same rule and rests on a different reason: the Security Lead's judgment feeds an external authorization decision, and self-certification by whoever owns the schedule is exactly the pressure the role exists to resist. On the smallest teams this hat sits with engineering, paired with Delivery/Platform, rather than with the Product Owner. Whether it can be a shared specialist across teams instead is OI-16, still open.
+
+**Growth order.** As a team grows, relieve the most overloaded hats first: **additional engineering capacity → dedicated designer → dedicated quality/delivery engineer.** Security separates into its own seat as soon as the authorization load justifies it.
 
 ## Responsibilities at a glance (RACI)
 
@@ -84,7 +104,7 @@ Read the table as a default, not a rule. The constant is that **all seven functi
 | Launch / go-live readiness | **A** | R | R | **R** | C | R |
 | Production monitoring & continuous auth | C | R | R | **A/R** | I | R |
 
-Where a lean team has merged two roles into one person, that person holds both rows — which is exactly why keeping the team small *and* keeping ownership explicit both matter.
+Where a lean team has merged two roles into one person, that person holds both rows — which is exactly why keeping the team small *and* keeping ownership explicit both matter. **With one exception:** no merge ever puts a PO row and an ENG or TL row on the same person. Read down the PO column and the ENG/TL columns; those two sets belong to different people at every team size.
 
 **One row has an exception worth stating.** "Gate-review decision to proceed" shows the Product Owner accountable, and that holds for the gates Red Alpha owns. **Gate 2 is not one of them** — customer acceptance of the MVP is the funding customer's decision, and the Product Owner's accountability there is for making the decision *informed and easy to make*, not for making it. **Gate 3** likewise requires the Security Lead as a joint owner and the Authorizing Official for the authorization itself. See document 05 for the decision owner of each gate.
 
@@ -100,7 +120,7 @@ A lean IPT depends on a few roles it does **not** contain, and naming them preve
 
 ## Scaling up (and the guardrail against scaling wrong)
 
-When a product genuinely outgrows seven people, we **split into two IPTs around bounded missions** rather than growing one team past the point where everyone can hold the whole product in their heads. At that point the **chapter/guild** idea from document 02 activates: a security chapter, an engineering chapter, and shared guilds keep standards and knowledge aligned across teams. The guardrail we take from Spotify's failures: adding structure only works if the culture of trust, ownership, and shared accountability comes with it — otherwise we've just made a bigger, slower team with new titles.
+When a product genuinely outgrows a team that can hold it in their heads, we **split into two IPTs around bounded missions** rather than growing one team past that point. At that point the **chapter/guild** idea from document 02 activates: a security chapter, an engineering chapter, and shared guilds keep standards and knowledge aligned across teams. The guardrail we take from Spotify's failures: adding structure only works if the culture of trust, ownership, and shared accountability comes with it — otherwise we've just made a bigger, slower team with new titles.
 
 ## Phase 5 — the IPT works forward-deployed
 
@@ -122,9 +142,10 @@ That gives the team one standing obligation it would not otherwise have: **when 
 
 *These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`08-open-items.md`](08-open-items.md), the register the whole team works from.*
 
+- **What is the actual floor now?** Agentic AI has lowered the headcount a product needs, and the separation rule sets a hard lower bound — but the smallest *viable* team is not necessarily the smallest *legal* one. The open question is where capacity genuinely runs out below four, not merely where the separation rule stops permitting a further cut. (OI-20.)
+- **Does the separation rule need a written exception path?** As stated it is absolute. Real programs produce edge cases — a Product Owner who is the only person who can read a specialist data format, say. Either the rule holds without exception and we accept the cost, or there is a narrow documented path with someone accountable for approving each use. Silence on this is the worst of the three.
 - Does Phase 5's forward-deployed work call for one person to spend most of their time embedded with the customer, or does it rotate across the team alongside core-track work?
 - Do we want the **Security Lead** to be a full member of every IPT, or a shared specialist across two or three teams at our current size?
-- What is the minimum viable team we'd ever stand up — is four really the floor, or three for the smallest efforts?
 - How do we handle **on-call / operations** load on a lean team once products are live in production?
 - Who **packages cleared IP into a demonstration** once a Phase 5 team's capability is judged worth generalizing (document 01)? It happens before any *new* IPT is chartered, and will draw on the same scarce people this document allocates — likely including some of the very team still delivering the originating customer's mission.
 - Whose job is it to **spot a generalizable capability early enough to raise a CRADA**, where the originating customer is one that can enter one at all, while the contract is still being shaped? That is a business-development and Legal question as much as a team one, but the team is where the signal originates.

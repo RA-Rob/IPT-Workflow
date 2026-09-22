@@ -12,9 +12,9 @@ The IPT concept comes from disciplined acquisition practice, most often under th
 
 For Red Alpha, we adopt that spirit and make it concrete:
 
-> A Red Alpha IPT is a small (4–7 person), cross-functional, and durable team that owns a single product from the moment a customer funds its development through launch and into sustained operation. It contains — in people or in hats — every skill needed to design, build, secure, ship, and support the product, so that the team almost never has to wait on an outside function to make progress.
+> A Red Alpha IPT is a small, cross-functional, and durable team that owns a single product from the moment a customer funds its development through launch and into sustained operation. It contains — in people or in hats — every skill needed to design, build, secure, ship, and support the product, so that the team almost never has to wait on an outside function to make progress. It is sized to the smallest number of people that covers those skills **while keeping the product owner separate from the product's builders**.
 
-Two words in that definition carry weight. **Cross-functional** means the team is not "the engineers plus some help"; product, design, engineering, security, and operations judgment all live inside the team. **Durable** means the team stays with the product — we do not disband and reform around projects, because the accountability and context that make an IPT valuable are exactly what get destroyed by constant reshuffling.
+Three things in that definition carry weight. **Cross-functional** means the team is not "the engineers plus some help"; product, design, engineering, security, and operations judgment all live inside the team. **Durable** means the team stays with the product — we do not disband and reform around projects, because the accountability and context that make an IPT valuable are exactly what get destroyed by constant reshuffling. And **small is a consequence, not a target**: our use of agentic AI development means a given headcount carries far more than it used to, so teams are smaller than the 4–7 this model previously assumed — but never so small that the person who decides *what we build* is also the person building it. Document 04 works through both constraints.
 
 ## The core philosophy
 

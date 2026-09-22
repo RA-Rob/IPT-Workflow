@@ -14,7 +14,7 @@ It is deliberately a *working* document. Items get claimed, argued, and closed. 
 
 **Status values.** **Open** (nobody is working it) · **In work** (owned, being worked) · **Decided** (answer written into the owning document; see *Recently decided* at the bottom).
 
-**Priority.** As of the 2026-09-22 reframing (see *Section C*), the items that block most are the **IP-rights** ones, because the whole front end now rests on them: **OI-26** (do our originating-contract terms let us generalize a customer's work into a product for someone else), **OI-27** (what an RA Legal IP clearance must contain and how long it takes), **OI-28** (when we pursue a CRADA), and **OI-29** (what we do with valuable IP we cannot clear). Alongside them sit the two long-standing items the [Executive Summary](../EXECUTIVE-SUMMARY.md) puts in front of leadership: **OI-01** (running the front end operationally) and **OI-07** (upstreaming rights, which is the same question one engagement later). A previous priority item, **OI-08** (the `stage` data class), closed 2026-08-24 — see *Recently decided* below. Everything else can be worked in any order, and several are a half-hour conversation away from closed.
+**Priority.** As of the 2026-09-22 reframing (see *Section C*), the items that block most are the **IP-rights** ones, because the whole front end now rests on them: **OI-26** (do our originating-contract terms let us generalize a customer's work into a product for someone else), **OI-27** (what an RA Legal IP clearance must contain and how long it takes), **OI-28** (when we pursue a CRADA), and **OI-29** (what we do with valuable IP we cannot clear). Alongside them sit the two long-standing items the [Executive Summary](../EXECUTIVE-SUMMARY.md) puts in front of leadership: **OI-01** (running the front end operationally) and **OI-07** (upstreaming rights, which is the same question one engagement later). **OI-20** (how small an IPT can actually be) became a priority item on 2026-09-22 when the team pushed back on the 4–7 range; document 04 now states the sizing *constraints* but deliberately names no number until that is settled. A previous priority item, **OI-08** (the `stage` data class), closed 2026-08-24 — see *Recently decided* below. Everything else can be worked in any order, and several are a half-hour conversation away from closed.
 
 ---
 
@@ -54,7 +54,7 @@ The funding customer owns Gate 2 and confirms the operating model at Gate 4. Sho
 
 **Owner:** *unassigned* · **Decides:** Product Owner · **Source:** [05](05-process-timeline-and-phases.md) · **Status:** Open
 
-A written decision memo, or a live 30-minute review with the checklist? The customer-facing gates may warrant more formality than the internal ones. The failure mode in both directions is real: ceremony a 4–7 person team resents, or decisions nobody can reconstruct six months later.
+A written decision memo, or a live 30-minute review with the checklist? The customer-facing gates may warrant more formality than the internal ones. The failure mode in both directions is real: ceremony a lean team resents, or decisions nobody can reconstruct six months later.
 
 **Resolved looks like:** one line per gate in the checklist template stating the expected artifact.
 
@@ -162,7 +162,7 @@ Inheriting an already-authorized platform or software factory can remove months 
 
 **Owner:** *unassigned* · **Decides:** Security Lead with the Authorizing Official · **Source:** [06](06-security-and-compliance.md) · **Status:** Open
 
-Moderate, most likely — but the control burden that follows from the answer is what a 4–7 person team has to actually carry, so guessing is expensive. Categorization happens per system in Phase 1; what we need is the planning default.
+Moderate, most likely — but the control burden that follows from the answer is what a lean team has to actually carry, so guessing is expensive. Categorization happens per system in Phase 1; what we need is the planning default.
 
 **Resolved looks like:** a stated planning assumption in document 06 with a rough control count, so charters and appetites are set against something real.
 
@@ -210,13 +210,17 @@ Or do some smaller efforts get a time-boxed team that disbands at launch? The du
 
 **Resolved looks like:** document 03 either affirming durability without exception or defining the smaller-effort case precisely.
 
-#### OI-20 — What is the minimum viable team?
+#### OI-20 — How small can an IPT actually be?
 
-**Owner:** *unassigned* · **Decides:** Sponsor with Product Owner · **Source:** [04](04-team-structure-and-roles.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Sponsor with Product Owner · **Source:** [04](04-team-structure-and-roles.md) · **Status:** Open · **Priority**
 
-Is four really the floor, or three for the smallest efforts? Below some size the seven functions stop being coverable by hats and start being uncovered.
+The old answer was 4–7 people, and the team has pushed back on it: Red Alpha's heavy use of **agentic AI software development** means a given headcount delivers substantially more built software than that range assumed, so the floor is genuinely lower than four. Document 04 has been rewritten to stop asserting a range, and to size teams by two constraints instead — coverage of the seven functions, and the separation of decision rights. **What it deliberately does not do is name the new number, because the team has not settled one.**
 
-**Resolved looks like:** a stated floor in document 04 and which hats double up at that size.
+**Two questions, and the second is the harder one.** The first is where the *separation rule* stops permitting a cut: that has a clean answer, since the Product Owner can never be an engineer, so any team is at least a Product Owner plus whoever builds. The second is where *capacity* genuinely runs out — the smallest team that can carry a real product through five phases, an authorization package, an on-call rotation, and a customer evaluation loop every two to three weeks. **The smallest legal team and the smallest viable team are not the same number**, and the risk in an AI-optimistic moment is quietly adopting the first while claiming the second.
+
+**Worth weighing when it is decided.** AI capacity reduces build hours; it does not reduce the hours spent gathering requirements from a customer, sitting with operators, negotiating an authorization boundary, or being on call at 2am. Those are the hours that a very small team runs out of first, and they are the ones least visible when the backlog is moving quickly. Related: OI-21 (on-call load on a lean team) and OI-16 (whether the Security Lead is embedded or shared) both constrain the answer.
+
+**Resolved looks like:** a stated floor and a working default range in document 04, said in terms of what the team must still be able to *do* rather than headcount alone — plus the charter template asking a team at or near the floor to say which of those non-build obligations it is carrying and how.
 
 #### OI-21 — How is on-call and operations load carried once products are live?
 
@@ -267,6 +271,14 @@ Always in Discovery, or only when a decision is genuinely high-risk? And when we
 ## Recently decided
 
 Items are kept here briefly after they close, so the team can see what changed without diffing the documents.
+
+**Team sizing is now constraint-based, and the product owner is separate from the builders** — model change, **2026-09-22** (reframes OI-20).
+
+Document 04 no longer asserts a 4–7 person range. An IPT is sized as the smallest team that covers the seven functions **and** preserves the separation of decision rights, and the number is justified in the charter rather than read off a table. Two reasons. Agentic AI development means a given headcount carries far more built software than the old range assumed, so the capacity floor is genuinely lower than four. And the constraint that actually binds is not capacity at all: **the Product Owner — who gathers requirements directly from the customer — is never also an engineer.** That holds at every team size, and it is what keeps a legible line between the owner of the product and its builders. Design is the only function permitted to double onto the Product Owner.
+
+The number itself is *not* decided and is tracked as OI-20, now a priority item.
+
+*Now documented in:* [04 — the sizing constraints, the separation rule, and the function-concentration table](04-team-structure-and-roles.md) · [03 — the IPT definition](03-ipt-model-overview.md) · [07 — glossary](07-glossary-and-references.md) · [the charter template](../templates/ipt-charter-template.md) · [the gate-review checklist](../templates/gate-review-checklist.md).
 
 **The front end is now contract-derived IP, and RA Legal clears it** — model change, **2026-09-22** (reframes OI-01; opens OI-27, OI-28, OI-29; promotes OI-26 to priority).
 

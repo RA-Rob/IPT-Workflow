@@ -62,7 +62,7 @@
 
 **Impact level** — Low / moderate / high categorization of a system's security sensitivity, which determines the applicable control baseline.
 
-**Integrated Project Team (IPT)** — A small, cross-functional, durable team that owns a product end to end, containing (in people or hats) every function needed to design, build, secure, ship, and support it. Best practices: keep it small, make roles explicit, set clear goals, lead through shared accountability. The concept comes from disciplined acquisition practice, where it's most often called an **Integrated Product Team** — same idea, different name.
+**Integrated Project Team (IPT)** — A small, cross-functional, durable team that owns a product end to end, containing (in people or hats) every function needed to design, build, secure, ship, and support it. Sized to the fewest people who can cover those functions **while keeping the Product Owner separate from the engineers** — the one staffing rule that no team size relaxes (document 04). Best practices: keep it small, make roles explicit, set clear goals, lead through shared accountability. The concept comes from disciplined acquisition practice, where it's most often called an **Integrated Product Team** — same idea, different name.
 
 **ISSO (Information System Security Officer)** — The role, embedded in the IPT, that owns security-by-design and the authorization path day to day. Red Alpha's "Security Lead."
 
@@ -94,7 +94,7 @@ Under the current model a POC is most often **packaged from cleared contract-der
 
 **Single-threaded owner** — Amazon's idea of one leader whose sole focus is one initiative — the ownership model behind our durable Product Owner.
 
-**Squad** — From Spotify: a small, cross-functional, autonomous team owning a mission. At 4–7 people a Red Alpha IPT effectively *is* one squad.
+**Squad** — From Spotify: a small, cross-functional, autonomous team owning a mission. A Red Alpha IPT is small enough that it effectively *is* one squad.
 
 **Stage (evaluation environment)** — The middle environment in the `dev → stage → prod` promotion path, and the one the **funding customer** has access to. Each **MVP** cycle ends with working capability promoted to stage, where the customer's own people exercise it against realistic tasks and approve or redirect the next cycle. Stage is what makes "incremental delivery for customer review" a concrete mechanism rather than a good intention. It is a **pre-production and/or pre-sales** environment: it always runs inside **Red Alpha's controlled environment** (on premises or Red Alpha's cloud, never the customer's enclave), it is shaped by the customer's stage **CONOPS** where they supply one and otherwise mirrors Red Alpha's intended production deployment, its data may be customer-supplied or Red Alpha-provided, and it **may be replicated so long as every instance runs the same release as the upstream mainline**. It carries no authorization to operate and no mission dependency — it is not the pilot. Because people outside Red Alpha touch it, its data handling and access controls are a security concern in their own right (document 06).
 
