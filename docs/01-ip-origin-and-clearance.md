@@ -1,6 +1,6 @@
 # 01 — Where the IP Comes From: Contract-Derived IP and Legal Clearance
 
-*Status: Draft for discussion — v0.4 — September 2026*
+*Status: Draft for discussion — v0.5 — September 2026*
 
 ## Why this document exists
 
@@ -25,9 +25,11 @@ Two consequences follow immediately, and the rest of this document is about them
 
 2. **The generalization question.** While solving it — or after — the team and Red Alpha leadership ask whether what was learned or built reaches beyond that one mission. Does it address a capability gap other customers plausibly share? Most mission-specific work stays mission-specific. Occasionally, something generalizes: a pattern, a component, an integration approach, a body of operational knowledge about how a class of problem behaves under real conditions.
 
+   What generalizes is the capability, across **mission spaces** that are genuinely different. A worked example: Red Alpha builds a tool for **Army Cyber** that addresses a real problem in their mission. The underlying capability turns out to apply just as well to a **Navy Cyber** mission — a different organization, a different mission space, different mission requirements, different data and integrations — but the same tool solves the same class of problem in both. That is what "generalizes" means here, and it is the case worth recognizing early, because it is where the rest of this document starts.
+
 3. **The IP position, determined by RA Legal.** Before anything is shopped, Red Alpha establishes *in writing* what its rights in that IP actually are. This is the hard stop described in the next section, and it has exactly three acceptable answers.
 
-4. **Matching it to a mission requirement, and shopping it.** Once the rights are settled, the IP is matched against prospective customers' **mission requirements** — we are looking for a customer whose stated mission problem this capability could help solve — and shopped, usually demonstrated in some working form so the conversation is about software rather than slideware. When such a customer commits funding to have it built out as an **MVP for their mission**, that commitment is **Gate 0** and document 05 takes over.
+4. **Matching it to a mission requirement, and shopping it.** Once the rights are settled, the IP is matched against prospective customers' **mission requirements** — we are looking for a customer whose stated mission problem this capability solves — and shopped, demonstrated in working form so the conversation is about software rather than slideware. **The job of that demonstration is to establish applicability**, concretely enough that both sides can see the capability addressing this customer's problem. When it does and the customer commits funding to have it adapted to their **mission space**, that commitment is **Gate 0** and document 05 takes over — and what they are funding from there is the *tailoring*, not a further test of whether the capability was the right one.
 
 ## The IP clearance checkpoint — the one hard stop before Gate 0
 
@@ -130,6 +132,7 @@ The route above answers where the IP comes from and on what basis we may use it.
 
 ## Changelog
 
+- v0.5 — 2026-09-22 — corrected the framing of what the MVP is for: applicability is established by the demonstration *before* Gate 0, so the MVP funds **tailoring into a new mission space**, not a test of whether the capability applies. Added the Army Cyber / Navy Cyber worked example and the **mission space** term.
 - v0.4 — 2026-09-22 — introduced **cleared** as a shorthand only at the point where clearance is explained, rather than in the opening, and disambiguated it there from *security*-cleared — which is what the word defaults to meaning for this audience. Opening paragraphs now say "IP Red Alpha has the right to use" in plain terms.
 - v0.3 — 2026-09-22 — qualified the CRADA position: it is a federal-laboratory instrument under 15 U.S.C. § 3710a (so unavailable where the originating customer lacks lab status) and not a funding vehicle (the government may not pay the non-federal party), which makes its economics different from the other two positions. Reflected in OI-28.
 - v0.2 — 2026-09-22 — reframed around **contract-derived IP** as the primary origin, with RA Legal's **IP clearance** as a hard precondition to shopping and three acceptable ownership positions (RA ownership, customer release, CRADA). The internally funded POC is retained as the secondary route. Document renamed from `01-ideation-and-poc-origin.md`.

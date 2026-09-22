@@ -51,7 +51,9 @@ These are the principles a Red Alpha IPT is expected to live by. They are the st
 
 Before the lifecycle makes sense, one structural fact has to be stated plainly, because it shapes how the money and the ownership work.
 
-Red Alpha builds and **owns a core product**, which it **licenses** to customers. What a customer funds is not the core — it is the **tailoring**: the integrations, data feeds, deployment work, and mission-specific workflows that make the core actually work in *their* environment for *their* mission. That is the "does it work for me?" development, and it is exactly what a customer is willing to pay for, because it is the part they can judge.
+Red Alpha builds and **owns a core product**, which it **licenses** to customers. What a customer funds is not the core — it is the **tailoring**: the integrations, data feeds, deployment work, and mission-specific workflows that adapt the core into *their* **mission space**. That is the "make it work here" development, and it is exactly what a customer is willing to pay for, because it is the part that stands between a capability they can already see working and one their operators can actually use.
+
+A distinction worth holding onto, because it shapes how the whole engagement is pitched and run: **the customer is not funding us to find out whether the capability applies to their mission.** That is established before they commit — it is what the demonstration is for. They are funding the gap between a capability proven in one mission space and a capability that works in theirs, which is real, often substantial, and mostly invisible until their people start using it.
 
 Three consequences follow:
 

@@ -20,7 +20,7 @@
 
 ## 2. The problem and the evidence so far
 
-[2–4 sentences: the customer's mission problem, what the demonstration proved (and what it deliberately didn't), and the gap between that demonstration and something this customer could actually use in their environment. Reference the PR/FAQ once it exists.]
+[2–4 sentences: the customer's mission problem, what the demonstration established about the capability applying to it, and — the part this engagement is actually funded to close — the gap between that capability and something this customer's operators can use in *their* mission space. Name what is known to differ from the originating mission space: organization, authorities, data, integrations, workflows. Reference the PR/FAQ once it exists.]
 
 ## 2a. Where the IP came from, and on what basis it is ours
 
