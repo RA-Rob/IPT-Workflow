@@ -8,7 +8,9 @@ This is the heart of the knowledge base: Red Alpha's **standard model for turnin
 
 ## What an Integrated Project Team is, in our terms
 
-The IPT concept comes from disciplined acquisition practice, most often under the name **Integrated Product Team** — a **multi-disciplinary team whose members come from every function needed to make a decision and own an outcome**, working together rather than passing work over walls between departments. Red Alpha calls its version an **Integrated Project Team**; the underlying concept and its recognized best practices are the same, and they're directly relevant to us: keep the team **small**, make **roles and responsibilities explicit** up front, set **clear goals**, and lead through **shared accountability and consensus** rather than command.
+**IPT stands for Integrated Project Team**, everywhere in this knowledge base and everywhere at Red Alpha. The expansion is deliberate and it is not interchangeable with anything else the acronym is used for elsewhere — a Red Alpha IPT is a **Project** Team, and should not be described as a product team in any document, briefing, or conversation with a customer.
+
+The underlying idea is a well-established one in disciplined acquisition practice: a **multi-disciplinary team whose members come from every function needed to make a decision and own an outcome**, working together rather than passing work over walls between departments. That literature's recognized best practices are directly relevant to us, and we adopt them — keep the team **small**, make **roles and responsibilities explicit** up front, set **clear goals**, and lead through **shared accountability and consensus** rather than command. What we take from it is the practice, not its naming. (Sources are in [`07-glossary-and-references.md`](07-glossary-and-references.md).)
 
 For Red Alpha, we adopt that spirit and make it concrete:
 

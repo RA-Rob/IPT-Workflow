@@ -62,7 +62,7 @@
 
 **Impact level** — Low / moderate / high categorization of a system's security sensitivity, which determines the applicable control baseline.
 
-**Integrated Project Team (IPT)** — A small, cross-functional, durable team that owns a product end to end, containing (in people or hats) every function needed to design, build, secure, ship, and support it. Sized to the fewest people who can cover those functions **while keeping the Product Owner separate from the engineers** — the one staffing rule that no team size relaxes (document 04). Best practices: keep it small, make roles explicit, set clear goals, lead through shared accountability. The concept comes from disciplined acquisition practice, where it's most often called an **Integrated Product Team** — same idea, different name.
+**Integrated Project Team (IPT)** — Always expanded as **Integrated Project Team**; never "product team," and not interchangeable with other uses of the acronym. A small, cross-functional, durable team that owns a product end to end, containing (in people or hats) every function needed to design, build, secure, ship, and support it. Sized to the fewest people who can cover those functions **while keeping the Product Owner separate from the engineers** — the one staffing rule that no team size relaxes (document 04). Best practices: keep it small, make roles explicit, set clear goals, lead through shared accountability — drawn from the multi-disciplinary integrated-team practice long established in disciplined acquisition work (document 03; sources below).
 
 **ISSO (Information System Security Officer)** — The role, embedded in the IPT, that owns security-by-design and the authorization path day to day. Red Alpha's "Security Lead."
 
@@ -136,7 +136,10 @@ The through-line: the shoppable asset is Red Alpha showing a capability that alr
 
 ## References (verified, August 2026)
 
-**Integrated Product Teams** (the acquisition-practice term our **Integrated Project Team** concept draws on)
+**Multi-disciplinary integrated teams in acquisition practice** (background for the **Integrated Project Team** model in document 03)
+
+*Source titles below are reproduced as published. That literature expands the acronym differently; **Red Alpha's IPT is an Integrated Project Team** and is not to be called a product team. The practice is what we borrow, not the name.*
+
 - Integrated Product Team (IPT) — AcqNotes: https://acqnotes.com/acqnote/careerfields/integrated-product-teams
 - Integrated product team — Wikipedia: https://en.wikipedia.org/wiki/Integrated_product_team
 - Setting up and managing integrated product teams — PMI: https://www.pmi.org/learning/library/setting-up-managing-integrated-product-teams-8903
