@@ -94,9 +94,11 @@ Document 01 makes clearance a hard stop before anything is shopped, and document
 
 **Owner:** *unassigned* · **Decides:** Executive leadership with RA Legal and business development · **Source:** [01](01-ip-origin-and-clearance.md) · **Status:** Open · **Priority**
 
-A **CRADA** negotiated while an originating contract is being written is the cleanest of document 01's three positions and far cheaper than arguing for a release afterward. But it has to be raised *early*, which means somebody has to spot the possibility of generalizable value before the work has produced any — a judgment made at contracting time, by people who may never talk to the delivery team. Document 04 flags the team as where the signal originates; it does not say who acts on it.
+A **CRADA** negotiated while the work is being set up is the cleanest of document 01's three positions where it is available, and far cheaper than arguing for a release afterward. But it has to be raised *early*, which means somebody has to spot the possibility of generalizable value before the work has produced any — a judgment made at contracting time, by people who may never talk to the delivery team. Document 04 flags the team as where the signal originates; it does not say who acts on it.
 
-**Resolved looks like:** a stated default (do we seek a CRADA on every contract of a certain shape, or only where generalizable value is foreseeable?), a named owner for raising it, and the trigger conditions — written into document 01.
+**Two constraints make this narrower than it first looks, and they need a real answer.** *(a)* A CRADA is a **federal-laboratory instrument** (15 U.S.C. § 3710a): the counterparty must be or act through a federal lab. We do not currently know **what proportion of Red Alpha's customer base can actually enter one** — and if the answer is "very little of it," this position is a special case rather than a default, and OI-26's question about standard contract terms carries correspondingly more weight. *(b)* A CRADA is **not a funding vehicle** — the government may not pay us under one. So the CRADA route gives the strongest IP position but not the funded-origin economics the rest of the model leans on, which means the business case for pursuing one has to be made on the rights alone.
+
+**Resolved looks like:** a read from RA Legal on how many of our customers and prospective customers can enter a CRADA at all; a stated default for when we seek one (every contract of a certain shape, or only where generalizable value is foreseeable and the counterparty qualifies); a named owner for raising it; and an explicit acknowledgement of what the route costs us in funding terms — written into document 01.
 
 #### OI-29 — What do we do with valuable IP we cannot clear?
 

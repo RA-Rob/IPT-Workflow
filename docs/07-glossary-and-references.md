@@ -32,7 +32,7 @@
 
 **Core product** — The product baseline that Red Alpha owns and **licenses** to customers. Grown with Red Alpha's own money, it is the part of the system that is not specific to any one customer, and the asset the company is actually building. Distinguished from **tailoring**, the customer-specific work built on top of it. The boundary between the two is drawn deliberately during Discovery and maintained through every cycle, because it determines who paid for what and who owns it. What the core is *built on* is a separate question with its own record: much of it arrives as **contract-derived IP**, which is Red Alpha's to use only once **IP clearance** says so (document 01).
 
-**CRADA (Cooperative Research and Development Agreement)** — An agreement with a collaborating customer — most often a government one — that settles up front who owns the intellectual property arising from joint work. At Red Alpha it is one of the three acceptable positions an **IP clearance** may rest on, and the cleanest of the three: negotiated while the originating contract is being written rather than argued for afterward, it lets Red Alpha keep the resulting IP outright. Where generalizable value is foreseeable, raising a CRADA early is far cheaper than seeking a release later. See document 01.
+**CRADA (Cooperative Research and Development Agreement)** — A technology-transfer agreement under **15 U.S.C. § 3710a** (Stevenson-Wydler) between one or more **federal laboratories** and one or more non-federal parties, settling up front who owns the intellectual property arising from joint work. At Red Alpha it is one of the three positions an **IP clearance** may rest on, and where available it is the cleanest: negotiated while the work is being set up rather than argued for afterward, it lets Red Alpha keep the resulting IP. Two limits define it. It is **not a general contracting vehicle** — the originating customer must be or act through a federal laboratory, so for a program office or command it may not be available at all. And it is **not a funding vehicle** — the government may contribute people, facilities, equipment, data, and its own IP, but **may not pay the non-federal party**, so a CRADA-derived capability is one Red Alpha funded its own share of. See document 01.
 
 **Cycle** — A fixed-time block of protected build work in which scope flexes and time does not. Shape Up's default is six weeks; during the **MVP** phase Red Alpha runs short cycles (2–3 weeks) so the **funding customer** gets working capability to evaluate often.
 
@@ -160,6 +160,11 @@ The through-line: the shoppable asset is Red Alpha earning the right to a conver
 **Forward Deployed Engineers**
 - "OpenAI Pays $280,000 For This Job. You Don't Have To Be An Engineer." — Nate B Jones, *AI News & Strategy Daily* (YouTube): https://youtu.be/0bLI31EFDDs
 
+**Intellectual property and technology transfer**
+- 15 U.S.C. § 3710a — Cooperative research and development agreements (the CRADA statute) — U.S. House, Office of the Law Revision Counsel: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section3710a&num=0&edition=prelim
+- Cooperative Research and Development Agreement (CRADA) — NIST Technology Partnerships Office: https://www.nist.gov/tpo/cooperative-research-and-development-agreement-crada
+- Cooperative Research & Development Agreement (CRADA), 15 USC 3710a — Defense Acquisition University, Contracting Cone: https://aaf.dau.mil/contracting-cone/rd-agreements/crada/
+
 **Security & compliance (RMF, ATO, cATO, DevSecOps)**
 - NIST RMF Explained: 7-Step Risk Management Framework — Deepwatch: https://www.deepwatch.com/glossary/nist-rmf/
 - NIST Risk Management Framework — NIST CSRC: https://csrc.nist.gov/projects/risk-management
@@ -167,4 +172,4 @@ The through-line: the shoppable asset is Red Alpha earning the right to a conver
 - Continuous Authorization to Operate (cATO) Evaluation Criteria — DoD CIO (PDF): https://dodcio.defense.gov/Portals/0/Documents/Library/cATO-EvaluationCriteria.pdf
 - Introduction to the DoD Software Factory — Anchore: https://anchore.com/blog/introduction-to-the-dod-software-factory/
 
-*Note: web sources were consulted in August 2026 and summarized for internal discussion. For any authorization decision, rely on the current official NIST and DoD publications and the guidance of the cognizant Authorizing Official rather than these secondary summaries.*
+*Note: web sources were consulted in August and September 2026 and summarized for internal discussion. For any authorization decision, rely on the current official NIST and DoD publications and the guidance of the cognizant Authorizing Official rather than these secondary summaries.*

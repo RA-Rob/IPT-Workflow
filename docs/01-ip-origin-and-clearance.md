@@ -1,6 +1,6 @@
 # 01 — Where the IP Comes From: Contract-Derived IP and Legal Clearance
 
-*Status: Draft for discussion — v0.2 — September 2026*
+*Status: Draft for discussion — v0.3 — September 2026*
 
 ## Why this document exists
 
@@ -16,7 +16,7 @@ That is the primary route, and it is the route to plan around. Red Alpha *can* s
 
 Two consequences follow immediately, and the rest of this document is about them:
 
-- **The economics are far better than a self-funded build.** The origin cost was already paid by the first engagement. What Red Alpha spends is the marginal cost of generalizing and packaging, not the full cost of invention.
+- **The economics are usually far better than a self-funded build.** Where the capability was built under a funded delivery contract, the origin cost was already paid by that engagement, and what Red Alpha spends is the marginal cost of generalizing and packaging rather than the full cost of invention. (The CRADA route is the exception — see below — because under a CRADA the government does not fund us at all.)
 - **The ownership question is far harder than a self-funded build.** IP produced under someone else's contract is not automatically ours. A POC Red Alpha funds outright carries no ambiguity about who owns it; contract-derived IP carries that ambiguity by default. **This is the trade, and it is why RA Legal is not optional here.**
 
 ## The route, step by step
@@ -39,9 +39,15 @@ Stage 0 is deliberately ungated: subjecting exploratory, unfunded work to charte
 
 - **Red Alpha owns the IP outright** under the terms of the originating contract — the contract assigns or retains ownership with us, and we may use, license, and modify it without further permission.
 - **The originating customer has released the IP** for Red Alpha's own use. The customer holds or held rights and has explicitly granted us the ability to use the capability for our own purposes, including with other customers. A release is a document, not an understanding between two program managers.
-- **A CRADA is in place.** A **Cooperative Research and Development Agreement** — negotiated with the originating customer, ideally before or during the work rather than after it — establishes from the outset that Red Alpha keeps the IP arising from the collaboration. Where we can see generalizable value coming, this is the cleanest instrument, because it settles the question while everyone still agrees on the answer.
+- **A CRADA is in place.** A **Cooperative Research and Development Agreement** (15 U.S.C. § 3710a) — negotiated before or during the work rather than after it — establishes from the outset that Red Alpha keeps the IP arising from the collaboration. Where one is available and we can see generalizable value coming, it is the cleanest of the three, because it settles the question while everyone still agrees on the answer. It is also the narrowest, for two reasons set out immediately below.
 
 **Anything else is a stop.** If Legal cannot place the IP in one of those three positions, the capability stays with the originating engagement. It is not shopped, not demonstrated, and not used as the basis of a new build, until the position is fixed — by renegotiating terms with the originating customer, by seeking a release, by putting a CRADA in place, or by rebuilding the capability independently and cleanly. Proceeding anyway is not an acceptable risk: it puts the originating relationship, the new engagement, and the licensed core product all at risk at once.
+
+**Two things about CRADAs that the other two positions do not share.** They are worth stating plainly, because a CRADA is easy to reach for rhetorically and harder to reach for in practice.
+
+*It is a federal-laboratory instrument, not a general contracting vehicle.* A CRADA is an agreement between one or more **federal laboratories** and one or more non-federal parties, created under Stevenson-Wydler for technology transfer out of government labs. Where the originating customer is or acts through a federal laboratory, it is available and it is excellent. Where they are a program office, a command, or any other component without laboratory status, **it may simply not be on the table** — and the position will have to be ownership under the contract's own terms or an explicit release instead. Nobody should plan a capability's IP position around a CRADA before confirming with RA Legal that the originating customer can actually enter one.
+
+*It is an IP instrument, not a funding one.* Under a CRADA the government **may not provide funds to the non-federal party**. It can contribute personnel, facilities, equipment, data, and its own intellectual property; it cannot pay us. That makes the CRADA route economically different from the other two in a way worth being honest about: the argument for contract-derived IP generally is that *someone else already paid for the work*, and under a CRADA that is not what happened — Red Alpha contributed its own effort and kept the resulting rights. The IP position is arguably the strongest of the three; the cost was ours. Both of those things are true at once, and a plan that quietly assumes the funding half of the argument while relying on a CRADA for the rights half is a plan with a hole in it.
 
 **What clearance is scoped to.** A determination covers a defined body of IP for a defined kind of use. It is not a blanket permission for everything the team ever learned on that contract, and it does not extend automatically to the originating customer's **data**, their specific deliverable, or their mission details — those remain theirs regardless of how the capability itself is cleared. What we generalize is the capability, never the customer.
 
@@ -118,5 +124,6 @@ The route above answers where the IP comes from and on what basis we may use it.
 
 ## Changelog
 
+- v0.3 — 2026-09-22 — qualified the CRADA position: it is a federal-laboratory instrument under 15 U.S.C. § 3710a (so unavailable where the originating customer lacks lab status) and not a funding vehicle (the government may not pay the non-federal party), which makes its economics different from the other two positions. Reflected in OI-28.
 - v0.2 — 2026-09-22 — reframed around **contract-derived IP** as the primary origin, with RA Legal's **IP clearance** as a hard precondition to shopping and three acceptable ownership positions (RA ownership, customer release, CRADA). The internally funded POC is retained as the secondary route. Document renamed from `01-ideation-and-poc-origin.md`.
 - v0.1 — 2026-08-31 — initial document: ideation as the origin of a self-funded POC.

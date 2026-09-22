@@ -127,7 +127,7 @@ That gives the team one standing obligation it would not otherwise have: **when 
 - What is the minimum viable team we'd ever stand up — is four really the floor, or three for the smallest efforts?
 - How do we handle **on-call / operations** load on a lean team once products are live in production?
 - Who **packages cleared IP into a demonstration** once a Phase 5 team's capability is judged worth generalizing (document 01)? It happens before any *new* IPT is chartered, and will draw on the same scarce people this document allocates — likely including some of the very team still delivering the originating customer's mission.
-- Whose job is it to **spot a generalizable capability early enough to raise a CRADA** while the originating contract is still being shaped? That is a business-development and Legal question as much as a team one, but the team is where the signal originates.
+- Whose job is it to **spot a generalizable capability early enough to raise a CRADA**, where the originating customer is one that can enter one at all, while the contract is still being shaped? That is a business-development and Legal question as much as a team one, but the team is where the signal originates.
 - Can one IPT carry a **second funding customer's** tailoring alongside the first, or does each engagement need its own team? This is the practical limit on how fast the licensing model can grow.
 
 *Role definitions and acronyms are in [`07-glossary-and-references.md`](07-glossary-and-references.md).*
