@@ -2,6 +2,8 @@
 
 Red Alpha's standard way of turning **cleared intellectual property** — usually derived from work an existing customer contract already paid for — into a shipped, secure, licensable software product, by way of a customer-funded **MVP** tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional **Integrated Project Teams (IPTs)**.
 
+> **"Cleared" means legally cleared, not security-cleared.** Throughout this repository, *cleared IP* is IP that **RA Legal has determined Red Alpha has the right to use** — because we own it under the originating contract, because the customer released it, or because a CRADA secures it. It says nothing about classification, releasability, or who holds a personnel clearance. Those are separate determinations, made by different people, and both can apply to the same capability. See [`docs/01`](./docs/01-ip-origin-and-clearance.md) and the [glossary](./docs/07-glossary-and-references.md).
+
 This repository is a **living, iterative knowledge base**, not a finished standard. It is meant to be read, argued with, and revised by the Red Alpha team. Once the ideas here stabilize through discussion, we pull them into other forms (decks, checklists, charters) without rewriting the underlying thinking.
 
 > **Start here:** [`EXECUTIVE-SUMMARY.md`](./EXECUTIVE-SUMMARY.md) for the one-page overview, then the `docs/` folder for full detail.

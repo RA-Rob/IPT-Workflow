@@ -15,7 +15,7 @@
 
 *This is the entry gate. It assumes a body of **cleared IP** exists and has been demonstrated to this customer — where that IP came from, and what RA Legal had to determine before it could be shown to anyone, is documented in [`docs/01`](../docs/01-ip-origin-and-clearance.md); this checklist picks up at the funded-delivery machinery described in [`docs/05`](../docs/05-process-timeline-and-phases.md). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
 
-- [ ] **RA Legal's IP clearance is on record** for the capability this engagement will build on — Red Alpha owns it, the originating customer released it, or a CRADA secures it. *(Hard condition. If this is blank, the gate does not open, whatever the customer is willing to pay.)*
+- [ ] **RA Legal's IP clearance is on record** for the capability this engagement will build on — Red Alpha owns it, the originating customer released it, or a CRADA secures it. *(Hard condition. If this is blank, the gate does not open, whatever the customer is willing to pay. Note: this is a **legal** clearance about our right to use the IP — not a security clearance, and not a statement about classification.)*
 - [ ] That determination's **scope still covers what we intend to build and license here** — re-checked, not assumed, because engagements drift between the first conversation and the commitment.
 - [ ] The originating customer's **data, deliverable, and mission details are excluded** — carried nowhere, including into the demonstration environment.
 - [ ] A funding customer's money is **committed**, not merely expected or verbally encouraged.

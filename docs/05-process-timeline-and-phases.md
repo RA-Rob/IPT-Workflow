@@ -4,7 +4,7 @@
 
 ## How to read this document
 
-This is the step-by-step process a Red Alpha IPT follows to take **cleared, demonstrated IP** to a shipped, operating, licensable product — by way of a **customer-funded MVP** tailored to that customer's mission. It is organized as **five phases separated by five gates**. A *phase* is a period of work with a clear purpose; a *gate* is a short, explicit decision point where the accountable parties decide whether to continue, adjust, or stop. Gates are what keep a lean team honest — they are the cheap moments to change course. The numbering is deliberate and worth memorizing: **Gate 0 opens the work, and after that Gate N closes Phase N.**
+This is the step-by-step process a Red Alpha IPT follows to take **cleared, demonstrated IP** — *cleared* meaning RA Legal has established Red Alpha's legal right to use it, **not** security-cleared (document 01) — to a shipped, operating, licensable product — by way of a **customer-funded MVP** tailored to that customer's mission. It is organized as **five phases separated by five gates**. A *phase* is a period of work with a clear purpose; a *gate* is a short, explicit decision point where the accountable parties decide whether to continue, adjust, or stop. Gates are what keep a lean team honest — they are the cheap moments to change course. The numbering is deliberate and worth memorizing: **Gate 0 opens the work, and after that Gate N closes Phase N.**
 
 Two things about this process are easy to miss and matter more than anything else in it:
 

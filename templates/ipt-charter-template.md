@@ -26,6 +26,8 @@
 
 *The question document 01 exists to answer. Fill this in before Gate 0 is decided, not after. A blank here is a blocked gate, not an open action item.*
 
+*Note on the word: **clearance here is legal, not security.** It records RA Legal's determination that Red Alpha has the right to use this IP. Classification, releasability, and personnel clearances are separate matters — record those in §8 with the rest of the security read.*
+
 | | |
 |---|---|
 | **Origin** | [Contract-derived — name the originating contract / customer · **or** Red Alpha self-funded build · **or** both, described] |

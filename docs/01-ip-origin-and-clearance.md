@@ -1,12 +1,16 @@
 # 01 — Where the IP Comes From: Contract-Derived IP and Legal Clearance
 
-*Status: Draft for discussion — v0.3 — September 2026*
+*Status: Draft for discussion — v0.4 — September 2026*
 
 ## Why this document exists
 
 Every other document in this knowledge base starts from the same assumed starting point: **something shoppable already exists, and a new customer has committed to fund turning it into an MVP for their mission.** That is a deliberate boundary — document 05's Gate 0 is specific and well-defined precisely because it does not also have to cover the unfunded work of getting to that point. But it leaves the first question unanswered: **where does the shoppable thing come from, and on what basis is it ours to shop?**
 
 This document is that front end. It does not replace anything — Gate 0 in document 05 is still where the gated, funded process begins — it explains what happens *before* that, and it names the one hard stop that has to be cleared on the way.
+
+> **A word on "cleared," before anything else.** In a defense and government context "cleared" almost always means *security*-cleared — cleared personnel, a cleared facility, material cleared for public release. **That is not what it means anywhere in these documents.** Here, **cleared IP** is IP that **RA Legal has determined Red Alpha has the legal right to use** — because we own it, because the originating customer released it, or because a CRADA secures it. It is a statement about *ownership and permission*, not about classification.
+>
+> The two are independent and both may apply. A body of IP can be legally cleared and still be classified; it can be unclassified and still not be ours to use. Nothing in this document's clearance says anything about a capability's classification level, its releasability, or who is cleared to see it — those are separate determinations, made by different people, and they do not substitute for each other in either direction.
 
 ## The asset is intellectual property, and it usually already exists
 
@@ -124,6 +128,7 @@ The route above answers where the IP comes from and on what basis we may use it.
 
 ## Changelog
 
+- v0.4 — 2026-09-22 — defined **cleared** in line and in the glossary, and disambiguated it from *security*-cleared, which is what the word defaults to meaning for this audience.
 - v0.3 — 2026-09-22 — qualified the CRADA position: it is a federal-laboratory instrument under 15 U.S.C. § 3710a (so unavailable where the originating customer lacks lab status) and not a funding vehicle (the government may not pay the non-federal party), which makes its economics different from the other two positions. Reflected in OI-28.
 - v0.2 — 2026-09-22 — reframed around **contract-derived IP** as the primary origin, with RA Legal's **IP clearance** as a hard precondition to shopping and three acceptable ownership positions (RA ownership, customer release, CRADA). The internally funded POC is retained as the secondary route. Document renamed from `01-ideation-and-poc-origin.md`.
 - v0.1 — 2026-08-31 — initial document: ideation as the origin of a self-funded POC.

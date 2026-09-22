@@ -12,6 +12,8 @@ description: >-
   <p class="lede">A standard, repeatable way to turn <strong>cleared intellectual property</strong> — usually derived from work an existing customer contract already paid for — into a shipped, secure, licensable software product, by way of a customer-funded <strong>MVP</strong> tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional <strong>Integrated Project Teams</strong>.</p>
 </div>
 
+<p class="note"><strong>&ldquo;Cleared&rdquo; here means legally cleared, not security-cleared.</strong> Throughout this site, <em>cleared IP</em> is IP that RA Legal has determined Red Alpha has the right to use — under the originating contract, by the customer&rsquo;s release, or through a CRADA. It is a statement about ownership and permission, not about classification, releasability, or personnel clearances. Those are separate determinations, and both can apply to the same capability. The full distinction is in the <a href="{{ '/docs/07-glossary-and-references.html' | relative_url }}">glossary</a>.</p>
+
 <div class="belief">
   <p class="claim">The expensive mistake in software is <em>building the wrong thing well.</em></p>
   <p>So the workflow does two things, in order: <strong>reduce uncertainty cheaply before committing</strong>, then <strong>let a small empowered team own delivery end to end</strong>.</p>

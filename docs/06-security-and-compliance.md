@@ -8,6 +8,8 @@ Because Red Alpha's products may serve defense and government customers, they mu
 
 This document explains the security and compliance landscape in plain terms and maps it onto the phases and gates from document 05. It is written to be read by the whole team, not only the Security Lead — because on a lean team, security is everyone's job even though one person owns it.
 
+> **A terminology warning, since this is the security document.** Documents 01 and 05 talk about **cleared IP** and **IP clearance**. In this document's subject matter, "cleared" would normally mean security-cleared — personnel, facilities, classification, public release. **It does not mean that there.** An IP clearance is RA Legal's determination that Red Alpha has the legal *right to use* a capability; it makes no statement whatever about classification, releasability, or who may see the material. A capability can be legally cleared and classified at the same time, and the security determinations in this document apply to it exactly as they would to anything else. Neither kind of clearance implies or replaces the other.
+
 > **Important caveat for reviewers.** The specific frameworks below (NIST RMF, ATO/cATO, DoD DevSecOps) are the general, publicly documented U.S. government approaches. The *exact* controls, authorization boundary, and authority that apply to any given Red Alpha product depend on that product's customer, data, and environment. Treat this as the shared mental model; the Security Lead tailors the specifics per product with the actual Authorizing Official.
 
 ## The core idea: secure by design, authorizable by default
