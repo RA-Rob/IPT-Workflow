@@ -6,11 +6,7 @@
 
 Every other document in this knowledge base starts from the same assumed starting point: **something shoppable already exists, and a new customer has committed to fund turning it into an MVP for their mission.** That is a deliberate boundary — document 05's Gate 0 is specific and well-defined precisely because it does not also have to cover the unfunded work of getting to that point. But it leaves the first question unanswered: **where does the shoppable thing come from, and on what basis is it ours to shop?**
 
-This document is that front end. It does not replace anything — Gate 0 in document 05 is still where the gated, funded process begins — it explains what happens *before* that, and it names the one hard stop that has to be cleared on the way.
-
-> **A word on "cleared," before anything else.** In a defense and government context "cleared" almost always means *security*-cleared — cleared personnel, a cleared facility, material cleared for public release. **That is not what it means anywhere in these documents.** Here, **cleared IP** is IP that **RA Legal has determined Red Alpha has the legal right to use** — because we own it, because the originating customer released it, or because a CRADA secures it. It is a statement about *ownership and permission*, not about classification.
->
-> The two are independent and both may apply. A body of IP can be legally cleared and still be classified; it can be unclassified and still not be ours to use. Nothing in this document's clearance says anything about a capability's classification level, its releasability, or who is cleared to see it — those are separate determinations, made by different people, and they do not substitute for each other in either direction.
+This document is that front end. It does not replace anything — Gate 0 in document 05 is still where the gated, funded process begins — it explains what happens *before* that, and it names the one hard stop that stands in the way.
 
 ## The asset is intellectual property, and it usually already exists
 
@@ -31,13 +27,19 @@ Two consequences follow immediately, and the rest of this document is about them
 
 3. **The IP position, determined by RA Legal.** Before anything is shopped, Red Alpha establishes *in writing* what its rights in that IP actually are. This is the hard stop described in the next section, and it has exactly three acceptable answers.
 
-4. **Matching it to a mission requirement, and shopping it.** Cleared IP is then matched against prospective customers' **mission requirements** — we are looking for a customer whose stated mission problem this capability could help solve — and shopped, usually demonstrated in some working form so the conversation is about software rather than slideware. When such a customer commits funding to have it built out as an **MVP for their mission**, that commitment is **Gate 0** and document 05 takes over.
+4. **Matching it to a mission requirement, and shopping it.** Once the rights are settled, the IP is matched against prospective customers' **mission requirements** — we are looking for a customer whose stated mission problem this capability could help solve — and shopped, usually demonstrated in some working form so the conversation is about software rather than slideware. When such a customer commits funding to have it built out as an **MVP for their mission**, that commitment is **Gate 0** and document 05 takes over.
 
 ## The IP clearance checkpoint — the one hard stop before Gate 0
 
 Stage 0 is deliberately ungated: subjecting exploratory, unfunded work to charter-and-gate machinery built for funded delivery would slow down exactly the work that needs to stay cheap and fast. **There is one exception, and it is absolute.**
 
 > **No shopping before clearance.** Contract-derived IP is not shopped, demonstrated to a prospective customer, or represented as Red Alpha's to build on until **RA Legal has reviewed the originating contract and recorded a determination that Red Alpha may use it.** This is not a formality and not a post-hoc sign-off. It happens before the first conversation with a prospect, because the first conversation is already a use.
+
+**The shorthand, and one caution about it.** These documents call that determination an **IP clearance**, and IP that has one **cleared IP**. The shorthand is convenient and it is used throughout — but in a defense and government context "cleared" ordinarily means *security*-cleared, so it is worth being blunt about the difference before going further.
+
+> An **IP clearance is a legal determination about ownership and permission**: may Red Alpha use this. It is **not** a security clearance, and it says nothing about a capability's classification level, its releasability, or who is cleared to see it.
+>
+> The two are independent, and both may apply to the same capability. IP can be legally cleared and still be classified; it can be unclassified and still not be ours to use. Different people make the two determinations, and neither substitutes for the other in either direction. Where these documents mean the security sense, they say so.
 
 **The three acceptable positions.** RA Legal's determination must land on one of these, in writing:
 
@@ -128,7 +130,7 @@ The route above answers where the IP comes from and on what basis we may use it.
 
 ## Changelog
 
-- v0.4 — 2026-09-22 — defined **cleared** in line and in the glossary, and disambiguated it from *security*-cleared, which is what the word defaults to meaning for this audience.
+- v0.4 — 2026-09-22 — introduced **cleared** as a shorthand only at the point where clearance is explained, rather than in the opening, and disambiguated it there from *security*-cleared — which is what the word defaults to meaning for this audience. Opening paragraphs now say "IP Red Alpha has the right to use" in plain terms.
 - v0.3 — 2026-09-22 — qualified the CRADA position: it is a federal-laboratory instrument under 15 U.S.C. § 3710a (so unavailable where the originating customer lacks lab status) and not a funding vehicle (the government may not pay the non-federal party), which makes its economics different from the other two positions. Reflected in OI-28.
 - v0.2 — 2026-09-22 — reframed around **contract-derived IP** as the primary origin, with RA Legal's **IP clearance** as a hard precondition to shopping and three acceptable ownership positions (RA ownership, customer release, CRADA). The internally funded POC is retained as the secondary route. Document renamed from `01-ideation-and-poc-origin.md`.
 - v0.1 — 2026-08-31 — initial document: ideation as the origin of a self-funded POC.

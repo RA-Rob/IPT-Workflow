@@ -1,8 +1,6 @@
 # IPT Workflow
 
-Red Alpha's standard way of turning **cleared intellectual property** — usually derived from work an existing customer contract already paid for — into a shipped, secure, licensable software product, by way of a customer-funded **MVP** tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional **Integrated Project Teams (IPTs)**.
-
-> **"Cleared" means legally cleared, not security-cleared.** Throughout this repository, *cleared IP* is IP that **RA Legal has determined Red Alpha has the right to use** — because we own it under the originating contract, because the customer released it, or because a CRADA secures it. It says nothing about classification, releasability, or who holds a personnel clearance. Those are separate determinations, made by different people, and both can apply to the same capability. See [`docs/01`](./docs/01-ip-origin-and-clearance.md) and the [glossary](./docs/07-glossary-and-references.md).
+Red Alpha's standard way of turning **intellectual property we own or have the right to reuse** — usually built and paid for on an existing customer contract — into a shipped, secure, licensable software product, by way of a customer-funded **MVP** tailored to a new customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional **Integrated Project Teams (IPTs)**.
 
 This repository is a **living, iterative knowledge base**, not a finished standard. It is meant to be read, argued with, and revised by the Red Alpha team. Once the ideas here stabilize through discussion, we pull them into other forms (decks, checklists, charters) without rewriting the underlying thinking.
 
@@ -33,11 +31,11 @@ Four facts about how Red Alpha gets its products shape everything downstream of 
 | Path | What it covers |
 |------|----------------|
 | [`EXECUTIVE-SUMMARY.md`](./EXECUTIVE-SUMMARY.md) | One-page overview for leadership |
-| [`docs/01-ip-origin-and-clearance.md`](./docs/01-ip-origin-and-clearance.md) | The entry point: where the IP comes from, and what RA Legal must clear before we shop it |
+| [`docs/01-ip-origin-and-clearance.md`](./docs/01-ip-origin-and-clearance.md) | The entry point: where the IP comes from, and the rights RA Legal must confirm before we shop it |
 | [`docs/02-research-brief-incubator-methodologies.md`](./docs/02-research-brief-incubator-methodologies.md) | Baseline research: five top product/idea companies and why they succeed |
 | [`docs/03-ipt-model-overview.md`](./docs/03-ipt-model-overview.md) | The Red Alpha idea-to-product model: philosophy, principles, when an IPT stands up |
 | [`docs/04-team-structure-and-roles.md`](./docs/04-team-structure-and-roles.md) | The lean 4–7 person IPT: roles, multi-hat assignments, responsibilities (RACI) |
-| [`docs/05-process-timeline-and-phases.md`](./docs/05-process-timeline-and-phases.md) | End-to-end timeline: five phases, five gates, cleared IP → MVP → product, artifacts, worked schedule |
+| [`docs/05-process-timeline-and-phases.md`](./docs/05-process-timeline-and-phases.md) | End-to-end timeline: five phases, five gates, IP → MVP → product, artifacts, worked schedule |
 | [`docs/06-security-and-compliance.md`](./docs/06-security-and-compliance.md) | Security-first / defense context: RMF, ATO/cATO, DevSecOps woven into the process; the `stage` boundary |
 | [`docs/07-glossary-and-references.md`](./docs/07-glossary-and-references.md) | Definitions, a shoppable-asset-vs-MVP comparison, and the full verified source list |
 | [`docs/08-open-items.md`](./docs/08-open-items.md) | The open-items register: every unsettled question, its owner, who decides, and what "resolved" looks like |

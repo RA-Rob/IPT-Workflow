@@ -4,9 +4,7 @@
 
 ## Bottom line up front
 
-**The product we sell is usually IP we have already been paid to build. A small, durable Integrated Project Team takes that cleared IP to a shipped product in about eight months from the day a new customer commits funding — and the customer approves the direction every two to three weeks along the way, not once at the end.**
-
-> *Throughout this page, **cleared** means **legally** cleared — RA Legal has determined Red Alpha has the right to use the IP. It does **not** mean security-cleared, and says nothing about classification or releasability. Those are separate determinations that may also apply. See [`docs/07`](docs/07-glossary-and-references.md) for the full distinction.*
+**The product we sell is usually intellectual property we have already been paid to build — and confirmed, in writing, that we have the right to reuse. A small, durable Integrated Project Team takes that IP to a shipped product in about eight months from the day a new customer commits funding, and the customer approves the direction every two to three weeks along the way, not once at the end.**
 
 - **The asset comes from contract work, not from speculation.** The ordinary case is that a Red Alpha team delivering on an existing customer's contract builds something whose underlying capability reaches beyond that one mission. We generalize it, match it to a *different* customer's mission requirement, and that customer pays for the **tailoring** that makes it work in their environment. Red Alpha can also self-fund a proof of concept from scratch — but that is the fallback, not the model, because it spends our own money to reach a starting line the first route arrives at already paid for.
 - **This is the single biggest change to the model, and it cuts both ways.** The economics improve sharply: the origin cost was already funded, so what we spend is the marginal cost of generalizing and packaging rather than the full cost of invention. The risk is new, and it is legal: **IP produced under someone else's contract is not ours by default.**

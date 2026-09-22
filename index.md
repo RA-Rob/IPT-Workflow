@@ -1,18 +1,17 @@
 ---
 title: Overview
 description: >-
-  Red Alpha's standard way of turning cleared IP, usually derived from work an
-  existing customer contract already funded, into a shipped, secure, licensable
-  software product, by way of a customer-funded MVP delivered in short
-  reviewable increments by a small Integrated Project Team.
+  Red Alpha's standard way of turning intellectual property it owns or has the
+  right to reuse, usually built and paid for on an existing customer contract,
+  into a shipped, secure, licensable software product, by way of a
+  customer-funded MVP delivered in short reviewable increments by a small
+  Integrated Project Team.
 ---
 
 <div class="hero">
   <h1>The Red&nbsp;Alpha IPT Workflow</h1>
-  <p class="lede">A standard, repeatable way to turn <strong>cleared intellectual property</strong> — usually derived from work an existing customer contract already paid for — into a shipped, secure, licensable software product, by way of a customer-funded <strong>MVP</strong> tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional <strong>Integrated Project Teams</strong>.</p>
+  <p class="lede">A standard, repeatable way to turn <strong>intellectual property we own or have the right to reuse</strong> — usually built and paid for on an existing customer contract — into a shipped, secure, licensable software product, by way of a customer-funded <strong>MVP</strong> tailored to a new customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional <strong>Integrated Project Teams</strong>.</p>
 </div>
-
-<p class="note"><strong>&ldquo;Cleared&rdquo; here means legally cleared, not security-cleared.</strong> Throughout this site, <em>cleared IP</em> is IP that RA Legal has determined Red Alpha has the right to use — under the originating contract, by the customer&rsquo;s release, or through a CRADA. It is a statement about ownership and permission, not about classification, releasability, or personnel clearances. Those are separate determinations, and both can apply to the same capability. The full distinction is in the <a href="{{ '/docs/07-glossary-and-references.html' | relative_url }}">glossary</a>.</p>
 
 <div class="belief">
   <p class="claim">The expensive mistake in software is <em>building the wrong thing well.</em></p>
@@ -23,11 +22,11 @@ This site is a **living knowledge base, not a finished standard**. It is meant t
 
 ## The shape of it
 
-A **small durable team** moves a product through **gated phases on a predictable cadence**, with **security and authorization designed in throughout**. Upstream of all of it sits the asset: **IP Red Alpha already has**, most often derived from work an earlier customer's contract funded, generalized beyond that one mission and **cleared by RA Legal** for our own use. Two funding streams then run through the delivery: Red Alpha's money builds out the **core product** it owns and licenses; the customer's money pays for the **tailoring** that makes it work in their environment for their mission.
+A **small durable team** moves a product through **gated phases on a predictable cadence**, with **security and authorization designed in throughout**. Upstream of all of it sits the asset: **IP Red Alpha already has**, most often derived from work an earlier customer's contract funded, generalized beyond that one mission and **confirmed by RA Legal as ours to use**. Two funding streams then run through the delivery: Red Alpha's money builds out the **core product** it owns and licenses; the customer's money pays for the **tailoring** that makes it work in their environment for their mission.
 
 | Phase | Purpose | Funded by | Gate |
 |-------|---------|-----------|------|
-| *(entry)* | IP is cleared and demonstrated; a customer commits funding; charter the IPT | — | Gate 0 — commit and charter |
+| *(entry)* | Our right to the IP is confirmed and the capability demonstrated; a customer commits funding; charter the IPT | — | Gate 0 — commit and charter |
 | **1. Discovery** | Frame the outcome (PR/FAQ); draw the core/tailoring line | Customer + RA | Gate 1 — green-light the MVP |
 | **2. MVP** | Tailor the core to the customer's mission, in short cycles | Customer | Gate 2 — **customer acceptance** |
 | **3. Build** | Two tracks: productize the core, continue tailoring | RA + Customer | Gate 3 — authority & readiness to launch |
@@ -42,8 +41,8 @@ Gate 0 opens the work; after that, **Gate N closes Phase N**. Gates are short, h
 </div>
 
 <div class="belief">
-  <p class="claim">No shopping before clearance.</p>
-  <p>Capability built under another customer's contract is <strong>not Red Alpha's by default.</strong> Before any of it is shopped, demonstrated, or built on, <strong>RA Legal records a determination</strong> that we may use it — Red Alpha owns it, the originating customer released it, or a <strong>CRADA</strong> secures it. There is no fourth position. The originating customer's <em>data</em> never travels with the capability, whatever the clearance says.</p>
+  <p class="claim">No shopping until the rights are settled.</p>
+  <p>Capability built under another customer's contract is <strong>not Red Alpha's by default.</strong> Before any of it is shopped, demonstrated, or built on, <strong>RA Legal records a determination</strong> that we have the legal right to use it — Red Alpha owns it, the originating customer released it, or a <strong>CRADA</strong> secures it. There is no fourth position. The originating customer's <em>data</em> never travels with the capability, whatever that determination says. (These documents call this an <em>IP clearance</em>; it is a question of ownership and permission, <strong>not</strong> a security clearance.)</p>
 </div>
 
 **What we shop and what we build are not the same thing.** What we shop is cleared IP, demonstrated — Red Alpha earning the right to a conversation, usually on the strength of work a previous customer already funded. The MVP is the *next* customer spending their own money to find out whether that capability fits their mission. Both take real time, and both are necessary. A [side-by-side comparison]({{ '/docs/07-glossary-and-references.html' | relative_url }}) is in the glossary.

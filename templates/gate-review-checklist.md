@@ -11,9 +11,9 @@
 ---
 
 ## Gate 0 — Commit and charter (stand up the IPT)
-*Decision owner: **the Product Owner** — who decides to take the cleared capability to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money.*
+*Decision owner: **the Product Owner** — who decides to take the capability to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money.*
 
-*This is the entry gate. It assumes a body of **cleared IP** exists and has been demonstrated to this customer — where that IP came from, and what RA Legal had to determine before it could be shown to anyone, is documented in [`docs/01`](../docs/01-ip-origin-and-clearance.md); this checklist picks up at the funded-delivery machinery described in [`docs/05`](../docs/05-process-timeline-and-phases.md). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
+*This is the entry gate. It assumes a body of **cleared IP** — IP that RA Legal has determined Red Alpha has the legal right to use, which is a question of ownership and permission and **not** a security clearance — exists and has been demonstrated to this customer. Where that IP came from, and what RA Legal had to determine before it could be shown to anyone, is documented in [`docs/01`](../docs/01-ip-origin-and-clearance.md); this checklist picks up at the funded-delivery machinery described in [`docs/05`](../docs/05-process-timeline-and-phases.md). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
 
 - [ ] **RA Legal's IP clearance is on record** for the capability this engagement will build on — Red Alpha owns it, the originating customer released it, or a CRADA secures it. *(Hard condition. If this is blank, the gate does not open, whatever the customer is willing to pay. Note: this is a **legal** clearance about our right to use the IP — not a security clearance, and not a statement about classification.)*
 - [ ] That determination's **scope still covers what we intend to build and license here** — re-checked, not assumed, because engagements drift between the first conversation and the commitment.
