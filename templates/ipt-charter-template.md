@@ -8,6 +8,7 @@
 | **Charter date / version** | [YYYY-MM-DD] / v[0.1] |
 | **Sponsor / Product Champion** | [name, role] |
 | **Funding customer** | [organization; named decision-maker; named evaluation lead] |
+| **IP clearance reference** | [RA Legal determination ref / date — **may not be left blank**; see [`docs/01`](../docs/01-ip-origin-and-clearance.md)] |
 | **Product Owner (Decider)** | [name] |
 | **Charter status** | Draft / Approved at Gate 0 |
 
@@ -19,7 +20,22 @@
 
 ## 2. The problem and the evidence so far
 
-[2–4 sentences: the customer's mission problem, what the **POC** proved (and what it deliberately didn't), and the gap between that POC and something this customer could actually use in their environment. Reference the PR/FAQ once it exists.]
+[2–4 sentences: the customer's mission problem, what the demonstration proved (and what it deliberately didn't), and the gap between that demonstration and something this customer could actually use in their environment. Reference the PR/FAQ once it exists.]
+
+## 2a. Where the IP came from, and on what basis it is ours
+
+*The question document 01 exists to answer. Fill this in before Gate 0 is decided, not after. A blank here is a blocked gate, not an open action item.*
+
+| | |
+|---|---|
+| **Origin** | [Contract-derived — name the originating contract / customer · **or** Red Alpha self-funded build · **or** both, described] |
+| **Originating customer** | [organization, or *n/a — self-funded*] |
+| **Basis for Red Alpha's use** | [RA owns it under the originating contract · originating customer released it · CRADA in place · *n/a — self-funded*] |
+| **RA Legal determination** | [reference / date / who signed it] |
+| **Scope of that determination** | [what body of IP it covers, and for what kind of use] |
+| **Does that scope cover this engagement?** | [Yes — confirmed at Gate 0 by (name), (date) / No — what needs to change first] |
+
+**Originating customer's data:** excluded. No clearance grants any right to it, and none of it is carried into this engagement or into any demonstration environment (see [`docs/06`](../docs/06-security-and-compliance.md)).
 
 ## 3. What the customer's money buys — and what stays ours
 
@@ -28,7 +44,7 @@
 - **Core product (Red Alpha-funded, Red Alpha-owned, licensed to the customer):** [first read on what belongs here]
 - **Tailoring (customer-funded, specific to this environment/mission):** [first read on what belongs here]
 - **Licensing arrangement:** [what the customer receives and on what terms]
-- **Upstreaming:** decided case by case and recorded in the upstream log. Contract basis: [reference, or TBD]
+- **Upstreaming:** decided case by case and recorded in the upstream log. Contract basis: [reference, or TBD]. An entry dispositioned *core* that carries real ownership weight goes to RA Legal before it is treated as ours to license onward.
 - **Customer's committed funding:** [amount / period / scope]
 - **Customer's committed people:** [who evaluates each cycle's increment, and how much of their time]
 
@@ -53,7 +69,7 @@
 | Quality & test | [name / engineer's hat] | — |
 | Delivery / platform (DevSecOps) | [name / Tech Lead's hat] | — |
 
-**Team size:** [4–7]. **Roles sitting around the team:** Sponsor [name]; Funding customer [org / decision-maker]; Authorizing Official [name/TBD].
+**Team size:** [4–7]. **Roles sitting around the team:** Sponsor [name]; Funding customer [org / decision-maker]; Authorizing Official [name/TBD]; RA Legal [name — the determination in §2a is theirs, not the team's].
 
 ## 6. Decision rights
 
@@ -86,6 +102,7 @@
 
 ### Gate 0 decision
 
+- [ ] **RA Legal's IP clearance is on record**, and its scope covers what this engagement will build and license (§2a complete, no blanks)
 - [ ] Funding customer's money **committed**, and their people's time committed too
 - [ ] Real mission need confirmed
 - [ ] Plausible path to desirable + feasible + viable + securable in their environment
@@ -95,3 +112,7 @@
 
 ### Changelog
 - v0.1 — [date] — initial charter drafted.
+
+---
+
+*Template changelog: 2026-09-22 — added §2a (IP provenance and clearance), the header clearance-reference field, and the Gate 0 clearance checkbox, following the reframing in [`docs/01`](../docs/01-ip-origin-and-clearance.md).*

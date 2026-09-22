@@ -1,10 +1,10 @@
 # 03 — The Red Alpha Idea-to-Product Model
 
-*Status: Draft for discussion — v0.2 — August 2026*
+*Status: Draft for discussion — v0.3 — September 2026*
 
 ## What this document is
 
-This is the heart of the knowledge base: Red Alpha's **standard model for turning a proven concept into a real, supportable, licensable software product** — by way of a customer-funded MVP tailored to that customer's mission. It defines what we mean by an Integrated Project Team, the principles that govern how one operates, when one stands up, and how the whole thing fits together. Documents 03, 04, and 05 then detail the team, the timeline, and the security dimension respectively.
+This is the heart of the knowledge base: Red Alpha's **standard model for turning a proven concept into a real, supportable, licensable software product** — by way of a customer-funded MVP tailored to that customer's mission. It defines what we mean by an Integrated Project Team, the principles that govern how one operates, when one stands up, and how the whole thing fits together. Documents 04, 05, and 06 then detail the team, the timeline, and the security dimension respectively.
 
 ## What an Integrated Project Team is, in our terms
 
@@ -59,17 +59,19 @@ Three consequences follow:
 - **Tailoring is not assumed to be core.** Much of it is specific enough that it never belongs in the licensed product, and that is a normal outcome. Whether any given capability is **upstreamed** into the core is a separate decision, made when the answer is clear and recorded in the **upstream log** with its reasoning.
 - **Both streams run at once.** Red Alpha keeps funding core-product work while the customer funds tailoring — one team, one backlog, two funding sources, every piece of work tagged. Keeping that split honest is an obligation in both directions, and it is the Product Owner's to own (document 05).
 
-The return on all of this is compounding: each engagement pays for the tailoring while Red Alpha's own investment turns a proven concept into something the *next* customer can license with far less work.
+The return on all of this is compounding: each engagement pays for the tailoring while Red Alpha's own investment turns a proven capability into something the *next* customer can license with far less work.
+
+**And the core does not usually start from nothing.** Where the capability underneath a core product most often comes from is the subject of document 01: **IP derived from work Red Alpha has already delivered under an existing customer contract**, generalized beyond that one mission and cleared by RA Legal for our own use. That is what makes the compounding real rather than aspirational — the origin cost was already funded by the engagement that produced it. It also introduces the one obligation that a self-funded build would not carry: **Red Alpha's right to use that IP has to be established in writing before any of it is shopped.** Three positions are acceptable — Red Alpha owns it under the originating contract, the originating customer has released it, or a **CRADA** secures it — and RA Legal makes that determination. There is no fourth position and no proceeding without one.
 
 ## Where the model begins — ideation, then Gate 0
 
-The model does not begin at Gate 0 — **it begins with ideation.** A Red Alpha team already embedded and delivering on an existing customer's mission builds a solution to that customer's real problem; when what they built generalizes beyond that one engagement, Red Alpha self-funds a POC around it and shops it to a new customer, owning the resulting IP outright. That origin is documented in [`01-ideation-and-poc-origin.md`](01-ideation-and-poc-origin.md) — it is a real, if informal, stage of this model, not input sitting outside it.
+The model does not begin at Gate 0 — **it begins with IP we already have.** A Red Alpha team delivering on an existing customer's contract builds a solution to that customer's real problem; when the underlying capability generalizes beyond that one mission, **RA Legal establishes Red Alpha's right to use it**, and the cleared IP is matched against another customer's mission requirement and shopped. Red Alpha may also self-fund a POC outright, which settles the ownership question trivially but spends its own money to do so — the secondary route, not the model. Both are documented in [`01-ip-origin-and-clearance.md`](01-ip-origin-and-clearance.md); that stage is real process, not input sitting outside the model.
 
-What *is* kept outside this model's gates is the POC's construction — the charter-and-gate machinery below starts once a customer commits money:
+What *is* kept outside this model's gates is everything before a customer commits money:
 
-> **Entry condition:** A **POC** has proven the idea against an identified customer gap, and a **funding customer** has committed to pay for turning it into an **MVP** tailored to their environment and mission — meaning there is a real mission need, a plausible path to being desirable, feasible, viable, *and* securable/authorizable in that environment, and Red Alpha is willing to commit a durable team.
+> **Entry condition:** A body of **cleared IP** — Red Alpha's to use, with RA Legal's determination on record — has been demonstrated to a prospective customer against a stated mission requirement, and that **funding customer** has committed to pay for building it out as an **MVP** tailored to their environment and mission — meaning there is a real mission need, a plausible path to being desirable, feasible, viable, *and* securable/authorizable in that environment, and Red Alpha is willing to commit a durable team.
 
-Keeping the POC's construction out of the *gated* part of the model is a deliberate choice, not an oversight: subjecting speculative, self-funded exploration to charter-and-gate machinery designed for funded delivery would be exactly the wrong trade — it would slow down the cheap, fast exploration that ideation depends on. What remains genuinely open — who staffs that POC build, how long it runs, what it must prove, and who shops it — is listed in the open questions below.
+Keeping that front end out of the *gated* part of the model is a deliberate choice, not an oversight: subjecting exploratory, unfunded work to charter-and-gate machinery designed for funded delivery would be exactly the wrong trade. **It is ungated, not unconstrained** — document 01's IP clearance is a hard stop, and Gate 0 re-checks that the clearance on record still covers what this engagement intends to build on. What remains genuinely open — the generalization bar, who runs the Legal review and how long it takes, who packages the demonstration, and who shops it — is listed in the open questions below.
 
 The payoff of that boundary is that from Gate 0 onward there is a customer, a budget, and a durable team — so the model can be specific about all three.
 
@@ -77,17 +79,17 @@ The full lifecycle, gates, and timeline are in document 05. In brief, the arc is
 
 ```mermaid
 flowchart TD
-    accTitle: The IPT lifecycle, from a shopped POC through five gated phases to sustained operation
-    accDescr: A Red Alpha-funded POC, originating from field-sourced ideation described in document 01, sits outside this model's gates. Gate 0 charters the IPT, then five phases follow — Discovery and Framing, MVP, Build, Launch, and Operate and Iterate — each closed by the next numbered gate. Gate 2 is the funding customer's decision.
+    accTitle: The IPT lifecycle, from cleared and shopped IP through five gated phases to sustained operation
+    accDescr: Cleared contract-derived IP, described in document 01, sits outside this model's gates and is shopped until a customer funds the next stage. Gate 0 charters the IPT, then five phases follow — Discovery and Framing, MVP, Build, Launch, and Operate and Iterate — each closed by the next numbered gate. Gate 2 is the funding customer's decision.
 
-    POC["PRE-GATE-0 · SEE DOC 01 — Red Alpha's money<br/>A POC is built from field-sourced ideation, then shopped until a customer funds the next stage"]
+    IP["PRE-GATE-0 · SEE DOC 01 — Red Alpha's own cost<br/>IP derived from an existing contract, cleared by RA Legal, packaged and shopped<br/>until a customer funds the build-out (or, less often, a self-funded POC)"]
     D["PHASE 1 · DISCOVERY AND FRAMING — both wallets<br/>PR/FAQ with the customer · validate the riskiest assumptions<br/>draw the core/tailoring boundary · stand up stage"]
     M["PHASE 2 · MVP, the tailoring — the customer's money<br/>Short 2–3 week cycles, each ending with working<br/>capability in stage for the customer to evaluate"]
     B["PHASE 3 · BUILD — both wallets, two tracks, one team<br/>core product (Red Alpha-funded) + tailoring (customer-funded)<br/>upstream decisions move capability into the core"]
     L["PHASE 4 · LAUNCH — both wallets<br/>Into the customer's real environment; prove it there"]
     O["PHASE 5 · OPERATE AND ITERATE — both wallets<br/>Run, monitor, iterate · continuous authorization<br/>renew, scale, or sunset"]
 
-    POC -. "GATE 0<br/>Commit and charter" .-> D
+    IP -. "GATE 0<br/>Commit and charter" .-> D
     D -- "GATE 1<br/>Green-light the MVP" --> M
     M -- "GATE 2<br/>Customer acceptance<br/>the customer's decision" --> B
     B -- "GATE 3<br/>Authority and readiness<br/>to launch" --> L
@@ -97,24 +99,25 @@ flowchart TD
     classDef customer fill:transparent,stroke:#3987e5,stroke-width:2px
     classDef both fill:transparent,stroke:#c98500,stroke-width:2px
 
-    class POC outside
+    class IP outside
     class M customer
     class D,B,L,O both
 ```
 
-*Outline color marks whose money pays: dashed red for Red Alpha's own, pre-Gate-0 and outside this model's gates (see document 01); blue for the customer's alone; gold where both wallets are open. Each phase also names its funding source in text, so the color is a shortcut rather than the only way to read it. **Gate 0 opens the work; after that, Gate N closes Phase N.***
+*Outline color marks whose money pays: dashed red for Red Alpha's own cost, pre-Gate-0 and outside this model's gates (see document 01); blue for the customer's alone; gold where both wallets are open. Each phase also names its funding source in text, so the color is a shortcut rather than the only way to read it. **Gate 0 opens the work; after that, Gate N closes Phase N.***
 
 
 ## How the pieces fit
 
-The model is deliberately simple to hold in your head: a **small durable team** (document 04) moves a product through **clearly gated phases on a predictable cadence** (document 05) — Red Alpha's money proving the concept, then the customer's money tailoring it for their mission in short reviewable increments, then both funding the productized result — with **security and authorization designed in throughout** (document 06), all guided by the principle of **cheap validation before committed delivery** that we drew from the best practitioners (document 02).
+The model is deliberately simple to hold in your head: a **small durable team** (document 04) moves a product through **clearly gated phases on a predictable cadence** (document 05) — Red Alpha's money proving the concept, then the customer's money tailoring it for their mission in short reviewable increments, then both funding the productized result — with **security and authorization designed in throughout** (document 06), all guided by the principle of **cheap validation before committed delivery** that we drew from the best practitioners (document 02). Upstream of all of it sits the asset the whole thing runs on: **cleared IP, most often derived from work a previous customer already funded** (document 01).
 
 ## Open questions / to resolve
 
 *These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`08-open-items.md`](08-open-items.md), the register the whole team works from.*
 
-- **Staffing and running the front end:** [`01-ideation-and-poc-origin.md`](01-ideation-and-poc-origin.md) now documents where a POC's idea comes from. Still open: who staffs a POC build once the generalization decision is made, how long it runs, what it must prove to be worth shopping, and who shops it.
-- What do our standard customer terms say about **upstreaming** customer-funded capability into the licensed core? The model assumes it is permitted with agreement; the contract has to actually say so.
+- **Running the front end:** [`01-ip-origin-and-clearance.md`](01-ip-origin-and-clearance.md) now documents where the IP comes from and what clearing it requires. Still open: who decides a capability generalizes, who triggers and runs the Legal review and how long it takes, who packages the cleared IP into a demonstration, and who shops it.
+- **What our standard originating-contract terms should say by default** about Red Alpha generalizing capability learned on a customer's work — so clearance is the normal case rather than a negotiation each time, and so a **CRADA** gets raised while the contract is being written rather than after the fact.
+- What do our standard customer terms say about **upstreaming** customer-funded capability into the licensed core? The model assumes it is permitted with agreement; the contract has to actually say so. Related to, but distinct from, the originating-IP question above: one is about the *source* of the core, the other about what a *current* engagement adds to it.
 - Should every product get a *durable* IPT, or do some smaller efforts get a time-boxed team that disbands? (Trade-off between focus and headcount.)
 - How many IPTs can Red Alpha realistically staff at once given our size, and what's the rule when demand exceeds that? Related: can one IPT carry two funding customers' tailoring?
 

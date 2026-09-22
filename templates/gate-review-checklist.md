@@ -11,10 +11,13 @@
 ---
 
 ## Gate 0 — Commit and charter (stand up the IPT)
-*Decision owner: **the Product Owner** — who decides to take the product from POC to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money.*
+*Decision owner: **the Product Owner** — who decides to take the cleared capability to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money.*
 
-*This is the entry gate. It assumes a POC already exists and has been shopped — where that POC's idea came from is documented in [`docs/01`](../docs/01-ideation-and-poc-origin.md); this checklist picks up at the funded-delivery machinery described in [`docs/05`](../docs/05-process-timeline-and-phases.md). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
+*This is the entry gate. It assumes a body of **cleared IP** exists and has been demonstrated to this customer — where that IP came from, and what RA Legal had to determine before it could be shown to anyone, is documented in [`docs/01`](../docs/01-ip-origin-and-clearance.md); this checklist picks up at the funded-delivery machinery described in [`docs/05`](../docs/05-process-timeline-and-phases.md). Gate 0 is both the decision and the ~1 week of chartering it authorizes.*
 
+- [ ] **RA Legal's IP clearance is on record** for the capability this engagement will build on — Red Alpha owns it, the originating customer released it, or a CRADA secures it. *(Hard condition. If this is blank, the gate does not open, whatever the customer is willing to pay.)*
+- [ ] That determination's **scope still covers what we intend to build and license here** — re-checked, not assumed, because engagements drift between the first conversation and the commitment.
+- [ ] The originating customer's **data, deliverable, and mission details are excluded** — carried nowhere, including into the demonstration environment.
 - [ ] A funding customer's money is **committed**, not merely expected or verbally encouraged.
 - [ ] There is a real, stated mission need from that customer (not a solution looking for a problem).
 - [ ] Plausible path to **desirable + feasible + viable + securable/authorizable** *in that customer's environment*.
@@ -116,4 +119,5 @@
 - **Security is continuous.** Each gate advances the RMF steps; nothing security-related is deferred to "the end."
 - **Stopping is a valid, cheap outcome.** The point of gates is the willingness to iterate or stop while it's still inexpensive.
 - **Know whose money you're spending.** Every bet has a funding source and a core-or-tailored designation; every upstream promotion is recorded.
+- **Know whose IP you're building on.** Every core capability traces to a cleared position. An upstream promotion that would make customer-funded work into IP we reuse elsewhere goes to RA Legal first.
 - **Make uncertainty visible.** Bring the hill chart and the honest unknowns, not just the good news.

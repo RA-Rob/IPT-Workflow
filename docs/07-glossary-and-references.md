@@ -1,6 +1,6 @@
 # 07 — Glossary and References
 
-*Status: Draft for discussion — v0.2 — August 2026*
+*Status: Draft for discussion — v0.3 — September 2026*
 
 ## Glossary
 
@@ -26,9 +26,13 @@
 
 **Continuous Monitoring (CONMON)** — Automated, real-time visibility into the state of security controls; the pillar of cATO that replaces periodic re-assessment with ongoing awareness.
 
+**Contract-derived IP** — Capability, code, architecture, and operational lessons produced by Red Alpha while delivering on an existing customer's contract, which generalize beyond that one mission. It is the **primary** source of what Red Alpha shops to a new customer, because the origin cost was already funded by the engagement that produced it. It is not Red Alpha's to use by default: it must pass **IP clearance** first. See document 01.
+
 **Cool-down** — From Shape Up: a short period between build cycles used for review, shaping upcoming work, betting, and small fixes.
 
-**Core product** — The product baseline that Red Alpha owns and **licenses** to customers. Grown with Red Alpha's own money, it is the part of the system that is not specific to any one customer, and the asset the company is actually building. Distinguished from **tailoring**, the customer-specific work built on top of it. The boundary between the two is drawn deliberately during Discovery and maintained through every cycle, because it determines who paid for what and who owns it.
+**Core product** — The product baseline that Red Alpha owns and **licenses** to customers. Grown with Red Alpha's own money, it is the part of the system that is not specific to any one customer, and the asset the company is actually building. Distinguished from **tailoring**, the customer-specific work built on top of it. The boundary between the two is drawn deliberately during Discovery and maintained through every cycle, because it determines who paid for what and who owns it. What the core is *built on* is a separate question with its own record: much of it arrives as **contract-derived IP**, which is Red Alpha's to use only once **IP clearance** says so (document 01).
+
+**CRADA (Cooperative Research and Development Agreement)** — An agreement with a collaborating customer — most often a government one — that settles up front who owns the intellectual property arising from joint work. At Red Alpha it is one of the three acceptable positions an **IP clearance** may rest on, and the cleanest of the three: negotiated while the originating contract is being written rather than argued for afterward, it lets Red Alpha keep the resulting IP outright. Where generalizable value is foreseeable, raising a CRADA early is far cheaper than seeking a release later. See document 01.
 
 **Cycle** — A fixed-time block of protected build work in which scope flexes and time does not. Shape Up's default is six weeks; during the **MVP** phase Red Alpha runs short cycles (2–3 weeks) so the **funding customer** gets working capability to evaluate often.
 
@@ -42,13 +46,15 @@
 
 **Forward Deployed Engineer (FDE)** — A practice, common across AI labs (OpenAI, Anthropic) and pioneered by Palantir, of staying embedded with a customer's own operators to find the highest-leverage, lowest-risk point to apply a capability, build and evaluate it against real cases, and own the result through actual production use. At Red Alpha this is not a new function on the roster but the **posture** the durable IPT adopts in **Phase 5 — Operate & Iterate** (document 02 §6, document 04, document 05).
 
-**Funding customer** — The customer who, having seen a **POC**, funds the work to turn it into an **MVP** for their own environment and mission. Distinct from the Red Alpha **sponsor**: the sponsor commits Red Alpha's people and core-product money, the funding customer commits money for **tailoring** and, crucially, commits their operators' time to evaluate each increment. Sits outside the IPT but is the decision owner at **Gate 2**.
+**Funding customer** — The customer who, having seen Red Alpha's cleared capability demonstrated against their mission requirement, funds the work to build it out as an **MVP** for their own environment and mission. Distinct from the **originating customer**, whose contract produced the underlying IP in the first place. Distinct from the Red Alpha **sponsor**: the sponsor commits Red Alpha's people and core-product money, the funding customer commits money for **tailoring** and, crucially, commits their operators' time to evaluate each increment. Sits outside the IPT but is the decision owner at **Gate 2**.
 
 **Gate** — In the Red Alpha model, a short, explicit decision point where the accountable parties decide to continue, adjust, or stop. Gate 0 opens the work by chartering the IPT; after that, Gate N closes Phase N. Most gates are decided inside Red Alpha by the **Product Owner** (Gate 0 is the Product Owner's alone; the sponsor commits the team and funding once it's made); **Gate 2** belongs to the **funding customer**, and **Gate 3** requires the **Authorizing Official** as well.
 
 **Hill chart** — From Shape Up: a way to show each piece of work's true status by placing it on a hill — uphill = "still figuring it out," downhill = "just execution."
 
-**Ideation process** — Red Alpha's internally funded, pre-Gate-0 route to a **POC**: a Red Alpha team already embedded and delivering on an existing customer's mission builds something that turns out to generalize beyond that one engagement, and Red Alpha self-funds a POC around the generalized capability to shop to a different customer. See document 01.
+**Ideation** — Red Alpha's pre-Gate-0 route to something shoppable. The primary route: a team delivering on an existing customer's contract builds something whose underlying capability generalizes beyond that one mission, RA Legal grants **IP clearance**, and the cleared **contract-derived IP** is packaged and shopped against another customer's **mission requirement**. The secondary route: Red Alpha funds a **POC** outright, which settles ownership trivially but spends Red Alpha's own money to do it. Ideation is a real stage of the workflow, not input sitting outside it — it is ungated but not unconstrained, because clearance is a hard stop. See document 01.
+
+**IP clearance** — RA Legal's **written determination** that Red Alpha may use a defined body of **contract-derived IP** for its own purposes, including with other customers. It must rest on one of exactly three positions: Red Alpha **owns** the IP under the originating contract, the **originating customer has released** it, or a **CRADA** secures it. There is no fourth position. Clearance is scoped — to a body of IP and a kind of use — and it never extends to the originating customer's **data**, deliverable, or mission details, which stay theirs regardless. **Nothing is shopped, demonstrated, or chartered on before clearance is on record**; Gate 0 re-checks that the scope still covers what the engagement intends to build. See document 01.
 
 **Impact level** — Low / moderate / high categorization of a system's security sensitivity, which determines the applicable control baseline.
 
@@ -56,13 +62,19 @@
 
 **ISSO (Information System Security Officer)** — The role, embedded in the IPT, that owns security-by-design and the authorization path day to day. Red Alpha's "Security Lead."
 
-**MVP (Minimum Viable Product)** — The smallest version of the **core product**, **tailored** to one named customer's environment and mission, that that customer can put in front of their own operators and judge against their own work. Built with the **funding customer's** money *and their participation*: each short **cycle** delivers working capability into the **stage** environment, the customer evaluates it, and their response shapes the next cycle. Its job is to answer "does this work for *us*?" before either side commits to full productization — and to do so incrementally, so the direction can be corrected cheaply and often rather than defended at the end. The MVP is not thrown away: it becomes the customer's delivered instance. See **POC vs. MVP** below for the contrast, and note that the **core product** underneath remains Red Alpha-owned and licensed no matter who funded the tailoring around it.
+**MVP (Minimum Viable Product)** — The smallest version of the **core product**, **tailored** to one named customer's environment and mission, that that customer can put in front of their own operators and judge against their own work. Built with the **funding customer's** money *and their participation*: each short **cycle** delivers working capability into the **stage** environment, the customer evaluates it, and their response shapes the next cycle. Its job is to answer "does this work for *us*?" before either side commits to full productization — and to do so incrementally, so the direction can be corrected cheaply and often rather than defended at the end. The MVP is not thrown away: it becomes the customer's delivered instance. See **The shoppable asset vs. the MVP** below for the contrast, and note that the **core product** underneath remains Red Alpha-owned and licensed no matter who funded the tailoring around it.
+
+**Mission requirement** — A prospective customer's stated operational problem, in their own terms. It is what cleared IP is matched *against* during shopping: we are not looking for a customer who likes the capability, but for one whose mission requirement it demonstrably helps solve. The match is the claim the customer is actually evaluating before they commit funding at **Gate 0**.
 
 **NIST RMF (Risk Management Framework)** — The seven-step U.S. government process for authorizing systems: Prepare, Categorize, Select, Implement, Assess, Authorize, Monitor.
 
+**Originating customer** — The customer whose funded contract produced a body of **contract-derived IP**. They are not a party to the engagement that IP is later used in, and they are not the **funding customer** of it. Two obligations run to them regardless: Red Alpha's use of the capability must be cleared against their contract (**IP clearance**), and their **data**, specific deliverable, and mission details are never carried forward — no clearance grants any right to those.
+
 **Plan of Action & Milestones (POA&M)** — The documented list of known security gaps and the plan/timeline to close them.
 
-**POC (Proof of Concept)** — A build Red Alpha funds **itself**, against a customer need or capability gap it has identified, to prove the idea is real: that the approach works technically and that it addresses something someone actually cares about. Its audience is first Red Alpha's own leadership and then prospective customers — a POC exists to be **shopped**, and its success condition is a customer interested enough to fund the next stage. It is deliberately narrow and time-boxed, runs in a **stage** instance Red Alpha controls, holds no real customer data, and carries no authorization. It is a demonstration, not something anyone operates. A POC comes out of Red Alpha's internally funded **ideation process** — separate from this IPT workflow, with Red Alpha owning the resulting IP outright — which starts in the field, from a team already embedded on an existing customer's mission, when what they build there generalizes beyond that one engagement (document 01). How that process staffs and runs a POC still sits **outside** the IPT workflow — that workflow starts once a customer commits money (document 05). See **POC vs. MVP** below.
+**POC (Proof of Concept)** — A working demonstration, built to prove a capability is real: that the approach works technically and that it addresses something someone actually cares about. Its audience is first Red Alpha's own leadership and then prospective customers — a POC exists to be **shopped**, and its success condition is a customer interested enough to fund the next stage. It is deliberately narrow and time-boxed, runs in a **stage** instance Red Alpha controls, holds only synthetic data, and carries no authorization. It is a demonstration, not something anyone operates.
+
+Under the current model a POC is most often **packaged from cleared contract-derived IP** rather than built from scratch — taking capability that already works and shaping it into something a prospect can exercise against a realistic version of their own problem. Red Alpha may also fund one outright from nothing; that is the secondary route, and its one advantage is that ownership needs no clearing. Either way, POC construction sits **outside** the IPT workflow's gates — that workflow starts once a customer commits money (document 05) — and either way, **no POC built on another customer's contract work is shown to anyone before IP clearance** (document 01). See **The shoppable asset vs. the MVP** below.
 
 **PR/FAQ** — Amazon's "Working Backwards" artifact: a mock press release describing the finished product from the customer's view, plus an FAQ answering the hard questions — written *before* building.
 
@@ -86,30 +98,33 @@
 
 **Two-pizza team** — Amazon's heuristic for keeping teams small enough to be fed by two pizzas — small, autonomous, end-to-end owners.
 
-**Upstream (and the upstream log)** — To *upstream* is to promote a capability built as customer-funded **tailoring** into the Red Alpha-owned **core product**, where Red Alpha thereafter owns, funds, and licenses it. Much tailoring is never upstreamed, and that is a normal outcome, not a failure. Because each decision changes who pays for a capability going forward and can carry licensing and IP implications, the Product Owner maintains an **upstream log**: a standing record giving every customer-funded capability a disposition — *core*, *customer-only*, or *deferred* — with the reasoning and any agreement the change requires. It has no fixed cadence; entries are made when the answer is clear.
+**Upstream (and the upstream log)** — To *upstream* is to promote a capability built as customer-funded **tailoring** into the Red Alpha-owned **core product**, where Red Alpha thereafter owns, funds, and licenses it. Much tailoring is never upstreamed, and that is a normal outcome, not a failure. Because each decision changes who pays for a capability going forward and can carry licensing and IP implications, the Product Owner maintains an **upstream log**: a standing record giving every customer-funded capability a disposition — *core*, *customer-only*, or *deferred* — with the reasoning and any agreement the change requires. It has no fixed cadence; entries are made when the answer is clear. An entry dispositioned *core* that carries real ownership weight is the same question **IP clearance** asks one engagement later — this customer's funded tailoring becoming IP we intend to use with the next one — and goes to RA Legal on the same three-position test before it is treated as ours to license onward (document 05).
 
 ---
 
-## POC vs. MVP — the two funded stages
+## The shoppable asset vs. the MVP — the two stages
 
-These two terms get used interchangeably in casual conversation, and the confusion is expensive, because at Red Alpha they are **different stages, paid for by different people, answering different questions**. Both exist for a real period of time, and both are necessary: the POC is what earns a customer's *interest*, and the MVP is what earns their *commitment*. Skipping the POC means pitching an idea with nothing to show. Skipping the MVP means asking a customer to fund a product they have never used in their own environment.
+"POC" and "MVP" get used interchangeably in casual conversation, and the confusion is expensive, because at Red Alpha they are **different stages, paid for by different people, answering different questions**. Both exist for a real period of time, and both are necessary: the shoppable asset is what earns a customer's *interest*, and the MVP is what earns their *commitment*. Skipping the first means pitching an idea with nothing to show. Skipping the second means asking a customer to fund a product they have never used in their own environment.
 
-| | **POC** | **MVP** |
+The left column below is what Red Alpha takes to a prospect. Read it as **cleared IP, demonstrated** — most often **contract-derived IP** that an earlier customer's contract already paid to create, cleared by RA Legal and packaged as a working **POC**; occasionally a POC Red Alpha funded from scratch. The difference between those two origins shows up in only two rows, marked below.
+
+| | **The shoppable asset** (cleared IP, demonstrated) | **MVP** |
 |---|---|---|
-| **Question it answers** | "Is this real — does the approach work, and does it address a gap someone has?" | "Does this work for *me* — in my environment, on my mission?" |
-| **Who pays** | Red Alpha, from its own money | The funding customer (Red Alpha funds the core in parallel) |
+| **Question it answers** | "Is this real — does the capability work, and does it address a mission requirement someone has?" | "Does this work for *me* — in my environment, on my mission?" |
+| **Who paid for it** | *Primary route:* the originating customer's contract already funded the capability; Red Alpha pays the marginal cost of generalizing, clearing, and packaging. *Secondary route:* Red Alpha funds the whole thing from its own money. | The funding customer (Red Alpha funds the core in parallel) |
+| **What makes it ours to use** | *Primary route:* **IP clearance** — RA Legal's written determination that Red Alpha owns it, the originating customer released it, or a **CRADA** secures it. *Secondary route:* nothing to clear; Red Alpha built it. | The licensed **core product** stays Red Alpha's; **tailoring** is dispositioned in the upstream log |
 | **Audience** | Red Alpha leadership, then prospective customers | One named customer's operators and mission owners |
 | **Customer's role** | Subject of the pitch — an observer | Active participant: exercises each increment and approves or redirects |
-| **Built on** | Whatever proves the idea fastest | The Red Alpha-owned **core product**, plus customer-specific **tailoring** |
-| **Where it runs** | A **stage** instance (no separate POC demo environment; release parity doesn't yet apply — there's no mainline to be at parity with) | **Stage** — an evaluation environment the customer can actually use |
-| **Rhythm** | One time-boxed push | Short cycles (2–3 weeks), each ending in a customer evaluation |
-| **Data** | Synthetic or sample; no real customer data | Representative data, with real controls around it |
+| **Built on** | Generalized capability that already works, packaged to demonstrate | The Red Alpha-owned **core product**, plus customer-specific **tailoring** |
+| **Where it runs** | A **stage** instance (no separate demo environment; release parity doesn't yet apply — there's no mainline to be at parity with) | **Stage** — an evaluation environment the customer can actually use |
+| **Rhythm** | One time-boxed push to package and shop | Short cycles (2–3 weeks), each ending in a customer evaluation |
+| **Data** | **Synthetic, always** — never the originating customer's data, whatever the clearance says | Representative data, with real controls around it |
 | **Security posture** | No authorization; not operated | Authorization path actively built; controls implemented every cycle |
-| **Lifespan** | Ends when it has made its point; may be discarded | Persists and evolves into the customer's delivered instance |
-| **Fate of the code** | Informs the core product; rarely shipped as-is | Core parts hardened into the licensed product; tailoring dispositioned in the **upstream log** |
-| **Ends at** | A customer who will fund the next stage — or a shelf | **Gate 2** — the customer accepts it and funds continued work |
+| **Lifespan** | Ends when it has made its point; the underlying IP persists | Persists and evolves into the customer's delivered instance |
+| **Fate of the code** | Becomes the seed of the core product | Core parts hardened into the licensed product; tailoring dispositioned in the **upstream log** |
+| **Ends at** | A customer who will fund the build-out — or a shelf | **Gate 2** — the customer accepts it and funds continued work |
 
-The through-line: a POC is Red Alpha spending its own money to earn the right to a conversation. An MVP is a customer spending theirs to find out whether the answer fits their mission — which is why it is delivered in short, reviewable increments rather than as a single reveal. Full phase-by-phase detail is in [`05-process-timeline-and-phases.md`](05-process-timeline-and-phases.md).
+The through-line: the shoppable asset is Red Alpha earning the right to a conversation — usually on the strength of work a previous customer already funded, which is what makes the model compound. An MVP is the next customer spending their own money to find out whether that capability fits *their* mission — which is why it is delivered in short, reviewable increments rather than as a single reveal. Full phase-by-phase detail is in [`05-process-timeline-and-phases.md`](05-process-timeline-and-phases.md); where the IP comes from and what clearing it requires is in [`01-ip-origin-and-clearance.md`](01-ip-origin-and-clearance.md).
 
 ---
 

@@ -1,6 +1,6 @@
 # IPT Workflow
 
-Red Alpha's standard way of turning a self-funded **proof of concept** into a shipped, secure, licensable software product — by way of a customer-funded **MVP** tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional **Integrated Project Teams (IPTs)**.
+Red Alpha's standard way of turning **cleared intellectual property** — usually derived from work an existing customer contract already paid for — into a shipped, secure, licensable software product, by way of a customer-funded **MVP** tailored to that customer's mission and delivered in short reviewable increments, built by small, durable, cross-functional **Integrated Project Teams (IPTs)**.
 
 This repository is a **living, iterative knowledge base**, not a finished standard. It is meant to be read, argued with, and revised by the Red Alpha team. Once the ideas here stabilize through discussion, we pull them into other forms (decks, checklists, charters) without rewriting the underlying thinking.
 
@@ -19,9 +19,11 @@ The expensive mistake in software is *building the wrong thing well.* So the wor
 
 Both come from studying how the best builders work: Amazon, Google Ventures, IDEO, Spotify, and Basecamp (see [`docs/02`](./docs/02-research-brief-incubator-methodologies.md)).
 
-Two facts about how Red Alpha is funded shape everything downstream of that:
+Four facts about how Red Alpha gets its products shape everything downstream of that:
 
-- **POC and MVP are different stages, paid for by different people.** Red Alpha funds a **POC** to prove an idea against a real capability gap, then shops it. A **funding customer** pays for the **tailoring** that makes it work in *their* environment for *their* mission. The **core product stays Red Alpha's**, licensed to the customer; promoting customer-funded tailoring into that core is a separate, recorded decision. Both stages take real time and both are necessary — the POC earns interest, the MVP earns commitment.
+- **The asset usually already exists, and someone else already paid for it.** What we take to a new customer is most often **IP derived from an existing customer contract** — capability and lessons learned generalized beyond the one mission they were built for, and matched against a different customer's **mission requirement**. Red Alpha can also self-fund a **POC** from scratch; that stays in the model as the secondary route, because it spends our own money to reach a starting line the first route arrives at already funded.
+- **Contract-derived IP is not ours by default, so RA Legal clears it before we shop it.** The determination must rest on one of three positions: Red Alpha **owns** it under the originating contract, the originating customer **released** it, or a **CRADA** secures it. No fourth position, and no shopping, demonstrating, or chartering before the determination is on record. The originating customer's *data* never travels with the capability regardless.
+- **What we shop and what we build are different stages, paid for by different people.** A **funding customer** pays for the **tailoring** that makes the capability work in *their* environment for *their* mission. The **core product stays Red Alpha's**, licensed to the customer; promoting customer-funded tailoring into that core is a separate, recorded decision — and where it carries ownership weight, a Legal one too.
 - **The MVP is delivered incrementally, not revealed at the end.** Every 2–3 week cycle puts working capability into a **stage** environment the customer's own operators can use; their evaluation steers the next cycle. The customer approves the *direction* repeatedly, while changing course is still cheap.
 
 ## Repository contents
@@ -29,23 +31,27 @@ Two facts about how Red Alpha is funded shape everything downstream of that:
 | Path | What it covers |
 |------|----------------|
 | [`EXECUTIVE-SUMMARY.md`](./EXECUTIVE-SUMMARY.md) | One-page overview for leadership |
-| [`docs/01-ideation-and-poc-origin.md`](./docs/01-ideation-and-poc-origin.md) | The entry point: where an idea (and the POC built from it) comes from, before Gate 0 |
+| [`docs/01-ip-origin-and-clearance.md`](./docs/01-ip-origin-and-clearance.md) | The entry point: where the IP comes from, and what RA Legal must clear before we shop it |
 | [`docs/02-research-brief-incubator-methodologies.md`](./docs/02-research-brief-incubator-methodologies.md) | Baseline research: five top product/idea companies and why they succeed |
 | [`docs/03-ipt-model-overview.md`](./docs/03-ipt-model-overview.md) | The Red Alpha idea-to-product model: philosophy, principles, when an IPT stands up |
 | [`docs/04-team-structure-and-roles.md`](./docs/04-team-structure-and-roles.md) | The lean 4–7 person IPT: roles, multi-hat assignments, responsibilities (RACI) |
-| [`docs/05-process-timeline-and-phases.md`](./docs/05-process-timeline-and-phases.md) | End-to-end timeline: five phases, five gates, POC → MVP → product, artifacts, worked schedule |
+| [`docs/05-process-timeline-and-phases.md`](./docs/05-process-timeline-and-phases.md) | End-to-end timeline: five phases, five gates, cleared IP → MVP → product, artifacts, worked schedule |
 | [`docs/06-security-and-compliance.md`](./docs/06-security-and-compliance.md) | Security-first / defense context: RMF, ATO/cATO, DevSecOps woven into the process; the `stage` boundary |
-| [`docs/07-glossary-and-references.md`](./docs/07-glossary-and-references.md) | Definitions, a POC-vs-MVP comparison, and the full verified source list |
+| [`docs/07-glossary-and-references.md`](./docs/07-glossary-and-references.md) | Definitions, a shoppable-asset-vs-MVP comparison, and the full verified source list |
 | [`docs/08-open-items.md`](./docs/08-open-items.md) | The open-items register: every unsettled question, its owner, who decides, and what "resolved" looks like |
-| [`templates/ipt-charter-template.md`](./templates/ipt-charter-template.md) | Fill-in charter for standing up an IPT at Gate 0 |
+| [`templates/ipt-charter-template.md`](./templates/ipt-charter-template.md) | Fill-in charter for standing up an IPT at Gate 0, including the IP provenance and clearance record |
 | [`templates/gate-review-checklist.md`](./templates/gate-review-checklist.md) | Entry/exit criteria and decision owners for Gates 0–4, plus the per-cycle customer evaluation |
 
 **Suggested first read:** `docs/01` → `docs/03` → `docs/04` → `docs/05` → `docs/06`, with `docs/02` as background and `docs/07` as reference. `docs/08` is the register of what is still unsettled — start there if you came to help settle something.
 
 ## Scope and assumptions
 
-This workflow doesn't start at **Gate 0** — **it starts with ideation.** A development team already embedded and working a mission for an existing customer builds a solution to that customer's real problem; when it turns out to generalize beyond that one customer, Red Alpha self-funds a POC around it and shops it to someone else. That origin is real process, documented in [`docs/01-ideation-and-poc-origin.md`](./docs/01-ideation-and-poc-origin.md) — not input sitting outside the workflow. What *is* gated separately, starting at **Gate 0 — the moment a new customer commits funding** — is everything from chartering the IPT through sustained operation. What's still open about the front end is operational, not conceptual — who staffs the POC build, how long it runs, what it must prove, and who shops it — tracked as OI-01 in [`docs/08-open-items.md`](./docs/08-open-items.md). Key assumptions, called out where they matter:
+This workflow doesn't start at **Gate 0** — **it starts with IP Red Alpha already has.** A development team delivering on an existing customer's contract builds a solution to that customer's real problem; when the underlying capability generalizes beyond that one mission, **RA Legal establishes Red Alpha's right to use it**, and the cleared IP is packaged and shopped to a customer whose mission requirement it fits. That origin is real process, documented in [`docs/01-ip-origin-and-clearance.md`](./docs/01-ip-origin-and-clearance.md) — not input sitting outside the workflow. What *is* gated separately, starting at **Gate 0 — the moment a new customer commits funding** — is everything from chartering the IPT through sustained operation.
 
+What's still open about the front end is now mostly **legal, not operational**: what our standard originating-contract terms actually permit, what an RA Legal clearance contains and how long one takes, when to pursue a CRADA, and what to do with valuable IP we cannot clear — tracked as OI-26 through OI-29 in [`docs/08-open-items.md`](./docs/08-open-items.md), with the operational remainder as OI-01. Key assumptions, called out where they matter:
+
+- **Contract-derived IP is the norm.** Most of what Red Alpha shops was built and paid for on an earlier engagement; a self-funded POC is the fallback.
+- **Nothing moves uncleared.** An RA Legal determination is a precondition to shopping, and Gate 0 re-checks that its scope still covers the engagement.
 - **Lean teams.** A standard IPT is **4–7 people**; almost everyone wears more than one hat.
 - **Two funding streams, one team.** Red Alpha funds the licensed **core product**; the customer funds **tailoring** for their environment. Every piece of work carries a funding source, and every upstream promotion is recorded.
 - **Security-first / defense context.** Products may serve government/defense customers; authorization (ATO/cATO) is a first-class part of the timeline.
@@ -118,4 +124,4 @@ Nothing is "Adopted" until the team agrees it is. Moving a document from `Draft`
 
 ---
 
-*Prepared as baseline material for Red Alpha team review, August 2026 — v0.1.*
+*Prepared as baseline material for Red Alpha team review, August 2026 — v0.2, September 2026.*

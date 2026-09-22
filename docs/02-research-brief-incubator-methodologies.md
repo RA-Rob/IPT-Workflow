@@ -28,7 +28,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 
 **Why it succeeds.** It replaces opinion-driven meetings with a validated (or invalidated) hypothesis in one week, at the cost of a prototype rather than a product. The five-user test reliably surfaces the biggest usability problems. The Decider role prevents the endless consensus loops that stall small teams.
 
-**Lesson for Red Alpha.** Keep a **sprint-style validation tool** in the kit for any point where the team faces a high-stakes, uncertain design decision on the way from POC to MVP to product. We don't run a sprint for everything, but when a direction is genuinely unclear, a one-week structured sprint is far cheaper than building the wrong thing. We also adopt the explicit **Decider** concept — a lean team needs someone who can break ties fast.
+**Lesson for Red Alpha.** Keep a **sprint-style validation tool** in the kit for any point where the team faces a high-stakes, uncertain design decision on the way from cleared IP to MVP to product. We don't run a sprint for everything, but when a direction is genuinely unclear, a one-week structured sprint is far cheaper than building the wrong thing. We also adopt the explicit **Decider** concept — a lean team needs someone who can break ties fast.
 
 ## 3. IDEO — human-centered design thinking
 
@@ -60,7 +60,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 
 **Why it succeeds.** A general AI capability and a specific business process do not meet on their own — someone has to translate a vague executive ask ("speed up claims processing") into a small, safe, measurably valuable build, because handing that translation entirely to the model or entirely to the customer produces either a dangerous amount of autonomy or a vague goal nobody can build against. And because AI software can now make decisions and take actions rather than just move data around, small misunderstandings travel a lot farther than in ordinary enterprise software — which raises the cost of *not* having someone who owns the whole arc from leverage point to production outcome.
 
-**Lesson for Red Alpha.** We already have the durable, embedded team this practice assumes — that is the point of an IPT. What we add explicitly is the *posture* the team takes once a product is live: in **Phase 5 (Operate & Iterate)**, the IPT works forward-deployed with the customer's own operators — finding the next high-leverage, low-risk automation point, building and evaluating against real cases, and owning the result through actual use. See document 04's role description and document 05's Phase 5 — and document 01 for how this same forward-deployed work is also where the next product's idea comes from.
+**Lesson for Red Alpha.** We already have the durable, embedded team this practice assumes — that is the point of an IPT. What we add explicitly is the *posture* the team takes once a product is live: in **Phase 5 (Operate & Iterate)**, the IPT works forward-deployed with the customer's own operators — finding the next high-leverage, low-risk automation point, building and evaluating against real cases, and owning the result through actual use. See document 04's role description and document 05's Phase 5 — and document 01 for how this same forward-deployed work is also where the next product's **IP** comes from, and what has to be cleared before Red Alpha can use it.
 
 ---
 
@@ -73,7 +73,7 @@ Organizationally, Amazon pairs this with **"two-pizza teams"** — teams small e
 | IDEO | Human-centered discovery; desirable/feasible/viable filter | Discovery phase and gate criteria (doc 05) |
 | Spotify | Autonomy + alignment; culture over org chart; chapters for scaling | IPT autonomy; scaling plan (doc 03, 04) |
 | Basecamp | Appetite (fixed time / variable scope); betting; circuit breaker | Cycle-based delivery and cadence (doc 05) |
-| OpenAI / Anthropic / Palantir | Stay embedded with the customer to find the highest-leverage, safest point to apply the capability; build and evaluate against real cases; own the outcome through production use | The IPT's forward-deployed posture in Phase 5, and the source of the next product's idea (doc 01, 04, 05) |
+| OpenAI / Anthropic / Palantir | Stay embedded with the customer to find the highest-leverage, safest point to apply the capability; build and evaluate against real cases; own the outcome through production use | The IPT's forward-deployed posture in Phase 5, and the source of the next product's IP (doc 01, 04, 05) |
 
 The common denominator — **reduce uncertainty cheaply before committing, then let a small empowered team own delivery end to end** — is the foundation of the Red Alpha IPT model described in document 03.
 
@@ -91,7 +91,7 @@ Each source (and our model) is scored **1–5** on six dimensions, where **1 = l
 2. **Process ceremony** — meetings, artifacts, and named roles required to run the method day to day.
 3. **Org overhead** — structure required beyond the immediate small team (cross-team roles, external decision owners).
 4. **Security & authorization coverage** — how much of the method addresses secure-by-design and formal authorization (RMF/ATO).
-5. **Funding & economics coverage** — how much of the method addresses who pays for what and who owns the resulting IP.
+5. **Funding & economics coverage** — how much of the method addresses who pays for what, who owns the resulting IP, and on what basis it may be reused with another customer.
 6. **Lifecycle coverage** — how much of idea → build → ship → operate the method actually spans.
 
 The last three dimensions are *coverage*, not ceremony — a high score there means the method solves more of the problem, not that it's needlessly heavy.
@@ -111,7 +111,7 @@ The last three dimensions are *coverage*, not ceremony — a high score there me
 
 None of the five sources is a peer of our model — each solves one piece of the idea-to-product problem (validation speed, discovery rigor, team autonomy, delivery cadence), not the whole thing. So on the narrow slice each one owns, several are *lighter* than us on purpose: Google's Design Sprint is the fastest way to validate a single decision (a five-day box, nothing more); Basecamp's Shape Up carries the least organizational overhead and is explicitly built to shrink further for teams of two or three; Amazon's entry gate is a single iterated document. Spotify scores highest org overhead among the five (tribes, chapters, guilds), but that's still lighter than our model once security and funding are counted.
 
-Our model's total is highest, and almost all of that gap sits in the three coverage dimensions — security, funding, and lifecycle — where every one of the five sources scores a 1. That's not an oversight on their part; none of them had to solve for a customer-funded, secure, licensable product in a defense/government context. We built a hybrid specifically because no single source covers that ground: we borrowed Amazon's cheap validation gate, Google's sprint-as-a-tool, IDEO's discovery lens, Spotify's autonomy-with-alignment culture, and Basecamp's fixed-time/variable-scope cadence, then added the two things none of them carry — continuous RMF/authorization and a two-wallet POC/MVP funding model — because a lean team without those would either get audited out of a government contract or accidentally give away the product it's supposed to license. The extra process weight is the cost of also being funded, secure, and licensable at the same time; it is not weight added for its own sake.
+Our model's total is highest, and almost all of that gap sits in the three coverage dimensions — security, funding, and lifecycle — where every one of the five sources scores a 1. That's not an oversight on their part; none of them had to solve for a customer-funded, secure, licensable product in a defense/government context. We built a hybrid specifically because no single source covers that ground: we borrowed Amazon's cheap validation gate, Google's sprint-as-a-tool, IDEO's discovery lens, Spotify's autonomy-with-alignment culture, and Basecamp's fixed-time/variable-scope cadence, then added the two things none of them carry — continuous RMF/authorization and a funding-and-IP model that says whose money paid for each piece of work and on what basis Red Alpha may reuse it with the next customer (document 01's IP clearance and document 05's upstream log) — because a lean team without those would either get audited out of a government contract or accidentally give away, or wrongly assume, the IP it's supposed to license. The extra process weight is the cost of also being funded, secure, and licensable at the same time; it is not weight added for its own sake.
 
 ---
 

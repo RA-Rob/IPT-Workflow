@@ -1,14 +1,14 @@
 # 05 — The Process: Timeline, Phases, and Gates
 
-*Status: Draft for discussion — v0.2 — August 2026*
+*Status: Draft for discussion — v0.3 — September 2026*
 
 ## How to read this document
 
-This is the step-by-step process a Red Alpha IPT follows to take a **proof of concept** to a shipped, operating, licensable product — by way of a **customer-funded MVP** tailored to that customer's mission. It is organized as **five phases separated by five gates**. A *phase* is a period of work with a clear purpose; a *gate* is a short, explicit decision point where the accountable parties decide whether to continue, adjust, or stop. Gates are what keep a lean team honest — they are the cheap moments to change course. The numbering is deliberate and worth memorizing: **Gate 0 opens the work, and after that Gate N closes Phase N.**
+This is the step-by-step process a Red Alpha IPT follows to take **cleared, demonstrated IP** to a shipped, operating, licensable product — by way of a **customer-funded MVP** tailored to that customer's mission. It is organized as **five phases separated by five gates**. A *phase* is a period of work with a clear purpose; a *gate* is a short, explicit decision point where the accountable parties decide whether to continue, adjust, or stop. Gates are what keep a lean team honest — they are the cheap moments to change course. The numbering is deliberate and worth memorizing: **Gate 0 opens the work, and after that Gate N closes Phase N.**
 
 Two things about this process are easy to miss and matter more than anything else in it:
 
-**The POC and the MVP are different stages, funded by different people.** The POC is Red Alpha's own investment, built to prove an idea and then shopped for a customer willing to fund the next step. The MVP is that customer's investment, spent tailoring our core product to their environment and their mission. Both take real time and both are necessary — the POC earns a customer's interest, the MVP earns their commitment. Treating them as one thing is how teams end up asking a customer to fund something they have never used, or demoing a POC as though it were a product. The full contrast is tabulated in [`07-glossary-and-references.md`](07-glossary-and-references.md).
+**What we shop and what we build are different stages, paid for by different people.** What we shop is **cleared IP** — most often capability and lessons learned derived from work an earlier customer already funded, generalized beyond that mission and cleared by RA Legal for Red Alpha's own use (document 01) — usually packaged as a working demonstration. The MVP is the *new* customer's investment, spent tailoring our core product to their environment and their mission. Both take real time and both are necessary — the cleared, demonstrated IP earns a customer's interest, the MVP earns their commitment. Treating them as one thing is how teams end up asking a customer to fund something they have never used, or demoing a proof of concept as though it were a product. The full contrast is tabulated in [`07-glossary-and-references.md`](07-glossary-and-references.md).
 
 **The MVP is delivered incrementally, not revealed at the end.** Once a customer is paying, we do not disappear for three months and come back with a product. We work in short cycles, and each one puts working capability into a **stage** environment the customer's own people can use. They evaluate it, they tell us where we have it wrong, and that shapes the next cycle. The customer approves the *direction* repeatedly, in small increments, rather than passing judgment once on a finished thing. This is the single most important protection for both sides: they are never far from being able to stop, and we are never far from knowing whether we are building what they will actually want.
 
@@ -20,20 +20,21 @@ A note on time: the durations below are **defaults for a typical lean product**,
 
 ## Where this process actually begins
 
-The process does not begin at Gate 0 — **it begins with ideation.** A Red Alpha team already embedded and delivering on an existing customer's mission builds a solution to that customer's real problem; when what they built turns out to generalize beyond that one engagement, Red Alpha self-funds a POC around it and shops it to a new customer. That origin story — the actual seed of every product this workflow ever takes on — is documented in [`01-ideation-and-poc-origin.md`](01-ideation-and-poc-origin.md). It is real process, not input sitting outside the workflow.
+The process does not begin at Gate 0 — **it begins with IP Red Alpha already has.** A Red Alpha team delivering on an existing customer's contract builds a solution to that customer's real problem; when the underlying capability generalizes beyond that one mission, **RA Legal establishes Red Alpha's right to use it**, and the cleared IP is packaged and shopped against another customer's stated mission requirement. Less often, Red Alpha self-funds a proof of concept outright. That origin — the actual seed of every product this workflow ever takes on — is documented in [`01-ip-origin-and-clearance.md`](01-ip-origin-and-clearance.md). It is real process, not input sitting outside the workflow.
 
-**What this document covers is the second half: the charter-and-gate machinery, from Gate 0 through Phase 5.** That machinery starts once a customer commits money, because it is built for funded delivery — a durable team, a budget, and gates with real stakes. Running ideation and POC construction through that same machinery would be the wrong trade: subjecting speculative, self-funded exploration to charter-and-gate ceremony built for a paying customer's money would slow down exactly the work that most needs to stay cheap and fast. So ideation and the POC stay outside *this document's gates* — not outside the process itself.
+**What this document covers is the second half: the charter-and-gate machinery, from Gate 0 through Phase 5.** That machinery starts once a customer commits money, because it is built for funded delivery — a durable team, a budget, and gates with real stakes. Running the front end through that same machinery would be the wrong trade: subjecting exploratory, unfunded work to charter-and-gate ceremony built for a paying customer's money would slow down exactly the work that most needs to stay cheap and fast. So the front end stays outside *this document's gates* — not outside the process itself, and not unconstrained: document 01's **IP clearance** is a hard stop that has to be cleared before anything is shopped at all.
 
 What we assume already exists when Gate 0 convenes:
 
-- **A POC** — something Red Alpha funded and built itself, seeded by field-sourced insight from an existing customer engagement (document 01), which demonstrably works and addresses a customer need or capability gap specific enough that it could have been wrong. It is a demonstration, not a product: Red Alpha-controlled environment, synthetic or sample data, nobody operating it.
-- **A funding customer** — a *different* customer, who has seen the POC and will pay to have it turned into an MVP for their environment and their mission.
+- **Cleared IP** — a defined body of capability that is Red Alpha's to use, with **RA Legal's written determination on record**: Red Alpha owns it under the originating contract, the originating customer has released it, or a **CRADA** secures it (document 01). Without that determination there is nothing to charter an IPT around, whatever the customer is willing to pay.
+- **A working demonstration of it** — usually packaged from the cleared IP, sometimes a self-funded POC, which demonstrably works and addresses a capability gap specific enough that it could have been wrong. It is a demonstration, not a product: Red Alpha-controlled environment, synthetic data, nobody operating it.
+- **A funding customer** — a *different* customer from the one whose contract produced the IP, who has seen it work and will pay to have it built out as an MVP for their environment and their mission.
 
-Document 01 covers where the idea comes from and the generalization decision that turns it into a POC. What it does not yet settle — who staffs the POC build, how long it runs, what it must prove, and who shops it — is tracked in the open questions below and in OI-01.
+Document 01 covers where the IP comes from, the generalization decision, and what clearing it requires. What it does not yet settle — the generalization bar, who runs the Legal review and how long it takes, who packages the demonstration, and who shops it — is tracked in the open questions below and in OI-01 and OI-26 through OI-29.
 
-What Gate 0 buys us from here is focus. From Gate 0 onward there is a customer, a budget, and a durable team — and this document can be specific about all three.
+What Gate 0 buys us from here is focus. From Gate 0 onward there is a customer, a budget, a durable team, and a settled IP position — and this document can be specific about all four.
 
-> **Entry condition:** A POC has proven the idea against an identified customer gap, and a funding customer has **committed** (not merely indicated interest) to pay for turning it into an MVP tailored to their environment and mission.
+> **Entry condition:** RA Legal has cleared the underlying IP for Red Alpha's use, that IP has been demonstrated against an identified customer gap, and a funding customer has **committed** (not merely indicated interest) to pay for building it out as an MVP tailored to their environment and mission.
 
 ---
 
@@ -41,7 +42,7 @@ What Gate 0 buys us from here is focus. From Gate 0 onward there is a customer, 
 
 | Phase | Purpose | Funded by | Typical duration | Ends at |
 |-------|---------|-----------|------------------|---------|
-| **0. Ideation & POC** *(document 01)* | Field-sourced insight from an embedded IPT's mission work generalizes beyond that customer; Red Alpha self-funds a POC and shops it | RA (self-funded) | Not yet standardized (OI-01) | A new customer commits funding → **Gate 0** |
+| **0. IP origin & clearance** *(document 01)* | Capability derived from an existing contract generalizes beyond that mission; **RA Legal clears the IP**; it is packaged and shopped against a new customer's mission requirement. (Secondary route: a self-funded POC.) | The originating contract, then RA's own cost to generalize and package | Not yet standardized (OI-01) | A new customer commits funding → **Gate 0** |
 | *(entry)* | A customer has committed funding; charter the IPT | — | ~1 week to charter | **Gate 0 — Commit and charter** |
 | **1. Discovery & Framing** | Frame the outcome with the customer; draw the core/tailoring boundary | Customer + RA | 2–3 weeks | **Gate 1 — Green-light the MVP** |
 | **2. MVP** | Tailor the core to the customer's mission, in short reviewable cycles | Customer | 3–5 cycles (~2–4 months) | **Gate 2 — Customer acceptance** |
@@ -55,12 +56,14 @@ What Gate 0 buys us from here is focus. From Gate 0 onward there is a customer, 
 
 Gate 0 is both the entry decision and the week of work that follows it, which is why it is a gate rather than a phase: standing up the team *is* the act of committing, and separating the two invented ceremony without adding a decision.
 
-**The decision.** *Decision owner: the Product Owner.* Commit a durable IPT only if the customer's funding is genuinely committed, a 4–7 person team can be staffed with every core function owned, and the core/tailoring and licensing arrangement is understood by both sides. Otherwise: keep shopping the POC, or stop. This is a real decision, not a formality — it commits scarce Red Alpha people for the life of a product.
+**The decision.** *Decision owner: the Product Owner.* Commit a durable IPT only if the customer's funding is genuinely committed, **RA Legal's IP clearance is on record and still covers what this engagement intends to build on**, a 4–7 person team can be staffed with every core function owned, and the core/tailoring and licensing arrangement is understood by both sides. Otherwise: keep shopping, fix the IP position, or stop. This is a real decision, not a formality — it commits scarce Red Alpha people for the life of a product.
 
-**The chartering work it authorizes (~1 week).** The Product Owner brings together the funded scope, what the POC proved, and the customer's stated mission need, and decides to take the product from POC to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money and names the team's hats (document 04). The Security Lead turns the POC-era security read into an initial view of the authorization path, now that a real environment and a real customer are in view. Red Alpha and the customer write down what the customer's money buys and what Red Alpha continues to fund itself.
+**The IP check is not a re-run of document 01's clearance, and it is not optional.** Clearance was granted before shopping, scoped to a defined body of IP for a defined kind of use. Gate 0 asks a narrower question: *does that scope still cover what we are about to build and license here?* Engagements drift between the first conversation and the commitment — a prospect's mission requirement turns out to need more of the originating capability than the determination covered, or a second body of contract-derived IP has been pulled in since. Confirming the fit takes minutes when the answer is yes, and this is the cheapest possible moment to discover that the answer is no. The charter records the determination's reference and date; a charter with that field blank is not complete.
+
+**The chartering work it authorizes (~1 week).** The Product Owner brings together the funded scope, what the demonstration proved, the IP clearance, and the customer's stated mission need, and decides to take the product to MVP via the IPT. The sponsor then commits the team and Red Alpha's own core-product money and names the team's hats (document 04). The Security Lead turns the pre-Gate-0 security read into an initial view of the authorization path, now that a real environment and a real customer are in view. Red Alpha and the customer write down what the customer's money buys and what Red Alpha continues to fund itself.
 
 **Artifacts produced.**
-- **IPT Charter** — one page: mission, named members and their hats, the sponsor, the funding customer, decision rights, and the appetite for Discovery.
+- **IPT Charter** — one page: mission, named members and their hats, the sponsor, the funding customer, decision rights, the **IP provenance and clearance reference**, and the appetite for Discovery.
 - **Funding and ownership summary** — plainly stated: the core product is Red Alpha's, licensed to the customer; the customer's money funds tailoring for their environment; upstreaming is decided case by case and recorded.
 - **Initial risk & security read** — authorization constraints and unknowns for the customer's actual environment, and the likely Authorizing Official identified.
 
@@ -73,7 +76,7 @@ Gate 0 is both the entry decision and the week of work that follows it, which is
 **Key steps.**
 1. **Write the launch narrative (PR/FAQ).** The Product Owner drafts a short mock press release describing the tailored product from the customer's operators' point of view, plus an FAQ answering the hard questions — mission fit, feasibility, cost, legal, and *how it will be secured and authorized in the customer's environment*. Iterate with the customer until the outcome is clear and compelling, or the idea is honestly reworked on paper.
 2. **Talk to the customer's real operators.** Not just the people who signed. The Designer (or whoever wears that hat) runs direct discovery with the people who would actually use this, and synthesizes findings into a small set of insights. Apply the desirable / feasible / viable filter explicitly.
-3. **Draw the core/tailoring boundary.** Explicitly: which capabilities belong to the Red Alpha **core product** and which are **tailoring** for this customer. This is the decision that keeps the funding split honest for the rest of the engagement, and it is far easier to draw now than to argue about in month four. It will move as we learn — but it should always be written down.
+3. **Draw the core/tailoring boundary — and record what the core is built on.** Explicitly: which capabilities belong to the Red Alpha **core product** and which are **tailoring** for this customer. This is the decision that keeps the funding split honest for the rest of the engagement, and it is far easier to draw now than to argue about in month four. It will move as we learn — but it should always be written down. Where a core capability came in as **contract-derived IP**, note it and its clearance reference alongside the boundary: the same record that says what is core should say on what basis it is ours (document 01). That is what makes the licensing conversation a short one.
 4. **Validate the riskiest assumption.** For the one or two decisions that would most damage the product if wrong, run a lightweight, time-boxed **validation sprint** (a compressed Design Sprint) — map, sketch, decide, prototype a facade, and test with about five of the customer's users. Spend a prototype, not a cycle, to learn.
 5. **Shape the first MVP cycle, and stand up stage.** The Tech Lead sketches the architecture at low fidelity; the Security Lead drafts the control and authorization approach (document 06). The Delivery/Platform hat stands up the `dev → stage → prod` path so that the **stage** environment is ready to receive the first increment — the customer cannot evaluate what they cannot reach. Stage lives in **Red Alpha's controlled environment** (on premises or our cloud), and is built to the customer's stage **CONOPS** if they supply one, otherwise mirroring what Red Alpha determines the production deployment will be. It may be replicated, but every instance runs the same release as the upstream mainline (document 06).
 
@@ -85,7 +88,7 @@ Gate 0 is both the entry decision and the week of work that follows it, which is
 
 ## Phase 2 — MVP (and Gate 2)
 
-**Purpose.** Turn the POC into something the customer's own people can use for their own mission, and find out — incrementally, while it is still cheap to change — whether it is the direction they actually want. This is the phase the customer is funding, and its defining property is that they see working capability repeatedly rather than once.
+**Purpose.** Turn the demonstrated capability into something the customer's own people can use for their own mission, and find out — incrementally, while it is still cheap to change — whether it is the direction they actually want. This is the phase the customer is funding, and its defining property is that they see working capability repeatedly rather than once.
 
 **The cadence — short cycles, each ending in a customer evaluation.** Build proceeds in **short cycles of 2–3 weeks**. Shorter than Shape Up's default on purpose: the point of this phase is frequent customer contact with real software, and a six-week gap between evaluations is too long to correct a wrong direction cheaply. Within each cycle:
 
@@ -123,6 +126,8 @@ One team carries both, one backlog holds both, and **every bet is tagged with it
 
 **The funding boundary is a real obligation, not bookkeeping.** Customer money must not quietly fund core-product work that Red Alpha will license to others; Red Alpha must not bill the customer for work that is really core investment; and customer-funded capability must not be absorbed into the core without the disposition being recorded and any required agreement in place. The Product Owner owns the integrity of that split. It is the kind of thing that is easy while everyone remembers who asked for what, and impossible to reconstruct a year later — which is what the **upstream log** is for.
 
+**Upstreaming is the same question document 01 asks, one engagement later.** Promoting this customer's funded tailoring into the licensed core makes it IP Red Alpha intends to use with the *next* customer — which is exactly the situation document 01 requires RA Legal to clear. The upstream log is the natural place for that to surface: an entry dispositioned *core* that carries real licensing or ownership weight goes to Legal before it is treated as ours, on the same three-position test. Most entries will not need it; the ones that do are far cheaper to catch here than at the next engagement's Gate 0.
+
 **The cadence.** Cycles here can run longer than the MVP phase's — the customer's need for frequent evaluation is partly satisfied and protected focus is worth more — followed by a short **cool-down** (~1–2 weeks) that serves as the **betting table**: review what shipped, shape upcoming work across both tracks, disposition anything ready for an upstream decision, and consciously bet on the next cycle. Customer-facing increments keep flowing to stage, just not necessarily every two weeks.
 
 **Security woven in.** As in Phase 2, and now with the authorization package as an explicit deliverable: by the end of build it should be substantially assembled rather than being started. See document 06.
@@ -151,7 +156,7 @@ One team carries both, one backlog holds both, and **every bet is tagged with it
 
 **Key steps.** The IPT continues in a lighter version of the build cadence, still across two tracks: operating and iterating on the customer's instance while advancing the core product toward being straightforwardly licensable to a second customer. This is where the team works **forward-deployed** — staying close enough to the customer's operators to find the next high-leverage, low-risk automation point, build and evaluate it against real cases, and own the result through production use rather than stopping at "it shipped" (document 04; document 02 §6). Increments continue to flow through stage for customer review. The upstream log stays live, since operating a real deployment surfaces plenty of capability worth promoting. Security shifts into **continuous monitoring and continuous authorization (cATO)** where applicable — maintaining authorization through ongoing automated evidence rather than periodic re-accreditation (document 06).
 
-Periodically, the sponsor and team make an explicit **renew, scale, or sunset** decision: renew the customer engagement, pursue a second customer on the now-productized core (and if the product outgrows seven people, split into two IPTs per document 04), hold steady, or retire it. A second funding customer re-enters this process at Gate 0 — with a real product rather than a POC to show, which is the return on the core-product investment.
+Periodically, the sponsor and team make an explicit **renew, scale, or sunset** decision: renew the customer engagement, pursue a second customer on the now-productized core (and if the product outgrows seven people, split into two IPTs per document 04), hold steady, or retire it. A second funding customer re-enters this process at Gate 0 — with a real product rather than a demonstration to show, which is the return on the core-product investment. Phase 5 is also where the *next* product's IP is produced: a team this deep in a customer's mission is the one positioned to notice when what it built generalizes, which starts document 01's loop over again — including its clearance obligation.
 
 **Artifacts produced.** Ongoing releases on both tracks; a living security posture and continuous-authorization evidence; operational metrics; a current upstream log; periodic product reviews and the renew/scale/sunset decision record.
 
@@ -159,7 +164,7 @@ Periodically, the sponsor and team make an explicit **renew, scale, or sunset** 
 
 ## A worked timeline (illustrative)
 
-Week 1 is the week the customer's funding is committed. The POC and the period spent shopping it precede this entirely and run on their own clock, which is why they are not in the count — folding an unschedulable period into a continuous calendar produces plans that are wrong before they start. Treat the numbers as a shape to adapt, not a promise.
+Week 1 is the week the customer's funding is committed. Everything in document 01 — generalizing the IP, clearing it with RA Legal, packaging it, and the period spent shopping it — precedes this entirely and runs on its own clock, which is why it is not in the count. Legal clearance in particular has no reliable duration yet (OI-27), and folding an unschedulable period into a continuous calendar produces plans that are wrong before they start. Treat the numbers as a shape to adapt, not a promise.
 
 ```mermaid
 gantt
@@ -208,6 +213,7 @@ That puts a proven first launch roughly **8 months after the customer commits fu
 - **Time is fixed, scope flexes.** Applies inside cycles and across the whole timeline.
 - **Show working software, often.** From the first MVP cycle onward, the customer's confidence rests on capability they can use in stage — never on a status report.
 - **Know whose money you are spending.** Every bet has a funding source and a core-or-tailored designation, and the upstream log records what became whose. This is an obligation to the customer and to Red Alpha both.
+- **Know whose IP you are building on.** Every core capability traces to a cleared position — Red Alpha's own build, an owned or released contract derivation, or a CRADA. No shopping and no chartering on IP that has not been cleared (document 01).
 - **Security is continuous, not a final phase.** It is read before Gate 0 and maintained through Phase 5.
 - **The team is durable.** The people who build it run it; we don't hand off to a separate ops team.
 - **Make uncertainty visible.** Hill charts and honest gate reviews surface trouble while it's still cheap.
@@ -216,7 +222,9 @@ That puts a proven first launch roughly **8 months after the customer commits fu
 
 *These items are also tracked — with owners, decision owners, and what "resolved" looks like — in [`08-open-items.md`](08-open-items.md), the register the whole team works from.*
 
-- **Staffing and running a POC.** [`01-ideation-and-poc-origin.md`](01-ideation-and-poc-origin.md) now documents where a POC's idea comes from. Still open: who decides to fund one, who staffs it (the IPT does not exist yet), how long it runs, what it must prove to be worth shopping, and who does the shopping.
+- **Running the front end.** [`01-ip-origin-and-clearance.md`](01-ip-origin-and-clearance.md) now documents where the IP comes from and what clearing it requires. Still open: who decides a capability generalizes, who triggers and runs the RA Legal review and how long it takes, who packages the cleared IP into a demonstration (the IPT does not exist yet), and who does the shopping.
+- **How long IP clearance takes, and what a determination must contain** to be usable at Gate 0. A step with no predictable duration gets routed around, and the timeline above cannot absorb one.
+- **Upstream-log entries that carry IP weight:** which dispositions need an RA Legal look before the capability is treated as Red Alpha's to license onward, and who decides which ones qualify.
 - **Build-phase cycle length:** the MVP phase is set at 2–3 weeks for customer contact. Should Phase 3 return to Shape Up's six weeks, or hold at 3–4?
 - **What data class stage may hold by default,** and who approves putting genuinely operational data into it. Where stage *lives* is settled — Red Alpha's controlled environment, on-prem or cloud — but the data question is still open, and it is the one that sets the control baseline. (See document 06.)
 - **Upstreaming and IP:** what do our standard customer terms actually say about promoting customer-funded capability into the licensed core? The upstream log records the decision, but the contract has to permit it.
@@ -225,4 +233,4 @@ That puts a proven first launch roughly **8 months after the customer commits fu
 - Do we always run a **validation sprint** in Discovery, or only when a decision is genuinely high-risk?
 - How formal should **gate reviews** be — a written decision memo, or a live 30-minute review? (The customer-facing ones may need to be more formal than the internal ones.)
 
-*Terms and acronyms are defined in [`07-glossary-and-references.md`](07-glossary-and-references.md), including a side-by-side comparison of POC and MVP.*
+*Terms and acronyms are defined in [`07-glossary-and-references.md`](07-glossary-and-references.md), including a side-by-side comparison of the shoppable asset and the MVP.*

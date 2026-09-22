@@ -1,6 +1,6 @@
 # 08 — Open Items
 
-*Status: Living register — v0.1 — August 2026*
+*Status: Living register — v0.2 — September 2026*
 
 ## What this is
 
@@ -14,23 +14,25 @@ It is deliberately a *working* document. Items get claimed, argued, and closed. 
 
 **Status values.** **Open** (nobody is working it) · **In work** (owned, being worked) · **Decided** (answer written into the owning document; see *Recently decided* at the bottom).
 
-**Priority.** Two items block more than the rest, and they are the two the [Executive Summary](../EXECUTIVE-SUMMARY.md) still puts in front of leadership: **OI-01** (staffing and running the front end — its origin story is now documented, but the operational questions remain) and **OI-07** (upstreaming rights). A related new item, **OI-26** (contractual clarity for ideation across customers), was opened 2026-08-31 alongside OI-01's update. A third priority item, **OI-08** (the `stage` data class), closed 2026-08-24 — see *Recently decided* below. Everything else can be worked in any order, and several are a half-hour conversation away from closed.
+**Priority.** As of the 2026-09-22 reframing (see *Section C*), the items that block most are the **IP-rights** ones, because the whole front end now rests on them: **OI-26** (do our originating-contract terms let us generalize a customer's work into a product for someone else), **OI-27** (what an RA Legal IP clearance must contain and how long it takes), **OI-28** (when we pursue a CRADA), and **OI-29** (what we do with valuable IP we cannot clear). Alongside them sit the two long-standing items the [Executive Summary](../EXECUTIVE-SUMMARY.md) puts in front of leadership: **OI-01** (running the front end operationally) and **OI-07** (upstreaming rights, which is the same question one engagement later). A previous priority item, **OI-08** (the `stage` data class), closed 2026-08-24 — see *Recently decided* below. Everything else can be worked in any order, and several are a half-hour conversation away from closed.
 
 ---
 
 ## A. The front end — before Gate 0
 
-#### OI-01 — How does a POC come to exist?
+#### OI-01 — How does a shoppable asset come to exist, operationally?
 
-**Owner:** Rob Weiss · **Decides:** Sponsor / executive leadership · **Source:** [01](01-ideation-and-poc-origin.md), [03](03-ipt-model-overview.md), [04](04-team-structure-and-roles.md), [05](05-process-timeline-and-phases.md) · **Status:** In work
+**Owner:** Rob Weiss · **Decides:** Sponsor / executive leadership · **Source:** [01](01-ip-origin-and-clearance.md), [03](03-ipt-model-overview.md), [04](04-team-structure-and-roles.md), [05](05-process-timeline-and-phases.md) · **Status:** In work
 
-Where a POC's *idea* comes from is now documented — see *Settled so far* below. What's left is operational: who decides to fund a POC once the idea exists, who staffs it before any new IPT exists, how long it runs, what it must prove to be worth shopping, and who does the shopping.
+Where the IP comes from is now documented — see *Settled so far* below. What's left is operational: **the generalization bar** (who decides a capability built for one customer reaches beyond it, and what that judgment weighs), who packages cleared IP into a demonstration before any new IPT exists, how long that runs, what it must show to be worth a prospect's time, and who does the shopping. The IP-rights half of the front end is tracked separately in **Section C** (OI-26 through OI-29).
 
-**Settled so far (2026-08-24):** a POC comes out of Red Alpha's own **ideation process**, separate from this framework; Red Alpha funds it internally and owns the resulting IP outright. *Now documented in:* [03](03-ipt-model-overview.md), [07 — glossary](07-glossary-and-references.md).
+**Settled so far (2026-08-24, superseded 2026-09-22):** an earlier reading had a POC coming out of Red Alpha's own internally funded ideation, with Red Alpha owning the resulting IP outright by construction. That is now the *secondary* route only. The primary route derives the IP from an existing customer contract, where ownership is **not** automatic — see the 2026-09-22 entry.
 
-**Settled so far (2026-08-31):** the ideation process's actual origin — a Red Alpha team already embedded and delivering on an existing customer's mission builds something that turns out to generalize beyond that one engagement, which is the trigger for Red Alpha to self-fund a POC around it. *Now documented in:* [01 — the full origin story](01-ideation-and-poc-origin.md), [02 §6 — the Forward Deployed Engineering practice it depends on](02-research-brief-incubator-methodologies.md), [04 — Phase 5, where this work happens](04-team-structure-and-roles.md). Still open: the generalization bar (who decides a mission-specific solution is worth a POC, and by what test), who staffs the POC build, how long it typically runs, what it must prove, and who shops it. A related contractual question is now tracked separately as **OI-26**.
+**Settled so far (2026-08-31):** ideation's actual origin — a Red Alpha team already embedded and delivering on an existing customer's mission builds something that turns out to generalize beyond that one engagement. That still holds, and is the trigger for everything downstream. *Now documented in:* [01](01-ip-origin-and-clearance.md), [02 §6 — the Forward Deployed Engineering practice it depends on](02-research-brief-incubator-methodologies.md), [04 — Phase 5, where this work happens](04-team-structure-and-roles.md).
 
-**Resolved looks like:** the remaining operational questions above answered in document 01, with this workflow's Gate 0 as document 01's hand-off point. Not an addition to document 05 — the funding model and the risk profile are different enough that putting speculative exploration under charter-and-gate machinery would be the wrong trade.
+**Settled so far (2026-09-22):** the asset Red Alpha shops is **IP derived from an existing customer contract** — generalized beyond that one mission and shopped to a customer whose **mission requirement** it helps solve — not, ordinarily, a self-funded POC. The internally funded POC remains a legitimate but secondary route. Red Alpha's right to use contract-derived IP is **not** assumed: it must rest on Red Alpha ownership, an originating-customer release, or a **CRADA**, and **RA Legal determines which, in writing, before anything is shopped**. *Now documented in:* [01 — the full origin and clearance model](01-ip-origin-and-clearance.md), [03](03-ipt-model-overview.md), [05 — Gate 0's IP check](05-process-timeline-and-phases.md), [06 — the data rule that follows from it](06-security-and-compliance.md), [07 — glossary](07-glossary-and-references.md), [the charter template](../templates/ipt-charter-template.md), [the gate-review checklist](../templates/gate-review-checklist.md).
+
+**Resolved looks like:** the remaining operational questions above answered in document 01, with this workflow's Gate 0 as document 01's hand-off point. Not an addition to document 05 — the funding model and the risk profile are different enough that putting exploratory work under charter-and-gate machinery would be the wrong trade.
 
 *OI-02 (does a POC being shopped run in a `stage` instance, or its own demo environment) closed 2026-08-24 — see Recently decided below.*
 
@@ -60,21 +62,49 @@ A written decision memo, or a live 30-minute review with the checklist? The cust
 
 ## C. Contracts and IP
 
+*This section carries the most weight in the register. The 2026-09-22 reframing (document 01) makes **contract-derived IP** the primary asset Red Alpha shops, which means the company's product pipeline now depends on being able to answer, reliably and quickly, "is this ours to use?" Every item below is some part of that question.*
+
 #### OI-07 — What do our standard customer terms permit on upstreaming?
 
 **Owner:** *unassigned* · **Decides:** Executive leadership with counsel · **Source:** [03](03-ipt-model-overview.md), [05](05-process-timeline-and-phases.md) · **Status:** Open
 
 The whole two-wallet model rests on this. We assume that customer-funded **tailoring** can be promoted into the Red Alpha-owned **core product** with the customer's agreement, and that the core stays ours and licensed. The upstream log records each decision — but the contract has to actually permit the decision to be made. If standard terms are silent or unfavorable, the compounding-asset argument for this whole workflow weakens.
 
-**Resolved looks like:** a plain-language summary of what current terms say, plus whatever clause we need in future ones, referenced from document 05's upstream-log section. Until then this is an assumption stated in public documents, which is a risk in itself.
+**Resolved looks like:** a plain-language summary of what current terms say, plus whatever clause we need in future ones, referenced from document 05's upstream-log section. Until then this is an assumption stated in public documents, which is a risk in itself. Related: document 05 now says an upstream entry carrying real ownership weight goes to RA Legal on the same three-position test as OI-26 — **which entries qualify, and who decides, is itself unsettled** and belongs to this item.
 
-#### OI-26 — Do our contracts let us generalize insight from one customer into a POC for another?
+#### OI-26 — Do our originating-contract terms let us generalize one customer's work into a product for another?
 
-**Owner:** *unassigned* · **Decides:** Executive leadership with counsel · **Source:** [01](01-ideation-and-poc-origin.md) · **Status:** Open
+**Owner:** *unassigned* · **Decides:** Executive leadership with RA Legal · **Source:** [01](01-ip-origin-and-clearance.md) · **Status:** Open · **Priority**
 
-This is a distinct question from OI-07. OI-07 is about promoting customer-funded **tailoring** into the licensed core *within the same engagement*. This item is upstream of that: document 01 describes ideation itself starting inside an existing customer's mission — a Red Alpha team learns something, or builds something, while delivering for Customer A, and Red Alpha wants to generalize the underlying capability into a self-funded POC aimed at a *different* prospective customer. Our terms with Customer A need to be unambiguous that Red Alpha may do this with the generalized capability, without implicating Customer A's specific data, deliverable, or mission details.
+**This is now the item the whole front end rests on.** Document 01 makes contract-derived IP the primary source of what Red Alpha shops: a team builds something while delivering for Customer A, the underlying capability generalizes, and Red Alpha wants to use it with a different customer. Whether we may do that is a question about the terms of Customer A's contract — and if the usual answer is no, the model described in document 01 does not work as its primary route and we are back to funding POCs ourselves.
 
-**Resolved looks like:** a plain-language summary of what current customer terms say about Red Alpha's right to generalize learnings into future work, plus whatever clause future terms need, referenced from document 01.
+Distinct from OI-07, which is about promoting customer-funded **tailoring** into the licensed core *within the same engagement*. This item is upstream of that and larger: it is about the *source* of the core rather than what a current engagement adds to it.
+
+**Resolved looks like:** a plain-language summary of what our current originating-contract terms actually say about Red Alpha's right to generalize capability developed on a customer's work, an honest read on how often that lands in each of document 01's three acceptable positions, and the standard clause future contracts should carry so that clearance is the normal case rather than a negotiation each time. Referenced from document 01.
+
+#### OI-27 — What must an RA Legal IP clearance contain, who triggers it, and how long does it take?
+
+**Owner:** *unassigned* · **Decides:** Executive leadership with RA Legal · **Source:** [01](01-ip-origin-and-clearance.md), [05](05-process-timeline-and-phases.md) · **Status:** Open · **Priority**
+
+Document 01 makes clearance a hard stop before anything is shopped, and document 05 makes Gate 0 re-check its scope. Neither says what a determination actually looks like as a document, who raises it, or how long to expect it to take. All three matter practically: a clearance whose scope is vague cannot be re-checked at Gate 0, and **a step with no predictable duration gets routed around** — which in this case means someone demonstrating uncleared IP to a prospect because Legal "hadn't come back yet."
+
+**Resolved looks like:** a short standard form for a clearance determination (what IP, on what basis, scoped to what use, dated, by whom), a named trigger point and requester, and a stated turnaround expectation — written into document 01 and reflected in the charter template's clearance field.
+
+#### OI-28 — When do we pursue a CRADA, and who raises it?
+
+**Owner:** *unassigned* · **Decides:** Executive leadership with RA Legal and business development · **Source:** [01](01-ip-origin-and-clearance.md) · **Status:** Open · **Priority**
+
+A **CRADA** negotiated while an originating contract is being written is the cleanest of document 01's three positions and far cheaper than arguing for a release afterward. But it has to be raised *early*, which means somebody has to spot the possibility of generalizable value before the work has produced any — a judgment made at contracting time, by people who may never talk to the delivery team. Document 04 flags the team as where the signal originates; it does not say who acts on it.
+
+**Resolved looks like:** a stated default (do we seek a CRADA on every contract of a certain shape, or only where generalizable value is foreseeable?), a named owner for raising it, and the trigger conditions — written into document 01.
+
+#### OI-29 — What do we do with valuable IP we cannot clear?
+
+**Owner:** *unassigned* · **Decides:** Executive leadership with RA Legal · **Source:** [01](01-ip-origin-and-clearance.md) · **Status:** Open
+
+Document 01 says an uncleared capability stays with the originating engagement until the position is fixed, and lists the ways to fix it: renegotiate terms, seek a release, put a CRADA in place, or rebuild the capability independently and cleanly. It does not say who decides which of those to pursue, what the bar is for spending effort on any of them, or — most awkwardly — **what "rebuild it cleanly" actually requires** to be defensible. That last one is the sharp edge: a clean-room rebuild that is not genuinely clean is worse than not rebuilding at all.
+
+**Resolved looks like:** a decision owner and a stated bar for pursuing each route, plus a plain description of what a defensible independent rebuild requires — in document 01, or a short companion note if it gets long.
 
 ---
 
@@ -166,7 +196,7 @@ The practical limit on how fast the licensing model can grow. Two customers on o
 
 **Owner:** *unassigned* · **Decides:** Executive leadership · **Source:** [03](03-ipt-model-overview.md) · **Status:** Open
 
-Related to OI-17 and to OI-01 — POCs draw on the same scarce people. Without a stated ceiling, the answer gets decided implicitly by whoever asks last.
+Related to OI-17 and to OI-01 — generalizing and packaging cleared IP draws on the same scarce people. Without a stated ceiling, the answer gets decided implicitly by whoever asks last.
 
 **Resolved looks like:** a current ceiling in document 03 and an explicit queueing or decline rule.
 
@@ -236,9 +266,15 @@ Always in Discovery, or only when a decision is genuinely high-risk? And when we
 
 Items are kept here briefly after they close, so the team can see what changed without diffing the documents.
 
+**The front end is now contract-derived IP, and RA Legal clears it** — model change, **2026-09-22** (reframes OI-01; opens OI-27, OI-28, OI-29; promotes OI-26 to priority).
+
+This is not an item closing so much as a change to what the register is a register *of*, so it is recorded here too. The asset Red Alpha takes to a new customer is now, primarily, **IP derived from work already delivered under an existing customer contract** — generalized beyond that one mission and matched against a new customer's **mission requirement**. The internally funded POC remains a real but secondary route. Because contract-derived IP is not Red Alpha's by default, **RA Legal must determine in writing that we may use it** before anything is shopped, on one of three positions: Red Alpha owns it, the originating customer released it, or a **CRADA** secures it. There is no fourth position and no proceeding without one. Gate 0 re-checks that the clearance still covers what the engagement will build. A consequence worth flagging separately: the originating customer's **data** never travels with the IP, whatever the clearance says.
+
+*Now documented in:* [01 — the full model](01-ip-origin-and-clearance.md) · [03](03-ipt-model-overview.md) · [05 — Gate 0's IP check and the upstream-log hook](05-process-timeline-and-phases.md) · [06 — the data rule](06-security-and-compliance.md) · [07 — glossary and the shoppable-asset comparison](07-glossary-and-references.md) · [the charter template](../templates/ipt-charter-template.md) · [the gate-review checklist](../templates/gate-review-checklist.md).
+
 **Who owns Gate 0, and whether the Decider role ever moves** — decided **2026-08-24** (closes OI-03 and OI-04).
 
-Every product has one **Product Owner** role (the renamed **Product Lead**). The Product Owner decides to take a product from POC to MVP by chartering the IPT — that is Gate 0, and it is theirs alone; once made, the sponsor commits the team and Red Alpha's own core-product money. The Product Owner is **always** the Decider — no exception by decision type (technical ties still go to the Tech Lead as the technical tie-breaker, but the single Decider for what/why is the Product Owner without exception).
+Every product has one **Product Owner** role (the renamed **Product Lead**). The Product Owner decides to take a product to MVP by chartering the IPT — that is Gate 0, and it is theirs alone; once made, the sponsor commits the team and Red Alpha's own core-product money. The Product Owner is **always** the Decider — no exception by decision type (technical ties still go to the Tech Lead as the technical tie-breaker, but the single Decider for what/why is the Product Owner without exception).
 
 *Now documented in:* [03](03-ipt-model-overview.md) · [04 — the role, renamed from Product Lead](04-team-structure-and-roles.md) · [05 — Gate 0](05-process-timeline-and-phases.md) · [07 — glossary](07-glossary-and-references.md) · [the charter template](../templates/ipt-charter-template.md) · [the gate-review checklist](../templates/gate-review-checklist.md).
 

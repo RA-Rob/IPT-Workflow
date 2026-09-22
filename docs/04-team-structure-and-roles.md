@@ -1,6 +1,6 @@
 # 04 — Team Structure, Roles, and Responsibilities
 
-*Status: Draft for discussion — v0.2 — August 2026*
+*Status: Draft for discussion — v0.3 — September 2026*
 
 ## The lean IPT, sized for Red Alpha
 
@@ -26,6 +26,8 @@ Regardless of headcount, every IPT must own all seven of these functions. Nothin
 Owns the product outcome end to end. Frames the problem and the launch narrative (the PR/FAQ-style entry document), maintains and prioritizes the backlog by value, sets the **appetite** for each piece of work, and is the single person empowered to **break ties** so the team never stalls waiting for consensus. Manages the relationship with the sponsor, the **funding customer** and their mission owners, and the Authorizing Official's expectations. Accountable for *what* and *why*; explicitly not the person deciding *how* the code is written. This is the role that carries Amazon's "single-threaded owner" and Google's "Decider" ideas.
 
 Two responsibilities specific to how Red Alpha is funded sit with this role, and they are not delegable. The Product Owner **runs the customer evaluation loop** — making sure every short cycle in the MVP phase ends with working capability the customer can actually exercise in **stage**, and that what they say comes back as input to the next bet rather than as a mid-cycle interruption. And the Product Owner **owns the integrity of the funding boundary**: every piece of work carries a funding source and a core-or-tailored designation, and every decision to promote customer-funded **tailoring** into the licensed **core product** is recorded in the **upstream log** with its reasoning and any agreement it requires (document 05). Nobody else is positioned to see both sides of that line.
+
+That responsibility has an IP half to it. The Product Owner does not decide what Red Alpha owns — that is RA Legal's determination, not a product judgment — but the Product Owner is the person who has to **notice when the question is live and route it**. Two moments in particular: confirming at Gate 0 that the **IP clearance** on record still covers what this engagement will build and license (document 05), and flagging an upstream-log entry whose promotion into the core would make it IP we intend to reuse with the next customer. Both are cheap when caught early and expensive when caught at the next engagement's Gate 0.
 
 ### Tech Lead / Lead Engineer
 Owns technical direction: architecture, key trade-offs, technical standards, and the technical feasibility judgment at each gate. Breaks technical ties, keeps the system coherent, and is the senior hands-on builder. Partners with the Security Lead so that security decisions and architecture decisions are made together, not in sequence. Accountable for *how* we build and for technical risk.
@@ -91,8 +93,9 @@ Where a lean team has merged two roles into one person, that person holds both r
 A lean IPT depends on a few roles it does **not** contain, and naming them prevents confusion about who decides what:
 
 - **Sponsor / Product Champion** — the Red Alpha leader who commits the team and Red Alpha's own **core-product** money once the Product Owner decides to charter, and owns the business case; sets direction at gates but does not run the team day to day.
-- **Funding customer** — the customer who, having seen the POC, pays for the **tailoring** that turns it into an MVP for their mission. Distinct from the sponsor in what they commit: the sponsor commits people and core investment, the customer commits money *and their operators' time* to evaluate each cycle's increment in **stage**. They are the decision owner at **Gate 2** — the acceptance of the MVP is theirs to make, not ours — and they confirm the operating model at Gate 4. Emphatically outside the IPT: they steer direction between cycles, and the Product Owner protects the team from mid-cycle requests by routing them to the next bet.
+- **Funding customer** — the customer who, having seen Red Alpha's cleared capability demonstrated against their own mission requirement, pays for the **tailoring** that builds it out into an MVP for that mission. Distinct from the sponsor in what they commit: the sponsor commits people and core investment, the customer commits money *and their operators' time* to evaluate each cycle's increment in **stage**. They are the decision owner at **Gate 2** — the acceptance of the MVP is theirs to make, not ours — and they confirm the operating model at Gate 4. Emphatically outside the IPT: they steer direction between cycles, and the Product Owner protects the team from mid-cycle requests by routing them to the next bet.
 - **Authorizing Official (AO)** — the government/organizational authority who accepts risk and grants the Authority to Operate. External to the team by definition; the Security Lead manages the relationship. (See document 06.)
+- **RA Legal** — the function that determines what Red Alpha's rights actually are in capability derived from a customer's contract, and records the **IP clearance** the whole front end depends on (document 01). Not on the IPT and not consulted only at the end: the clearance has to exist before anything is shopped, and the Product Owner re-checks its scope at Gate 0. The team's obligation to Legal is to raise the question early and describe the IP honestly — including where it came from — not to reach its own conclusion about ownership.
 - **Shared specialists / chapters** — as Red Alpha grows more than one IPT, cross-team "chapter"-style groups (e.g., all security leads, all engineers) keep standards consistent without adding permanent headcount to any single team. This is the Spotify lesson we hold in reserve for scaling.
 
 ## Scaling up (and the guardrail against scaling wrong)
@@ -111,7 +114,9 @@ This is not an eighth function added to the table above — it is the **Product 
 
 Domain knowledge compounds here: whoever already knows the customer's mission will find the real leverage point faster than someone learning it from the outside, which is worth weighing when deciding who on the team spends the most embedded time with the customer's operators during Phase 5.
 
-**This is also where the next product's idea comes from.** A team doing Phase 5 well is, by definition, deep enough in a customer's mission to notice when something it built generalizes beyond that one engagement — which is exactly the origin story document 01 describes. Phase 5 is not only where a product matures; it is Red Alpha's actual wellspring of ideation.
+**This is also where the next product's IP comes from.** A team doing Phase 5 well is, by definition, deep enough in a customer's mission to notice when something it built generalizes beyond that one engagement — which is exactly the origin story document 01 describes. Phase 5 is not only where a product matures; it is Red Alpha's actual wellspring of new capability.
+
+That gives the team one standing obligation it would not otherwise have: **when something looks generalizable, say so early, and say so to RA Legal as well as to leadership.** Whether Red Alpha may use that capability with another customer depends on the terms of the contract this team is delivering under — and the cheapest time to establish the position, or to raise a **CRADA**, is while the work is still live and everyone still agrees on what happened. The team is not expected to judge the ownership question. It is expected to notice that the question exists and not to let the capability drift toward a sales conversation before it has been answered (document 01).
 
 ## Open questions / to resolve
 
@@ -121,7 +126,8 @@ Domain knowledge compounds here: whoever already knows the customer's mission wi
 - Do we want the **Security Lead** to be a full member of every IPT, or a shared specialist across two or three teams at our current size?
 - What is the minimum viable team we'd ever stand up — is four really the floor, or three for the smallest efforts?
 - How do we handle **on-call / operations** load on a lean team once products are live in production?
-- Who staffs a **POC** build once a Phase 5 team's insight is judged worth generalizing (document 01)? It happens before any *new* IPT is chartered, and will draw on the same scarce people this document allocates — likely including some of the very team still delivering the original customer's mission.
+- Who **packages cleared IP into a demonstration** once a Phase 5 team's capability is judged worth generalizing (document 01)? It happens before any *new* IPT is chartered, and will draw on the same scarce people this document allocates — likely including some of the very team still delivering the originating customer's mission.
+- Whose job is it to **spot a generalizable capability early enough to raise a CRADA** while the originating contract is still being shaped? That is a business-development and Legal question as much as a team one, but the team is where the signal originates.
 - Can one IPT carry a **second funding customer's** tailoring alongside the first, or does each engagement need its own team? This is the practical limit on how fast the licensing model can grow.
 
 *Role definitions and acronyms are in [`07-glossary-and-references.md`](07-glossary-and-references.md).*
